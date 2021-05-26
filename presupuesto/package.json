@@ -1,0 +1,18 @@
+{
+  "name": "presupuesto",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "json": "node src/convertJson.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "Pedro Obando",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "fs-extra": "^10.0.0"
+  }
+}
