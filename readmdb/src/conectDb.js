@@ -1,4 +1,5 @@
 'use strict';
+'use strict';
 
 const ADODB = require('node-adodb');
 

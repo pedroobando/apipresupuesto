@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "json": "node src/convertJson.js",
     "dev": "nodemon src/index.js"
   },
   "keywords": [],
