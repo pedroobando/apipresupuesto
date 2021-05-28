@@ -19,6 +19,16 @@ const numeroCuenta = (cta) =>
     2
   )}.${ceroleft(cta.Ordi, 3)}`;
 
+const sumaPadre = (laColleccion, elPadre) => {
+  var total = 0;
+  laColleccion
+    .filter((item) => item.fatherId == elPadre)
+    .forEach((element) => {
+      total += element.Inicial;
+    });
+  return total;
+};
+
 // Agregar Registro
 cuenta = cuenta.map((cta) => ({
   ...cta,
@@ -32,23 +42,24 @@ cuenta = cuenta.map((cta) => ({
       ? numeroCuenta(cta).slice(0, -10) + ".00.00.000"
       : cta.Nivel == 2
       ? numeroCuenta(cta).slice(0, -13) + ".00.00.00.000"
-      : "-",
+      : numeroCuenta(cta).slice(0, -13) + ".00.00.00.000",
 }));
 
 // Ordenar Cuenta
-cuenta = cuenta.sort(ordenCuenta);
+// cuenta = cuenta.sort(ordenCuentaDesc);
 // cuenta = cuenta.sort((a, b) =>
 //   a.cuentaNo > b.cuentaNo ? 1 : a.cuentaNo < b.cuentaNo ? -1 : 0
 // );
 
 // Filtrar la Cuenta  de Grupo & el Ano.
-const ctasDeGrupo = cuenta.filter((cta) => cta.Año == 2015);
-var ctaAjustada = cuenta.filter((cta) => cta.Año == 2015);
+const ctasDeGrupo = cuenta.filter((cta) => cta.Año == 2015).sort(ordenCuentaDesc);
+let ctaAjustada = cuenta.filter((cta) => cta.Año == 2015).sort(ordenCuentaDesc);
 
 ctasDeGrupo.map((laCta) => {
-  let findFather = ctaAjustada.find((cta) => cta.cuentaNo === laCta.fatherId);
+  let findFather = ctaAjustada.find((cta) => cta.cuentaNo == laCta.fatherId);
   if (findFather) {
-    findFather = { ...findFather, Inicial: findFather.Inicial + laCta.Inicial };
+    // findFather = { ...findFather, Inicial: findFather.Inicial + laCta.Inicial };
+    findFather = { ...findFather, Inicial: sumaPadre(ctaAjustada, findFather.cuentaNo) };
     ctaAjustada = [
       ...ctaAjustada.filter((ctaAj) => ctaAj.cuentaNo !== findFather.cuentaNo),
       findFather,
@@ -58,19 +69,8 @@ ctasDeGrupo.map((laCta) => {
   }
 });
 
-// Esto verifica si faltan cuentas...
-// ctasDeGrupo.map((cta) => {
-//   if (cta.Tipo == "I") {
-//     const ctaFather = ctasDeGrupo.find((ctad) => ctad.cuentaNo === cta.fatherId);
-//     if (!ctaFather) {
-//       console.log(`Cuenta: ${cta.fatherId} no existe`);
-//     } else if (ctaFather.Tipo == !"D") {
-//       console.log(`Cuenta: ${cta.fatherId} no es cta de grupo`);
-//     }
-//   }
-// });
-
-// nvoFormato.map((cta) => console.log(consolaShow(cta, cta.Tipo !== "D" ? "---" : "==>")));
-// ctasDeGrupo.map((cta) => console.log(consolaShow(cta, cta.Tipo !== "D" ? "---" : "==>")));
+// Ordena de nuevo la cuenta
 ctaAjustada = ctaAjustada.sort(ordenCuenta);
+
+// Imprime la cuenta
 ctaAjustada.map((cta) => console.log(consolaShow(cta, cta.Tipo !== "D" ? "---" : "==>")));
