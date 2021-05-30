@@ -1,0 +1,928 @@
+{"Inicial":null,"_id":"04.00.00.00.000"}
+{"Inicial":null,"_id":"04.01.00.00.000"}
+{"Inicial":null,"_id":"04.01.01.00.000"}
+{"Inicial":null,"_id":"04.01.01.01.000"}
+{"Inicial":null,"_id":"04.01.01.10.000"}
+{"Inicial":null,"_id":"04.01.01.18.002"}
+{"Inicial":null,"_id":"04.01.01.36.000"}
+{"Inicial":null,"_id":"04.01.03.00.000"}
+{"Inicial":null,"_id":"04.01.03.02.000"}
+{"Inicial":null,"_id":"04.01.03.08.000"}
+{"Inicial":null,"_id":"04.01.03.09.000"}
+{"Inicial":null,"_id":"04.01.03.17.000"}
+{"Inicial":null,"_id":"04.01.03.21.000"}
+{"Inicial":null,"_id":"04.01.03.22.000"}
+{"Inicial":null,"_id":"04.01.03.47.000"}
+{"Inicial":null,"_id":"04.01.03.95.000"}
+{"Inicial":null,"_id":"04.01.03.97.000"}
+{"Inicial":null,"_id":"04.01.03.98.000"}
+{"Inicial":null,"_id":"04.01.04.00.000"}
+{"Inicial":null,"_id":"04.01.04.08.000"}
+{"Inicial":null,"_id":"04.01.04.18.000"}
+{"Inicial":null,"_id":"04.01.04.48.000"}
+{"Inicial":null,"_id":"04.01.04.51.000"}
+{"Inicial":null,"_id":"04.01.05.00.000"}
+{"Inicial":null,"_id":"04.01.05.01.000"}
+{"Inicial":null,"_id":"04.01.05.03.000"}
+{"Inicial":null,"_id":"04.01.05.04.000"}
+{"Inicial":null,"_id":"04.01.05.06.000"}
+{"Inicial":null,"_id":"04.01.05.16.000"}
+{"Inicial":null,"_id":"04.01.05.18.000"}
+{"Inicial":null,"_id":"04.01.06.00.000"}
+{"Inicial":null,"_id":"04.01.06.01.000"}
+{"Inicial":null,"_id":"04.01.06.03.000"}
+{"Inicial":null,"_id":"04.01.06.04.000"}
+{"Inicial":null,"_id":"04.01.06.05.000"}
+{"Inicial":null,"_id":"04.01.06.10.000"}
+{"Inicial":null,"_id":"04.01.06.11.000"}
+{"Inicial":null,"_id":"04.01.06.12.000"}
+{"Inicial":null,"_id":"04.01.06.13.000"}
+{"Inicial":null,"_id":"04.01.06.39.000"}
+{"Inicial":null,"_id":"04.01.06.41.000"}
+{"Inicial":null,"_id":"04.01.06.42.000"}
+{"Inicial":null,"_id":"04.01.06.43.000"}
+{"Inicial":null,"_id":"04.01.07.00.000"}
+{"Inicial":null,"_id":"04.01.07.03.000"}
+{"Inicial":null,"_id":"04.01.07.04.000"}
+{"Inicial":null,"_id":"04.01.07.05.000"}
+{"Inicial":null,"_id":"04.01.07.06.000"}
+{"Inicial":null,"_id":"04.01.07.07.000"}
+{"Inicial":null,"_id":"04.01.07.08.000"}
+{"Inicial":null,"_id":"04.01.07.09.000"}
+{"Inicial":null,"_id":"04.01.07.10.000"}
+{"Inicial":null,"_id":"04.01.07.11.000"}
+{"Inicial":null,"_id":"04.01.07.12.000"}
+{"Inicial":null,"_id":"04.01.07.19.000"}
+{"Inicial":null,"_id":"04.01.07.20.000"}
+{"Inicial":null,"_id":"04.01.07.21.000"}
+{"Inicial":null,"_id":"04.01.07.22.000"}
+{"Inicial":null,"_id":"04.01.07.23.000"}
+{"Inicial":null,"_id":"04.01.07.24.000"}
+{"Inicial":null,"_id":"04.01.07.26.000"}
+{"Inicial":null,"_id":"04.01.07.64.000"}
+{"Inicial":null,"_id":"04.01.07.65.000"}
+{"Inicial":null,"_id":"04.01.07.66.000"}
+{"Inicial":null,"_id":"04.01.07.67.000"}
+{"Inicial":null,"_id":"04.01.07.68.000"}
+{"Inicial":null,"_id":"04.01.07.69.000"}
+{"Inicial":null,"_id":"04.01.07.97.000"}
+{"Inicial":null,"_id":"04.01.07.97.001"}
+{"Inicial":null,"_id":"04.01.08.00.000"}
+{"Inicial":null,"_id":"04.01.08.01.000"}
+{"Inicial":null,"_id":"04.01.08.01.001"}
+{"Inicial":null,"_id":"04.01.08.02.000"}
+{"Inicial":null,"_id":"04.01.08.07.000"}
+{"Inicial":null,"_id":"04.02.00.00.000"}
+{"Inicial":null,"_id":"04.02.01.00.000"}
+{"Inicial":null,"_id":"04.02.01.01.000"}
+{"Inicial":null,"_id":"04.02.01.03.000"}
+{"Inicial":null,"_id":"04.02.03.00.000"}
+{"Inicial":null,"_id":"04.02.03.01.000"}
+{"Inicial":null,"_id":"04.02.03.02.000"}
+{"Inicial":null,"_id":"04.02.04.00.000"}
+{"Inicial":null,"_id":"04.02.04.03.000"}
+{"Inicial":null,"_id":"04.02.05.00.000"}
+{"Inicial":null,"_id":"04.02.05.01.000"}
+{"Inicial":null,"_id":"04.02.05.03.000"}
+{"Inicial":null,"_id":"04.02.05.04.000"}
+{"Inicial":null,"_id":"04.02.05.07.000"}
+{"Inicial":null,"_id":"04.02.06.00.000"}
+{"Inicial":null,"_id":"04.02.06.02.000"}
+{"Inicial":null,"_id":"04.02.06.03.000"}
+{"Inicial":null,"_id":"04.02.06.04.000"}
+{"Inicial":null,"_id":"04.02.06.05.000"}
+{"Inicial":null,"_id":"04.02.06.06.000"}
+{"Inicial":null,"_id":"04.02.06.08.000"}
+{"Inicial":null,"_id":"04.02.07.00.000"}
+{"Inicial":null,"_id":"04.02.07.01.000"}
+{"Inicial":null,"_id":"04.02.07.02.000"}
+{"Inicial":null,"_id":"04.02.07.03.000"}
+{"Inicial":null,"_id":"04.02.07.04.000"}
+{"Inicial":null,"_id":"04.02.08.00.000"}
+{"Inicial":null,"_id":"04.02.08.03.000"}
+{"Inicial":null,"_id":"04.02.08.09.000"}
+{"Inicial":null,"_id":"04.02.08.10.000"}
+{"Inicial":null,"_id":"04.02.09.00.000"}
+{"Inicial":null,"_id":"04.02.09.02.000"}
+{"Inicial":null,"_id":"04.02.09.99.000"}
+{"Inicial":null,"_id":"04.02.10.00.000"}
+{"Inicial":null,"_id":"04.02.10.02.000"}
+{"Inicial":null,"_id":"04.02.10.03.000"}
+{"Inicial":null,"_id":"04.02.10.05.000"}
+{"Inicial":null,"_id":"04.02.10.06.000"}
+{"Inicial":null,"_id":"04.02.10.07.000"}
+{"Inicial":null,"_id":"04.02.10.08.000"}
+{"Inicial":null,"_id":"04.02.10.09.000"}
+{"Inicial":null,"_id":"04.02.10.11.000"}
+{"Inicial":null,"_id":"04.02.10.12.000"}
+{"Inicial":null,"_id":"04.02.10.13.000"}
+{"Inicial":null,"_id":"04.02.10.99.000"}
+{"Inicial":null,"_id":"04.02.99.00.000"}
+{"Inicial":null,"_id":"04.02.99.01.000"}
+{"Inicial":null,"_id":"04.03.00.00.000"}
+{"Inicial":null,"_id":"04.03.01.00.000"}
+{"Inicial":null,"_id":"04.03.01.01.000"}
+{"Inicial":null,"_id":"04.03.02.00.000"}
+{"Inicial":null,"_id":"04.03.02.02.000"}
+{"Inicial":null,"_id":"04.03.04.00.000"}
+{"Inicial":null,"_id":"04.03.04.01.000"}
+{"Inicial":null,"_id":"04.03.04.02.000"}
+{"Inicial":null,"_id":"04.03.04.03.000"}
+{"Inicial":null,"_id":"04.03.04.04.001"}
+{"Inicial":null,"_id":"04.03.04.04.002"}
+{"Inicial":null,"_id":"04.03.04.05.000"}
+{"Inicial":null,"_id":"04.03.04.06.000"}
+{"Inicial":null,"_id":"04.03.06.00.000"}
+{"Inicial":null,"_id":"04.03.06.01.000"}
+{"Inicial":null,"_id":"04.03.06.03.000"}
+{"Inicial":null,"_id":"04.03.07.00.000"}
+{"Inicial":null,"_id":"04.03.07.01.000"}
+{"Inicial":null,"_id":"04.03.07.02.000"}
+{"Inicial":null,"_id":"04.03.07.03.000"}
+{"Inicial":null,"_id":"04.03.07.04.000"}
+{"Inicial":null,"_id":"04.03.08.00.000"}
+{"Inicial":null,"_id":"04.03.08.01.000"}
+{"Inicial":null,"_id":"04.03.08.02.000"}
+{"Inicial":null,"_id":"04.03.08.03.000"}
+{"Inicial":null,"_id":"04.03.09.00.000"}
+{"Inicial":null,"_id":"04.03.09.01.000"}
+{"Inicial":null,"_id":"04.03.09.02.000"}
+{"Inicial":null,"_id":"04.03.10.00.000"}
+{"Inicial":null,"_id":"04.03.10.01.000"}
+{"Inicial":null,"_id":"04.03.10.03.000"}
+{"Inicial":null,"_id":"04.03.10.07.000"}
+{"Inicial":null,"_id":"04.03.10.09.000"}
+{"Inicial":null,"_id":"04.03.10.99.000"}
+{"Inicial":null,"_id":"04.03.11.00.000"}
+{"Inicial":null,"_id":"04.03.11.02.000"}
+{"Inicial":null,"_id":"04.03.11.07.000"}
+{"Inicial":null,"_id":"04.03.11.99.000"}
+{"Inicial":null,"_id":"04.03.12.00.000"}
+{"Inicial":null,"_id":"04.03.12.01.000"}
+{"Inicial":null,"_id":"04.03.18.00.000"}
+{"Inicial":null,"_id":"04.03.18.01.000"}
+{"Inicial":null,"_id":"04.03.18.01.001"}
+{"Inicial":null,"_id":"04.03.18.01.002"}
+{"Inicial":null,"_id":"04.03.19.00.000"}
+{"Inicial":null,"_id":"04.03.19.01.000"}
+{"Inicial":null,"_id":"04.04.00.00.000"}
+{"Inicial":null,"_id":"04.04.01.00.000"}
+{"Inicial":null,"_id":"04.04.01.01.000"}
+{"Inicial":null,"_id":"04.04.01.01.002"}
+{"Inicial":null,"_id":"04.04.01.01.007"}
+{"Inicial":null,"_id":"04.04.01.01.099"}
+{"Inicial":null,"_id":"04.04.01.02.000"}
+{"Inicial":null,"_id":"04.04.01.02.002"}
+{"Inicial":null,"_id":"04.04.01.02.007"}
+{"Inicial":null,"_id":"04.04.01.02.099"}
+{"Inicial":null,"_id":"04.04.02.00.000"}
+{"Inicial":null,"_id":"04.04.02.01.000"}
+{"Inicial":null,"_id":"04.04.04.00.000"}
+{"Inicial":null,"_id":"04.04.04.01.000"}
+{"Inicial":null,"_id":"04.04.05.00.000"}
+{"Inicial":null,"_id":"04.04.05.01.000"}
+{"Inicial":null,"_id":"04.04.07.00.000"}
+{"Inicial":null,"_id":"04.04.07.02.000"}
+{"Inicial":null,"_id":"04.04.07.03.000"}
+{"Inicial":null,"_id":"04.04.07.04.000"}
+{"Inicial":null,"_id":"04.04.09.00.000"}
+{"Inicial":null,"_id":"04.04.09.01.000"}
+{"Inicial":null,"_id":"04.04.09.02.000"}
+{"Inicial":null,"_id":"04.04.09.03.000"}
+{"Inicial":null,"_id":"04.04.09.99.000"}
+{"Inicial":null,"_id":"04.04.12.00.000"}
+{"Inicial":null,"_id":"04.04.12.04.000"}
+{"Inicial":null,"_id":"04.07.00.00.000"}
+{"Inicial":null,"_id":"04.07.01.00.000"}
+{"Inicial":null,"_id":"04.07.01.01.000"}
+{"Inicial":null,"_id":"04.07.01.01.001"}
+{"Inicial":null,"_id":"04.07.01.01.002"}
+{"Inicial":null,"_id":"04.07.01.01.009"}
+{"Inicial":null,"_id":"04.07.01.01.010"}
+{"Inicial":null,"_id":"04.07.01.01.011"}
+{"Inicial":null,"_id":"04.07.01.01.012"}
+{"Inicial":null,"_id":"04.07.01.01.013"}
+{"Inicial":null,"_id":"04.07.01.01.014"}
+{"Inicial":null,"_id":"04.07.01.01.015"}
+{"Inicial":null,"_id":"04.07.01.01.016"}
+{"Inicial":null,"_id":"04.07.01.01.075"}
+{"Inicial":null,"_id":"04.07.01.06.000"}
+{"Inicial":null,"_id":"04.07.01.06.002"}
+{"Inicial":null,"_id":"04.07.01.06.007"}
+{"Inicial":null,"_id":"04.07.01.06.012"}
+{"Inicial":null,"_id":"04.07.01.06.017"}
+{"Inicial":null,"_id":"04.07.01.06.099"}
+{"Inicial":null,"_id":"04.07.01.12.001"}
+{"Inicial":null,"_id":"04.07.01.12.002"}
+{"Inicial":null,"_id":"04.07.01.12.003"}
+{"Inicial":null,"_id":"04.07.01.12.004"}
+{"Inicial":null,"_id":"04.07.01.16.001"}
+{"Inicial":null,"_id":"04.07.01.16.002"}
+{"Inicial":null,"_id":"04.07.01.16.003"}
+{"Inicial":null,"_id":"04.07.01.16.004"}
+{"Inicial":null,"_id":"04.07.01.75.001"}
+{"Inicial":null,"_id":"04.08.00.00.000"}
+{"Inicial":null,"_id":"04.08.08.00.000"}
+{"Inicial":null,"_id":"04.08.08.01.000"}
+{"Inicial":null,"_id":"04.08.08.01.002"}
+{"Inicial":null,"_id":"04.11.00.00.000"}
+{"Inicial":null,"_id":"04.11.11.00.000"}
+{"Inicial":null,"_id":"04.11.11.04.000"}
+{"Inicial":null,"_id":"04.11.11.04.001"}
+{"Inicial":null,"_id":"04.11.11.05.000"}
+{"$$deleted":true,"_id":"04.00.00.00.000"}
+{"$$deleted":true,"_id":"04.01.00.00.000"}
+{"$$deleted":true,"_id":"04.01.01.00.000"}
+{"$$deleted":true,"_id":"04.01.01.01.000"}
+{"$$deleted":true,"_id":"04.01.01.10.000"}
+{"$$deleted":true,"_id":"04.01.01.18.002"}
+{"$$deleted":true,"_id":"04.01.01.36.000"}
+{"$$deleted":true,"_id":"04.01.03.00.000"}
+{"$$deleted":true,"_id":"04.01.03.02.000"}
+{"$$deleted":true,"_id":"04.01.03.08.000"}
+{"$$deleted":true,"_id":"04.01.03.09.000"}
+{"$$deleted":true,"_id":"04.01.03.17.000"}
+{"$$deleted":true,"_id":"04.01.03.21.000"}
+{"$$deleted":true,"_id":"04.01.03.22.000"}
+{"$$deleted":true,"_id":"04.01.03.47.000"}
+{"$$deleted":true,"_id":"04.01.03.95.000"}
+{"$$deleted":true,"_id":"04.01.03.97.000"}
+{"$$deleted":true,"_id":"04.01.03.98.000"}
+{"$$deleted":true,"_id":"04.01.04.00.000"}
+{"$$deleted":true,"_id":"04.01.04.08.000"}
+{"$$deleted":true,"_id":"04.01.04.18.000"}
+{"$$deleted":true,"_id":"04.01.04.48.000"}
+{"$$deleted":true,"_id":"04.01.04.51.000"}
+{"$$deleted":true,"_id":"04.01.05.00.000"}
+{"$$deleted":true,"_id":"04.01.05.01.000"}
+{"$$deleted":true,"_id":"04.01.05.03.000"}
+{"$$deleted":true,"_id":"04.01.05.04.000"}
+{"$$deleted":true,"_id":"04.01.05.06.000"}
+{"$$deleted":true,"_id":"04.01.05.16.000"}
+{"$$deleted":true,"_id":"04.01.05.18.000"}
+{"$$deleted":true,"_id":"04.01.06.00.000"}
+{"$$deleted":true,"_id":"04.01.06.01.000"}
+{"$$deleted":true,"_id":"04.01.06.03.000"}
+{"$$deleted":true,"_id":"04.01.06.04.000"}
+{"$$deleted":true,"_id":"04.01.06.05.000"}
+{"$$deleted":true,"_id":"04.01.06.10.000"}
+{"$$deleted":true,"_id":"04.01.06.11.000"}
+{"$$deleted":true,"_id":"04.01.06.12.000"}
+{"$$deleted":true,"_id":"04.01.06.13.000"}
+{"$$deleted":true,"_id":"04.01.06.39.000"}
+{"$$deleted":true,"_id":"04.01.06.41.000"}
+{"$$deleted":true,"_id":"04.01.06.42.000"}
+{"$$deleted":true,"_id":"04.01.06.43.000"}
+{"$$deleted":true,"_id":"04.01.07.00.000"}
+{"$$deleted":true,"_id":"04.01.07.03.000"}
+{"$$deleted":true,"_id":"04.01.07.04.000"}
+{"$$deleted":true,"_id":"04.01.07.05.000"}
+{"$$deleted":true,"_id":"04.01.07.06.000"}
+{"$$deleted":true,"_id":"04.01.07.07.000"}
+{"$$deleted":true,"_id":"04.01.07.08.000"}
+{"$$deleted":true,"_id":"04.01.07.09.000"}
+{"$$deleted":true,"_id":"04.01.07.10.000"}
+{"$$deleted":true,"_id":"04.01.07.11.000"}
+{"$$deleted":true,"_id":"04.01.07.12.000"}
+{"$$deleted":true,"_id":"04.01.07.19.000"}
+{"$$deleted":true,"_id":"04.01.07.20.000"}
+{"$$deleted":true,"_id":"04.01.07.21.000"}
+{"$$deleted":true,"_id":"04.01.07.22.000"}
+{"$$deleted":true,"_id":"04.01.07.23.000"}
+{"$$deleted":true,"_id":"04.01.07.24.000"}
+{"$$deleted":true,"_id":"04.01.07.26.000"}
+{"$$deleted":true,"_id":"04.01.07.64.000"}
+{"$$deleted":true,"_id":"04.01.07.65.000"}
+{"$$deleted":true,"_id":"04.01.07.66.000"}
+{"$$deleted":true,"_id":"04.01.07.67.000"}
+{"$$deleted":true,"_id":"04.01.07.68.000"}
+{"$$deleted":true,"_id":"04.01.07.69.000"}
+{"$$deleted":true,"_id":"04.01.07.97.000"}
+{"$$deleted":true,"_id":"04.01.07.97.001"}
+{"$$deleted":true,"_id":"04.01.08.00.000"}
+{"$$deleted":true,"_id":"04.01.08.01.000"}
+{"$$deleted":true,"_id":"04.01.08.01.001"}
+{"$$deleted":true,"_id":"04.01.08.02.000"}
+{"$$deleted":true,"_id":"04.01.08.07.000"}
+{"$$deleted":true,"_id":"04.02.00.00.000"}
+{"$$deleted":true,"_id":"04.02.01.00.000"}
+{"$$deleted":true,"_id":"04.02.01.01.000"}
+{"$$deleted":true,"_id":"04.02.01.03.000"}
+{"$$deleted":true,"_id":"04.02.03.00.000"}
+{"$$deleted":true,"_id":"04.02.03.01.000"}
+{"$$deleted":true,"_id":"04.02.03.02.000"}
+{"$$deleted":true,"_id":"04.02.04.00.000"}
+{"$$deleted":true,"_id":"04.02.04.03.000"}
+{"$$deleted":true,"_id":"04.02.05.00.000"}
+{"$$deleted":true,"_id":"04.02.05.01.000"}
+{"$$deleted":true,"_id":"04.02.05.03.000"}
+{"$$deleted":true,"_id":"04.02.05.04.000"}
+{"$$deleted":true,"_id":"04.02.05.07.000"}
+{"$$deleted":true,"_id":"04.02.06.00.000"}
+{"$$deleted":true,"_id":"04.02.06.02.000"}
+{"$$deleted":true,"_id":"04.02.06.03.000"}
+{"$$deleted":true,"_id":"04.02.06.04.000"}
+{"$$deleted":true,"_id":"04.02.06.05.000"}
+{"$$deleted":true,"_id":"04.02.06.06.000"}
+{"$$deleted":true,"_id":"04.02.06.08.000"}
+{"$$deleted":true,"_id":"04.02.07.00.000"}
+{"$$deleted":true,"_id":"04.02.07.01.000"}
+{"$$deleted":true,"_id":"04.02.07.02.000"}
+{"$$deleted":true,"_id":"04.02.07.03.000"}
+{"$$deleted":true,"_id":"04.02.07.04.000"}
+{"$$deleted":true,"_id":"04.02.08.00.000"}
+{"$$deleted":true,"_id":"04.02.08.03.000"}
+{"$$deleted":true,"_id":"04.02.08.09.000"}
+{"$$deleted":true,"_id":"04.02.08.10.000"}
+{"$$deleted":true,"_id":"04.02.09.00.000"}
+{"$$deleted":true,"_id":"04.02.09.02.000"}
+{"$$deleted":true,"_id":"04.02.09.99.000"}
+{"$$deleted":true,"_id":"04.02.10.00.000"}
+{"$$deleted":true,"_id":"04.02.10.02.000"}
+{"$$deleted":true,"_id":"04.02.10.03.000"}
+{"$$deleted":true,"_id":"04.02.10.05.000"}
+{"$$deleted":true,"_id":"04.02.10.06.000"}
+{"$$deleted":true,"_id":"04.02.10.07.000"}
+{"$$deleted":true,"_id":"04.02.10.08.000"}
+{"$$deleted":true,"_id":"04.02.10.09.000"}
+{"$$deleted":true,"_id":"04.02.10.11.000"}
+{"$$deleted":true,"_id":"04.02.10.12.000"}
+{"$$deleted":true,"_id":"04.02.10.13.000"}
+{"$$deleted":true,"_id":"04.02.10.99.000"}
+{"$$deleted":true,"_id":"04.02.99.00.000"}
+{"$$deleted":true,"_id":"04.02.99.01.000"}
+{"$$deleted":true,"_id":"04.03.00.00.000"}
+{"$$deleted":true,"_id":"04.03.01.00.000"}
+{"$$deleted":true,"_id":"04.03.01.01.000"}
+{"$$deleted":true,"_id":"04.03.02.00.000"}
+{"$$deleted":true,"_id":"04.03.02.02.000"}
+{"$$deleted":true,"_id":"04.03.04.00.000"}
+{"$$deleted":true,"_id":"04.03.04.01.000"}
+{"$$deleted":true,"_id":"04.03.04.02.000"}
+{"$$deleted":true,"_id":"04.03.04.03.000"}
+{"$$deleted":true,"_id":"04.03.04.04.001"}
+{"$$deleted":true,"_id":"04.03.04.04.002"}
+{"$$deleted":true,"_id":"04.03.04.05.000"}
+{"$$deleted":true,"_id":"04.03.04.06.000"}
+{"$$deleted":true,"_id":"04.03.06.00.000"}
+{"$$deleted":true,"_id":"04.03.06.01.000"}
+{"$$deleted":true,"_id":"04.03.06.03.000"}
+{"$$deleted":true,"_id":"04.03.07.00.000"}
+{"$$deleted":true,"_id":"04.03.07.01.000"}
+{"$$deleted":true,"_id":"04.03.07.02.000"}
+{"$$deleted":true,"_id":"04.03.07.03.000"}
+{"$$deleted":true,"_id":"04.03.07.04.000"}
+{"$$deleted":true,"_id":"04.03.08.00.000"}
+{"$$deleted":true,"_id":"04.03.08.01.000"}
+{"$$deleted":true,"_id":"04.03.08.02.000"}
+{"$$deleted":true,"_id":"04.03.08.03.000"}
+{"$$deleted":true,"_id":"04.03.09.00.000"}
+{"$$deleted":true,"_id":"04.03.09.01.000"}
+{"$$deleted":true,"_id":"04.03.09.02.000"}
+{"$$deleted":true,"_id":"04.03.10.00.000"}
+{"$$deleted":true,"_id":"04.03.10.01.000"}
+{"$$deleted":true,"_id":"04.03.10.03.000"}
+{"$$deleted":true,"_id":"04.03.10.07.000"}
+{"$$deleted":true,"_id":"04.03.10.09.000"}
+{"$$deleted":true,"_id":"04.03.10.99.000"}
+{"$$deleted":true,"_id":"04.03.11.00.000"}
+{"$$deleted":true,"_id":"04.03.11.02.000"}
+{"$$deleted":true,"_id":"04.03.11.07.000"}
+{"$$deleted":true,"_id":"04.03.11.99.000"}
+{"$$deleted":true,"_id":"04.03.12.00.000"}
+{"$$deleted":true,"_id":"04.03.12.01.000"}
+{"$$deleted":true,"_id":"04.03.18.00.000"}
+{"$$deleted":true,"_id":"04.03.18.01.000"}
+{"$$deleted":true,"_id":"04.03.18.01.001"}
+{"$$deleted":true,"_id":"04.03.18.01.002"}
+{"$$deleted":true,"_id":"04.03.19.00.000"}
+{"$$deleted":true,"_id":"04.03.19.01.000"}
+{"$$deleted":true,"_id":"04.04.00.00.000"}
+{"$$deleted":true,"_id":"04.04.01.00.000"}
+{"$$deleted":true,"_id":"04.04.01.01.000"}
+{"$$deleted":true,"_id":"04.04.01.01.002"}
+{"$$deleted":true,"_id":"04.04.01.01.007"}
+{"$$deleted":true,"_id":"04.04.01.01.099"}
+{"$$deleted":true,"_id":"04.04.01.02.000"}
+{"$$deleted":true,"_id":"04.04.01.02.002"}
+{"$$deleted":true,"_id":"04.04.01.02.007"}
+{"$$deleted":true,"_id":"04.04.01.02.099"}
+{"$$deleted":true,"_id":"04.04.02.00.000"}
+{"$$deleted":true,"_id":"04.04.02.01.000"}
+{"$$deleted":true,"_id":"04.04.04.00.000"}
+{"$$deleted":true,"_id":"04.04.04.01.000"}
+{"$$deleted":true,"_id":"04.04.05.00.000"}
+{"$$deleted":true,"_id":"04.04.05.01.000"}
+{"$$deleted":true,"_id":"04.04.07.00.000"}
+{"$$deleted":true,"_id":"04.04.07.02.000"}
+{"$$deleted":true,"_id":"04.04.07.03.000"}
+{"$$deleted":true,"_id":"04.04.07.04.000"}
+{"$$deleted":true,"_id":"04.04.09.00.000"}
+{"$$deleted":true,"_id":"04.04.09.01.000"}
+{"$$deleted":true,"_id":"04.04.09.02.000"}
+{"$$deleted":true,"_id":"04.04.09.03.000"}
+{"$$deleted":true,"_id":"04.04.09.99.000"}
+{"$$deleted":true,"_id":"04.04.12.00.000"}
+{"$$deleted":true,"_id":"04.04.12.04.000"}
+{"$$deleted":true,"_id":"04.07.00.00.000"}
+{"$$deleted":true,"_id":"04.07.01.00.000"}
+{"$$deleted":true,"_id":"04.07.01.01.000"}
+{"$$deleted":true,"_id":"04.07.01.01.001"}
+{"$$deleted":true,"_id":"04.07.01.01.002"}
+{"$$deleted":true,"_id":"04.07.01.01.009"}
+{"$$deleted":true,"_id":"04.07.01.01.010"}
+{"$$deleted":true,"_id":"04.07.01.01.011"}
+{"$$deleted":true,"_id":"04.07.01.01.012"}
+{"$$deleted":true,"_id":"04.07.01.01.013"}
+{"$$deleted":true,"_id":"04.07.01.01.014"}
+{"$$deleted":true,"_id":"04.07.01.01.015"}
+{"$$deleted":true,"_id":"04.07.01.01.016"}
+{"$$deleted":true,"_id":"04.07.01.01.075"}
+{"$$deleted":true,"_id":"04.07.01.06.000"}
+{"$$deleted":true,"_id":"04.07.01.06.002"}
+{"$$deleted":true,"_id":"04.07.01.06.007"}
+{"$$deleted":true,"_id":"04.07.01.06.012"}
+{"$$deleted":true,"_id":"04.07.01.06.017"}
+{"$$deleted":true,"_id":"04.07.01.06.099"}
+{"$$deleted":true,"_id":"04.07.01.12.001"}
+{"$$deleted":true,"_id":"04.07.01.12.002"}
+{"$$deleted":true,"_id":"04.07.01.12.003"}
+{"$$deleted":true,"_id":"04.07.01.12.004"}
+{"$$deleted":true,"_id":"04.07.01.16.001"}
+{"$$deleted":true,"_id":"04.07.01.16.002"}
+{"$$deleted":true,"_id":"04.07.01.16.003"}
+{"$$deleted":true,"_id":"04.07.01.16.004"}
+{"$$deleted":true,"_id":"04.07.01.75.001"}
+{"$$deleted":true,"_id":"04.08.00.00.000"}
+{"$$deleted":true,"_id":"04.08.08.00.000"}
+{"$$deleted":true,"_id":"04.08.08.01.000"}
+{"$$deleted":true,"_id":"04.08.08.01.002"}
+{"$$deleted":true,"_id":"04.11.00.00.000"}
+{"$$deleted":true,"_id":"04.11.11.00.000"}
+{"$$deleted":true,"_id":"04.11.11.04.000"}
+{"$$deleted":true,"_id":"04.11.11.04.001"}
+{"$$deleted":true,"_id":"04.11.11.05.000"}
+{"Ano":2015,"_id":"04.00.00.00.000","cuentaNo":"04.00.00.00.000","fatherId":"04.00.00.00.000","Nivel":1,"Tipo":"D","Inicial":0,"Descripcion":"GASTOS DE TOTAL","Part":4,"Gene":0,"Espe":0,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.01.00.00.000","cuentaNo":"04.01.00.00.000","fatherId":"04.00.00.00.000","Nivel":2,"Tipo":"D","Inicial":0,"Descripcion":"GASTOS DE PERSONAL","Part":4,"Gene":1,"Espe":0,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.01.01.00.000","cuentaNo":"04.01.01.00.000","fatherId":"04.01.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"SUELDOS, SALARIOS Y OTRAS RETRIBUCIONES","Part":4,"Gene":1,"Espe":1,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.01.01.01.000","cuentaNo":"04.01.01.01.000","fatherId":"04.01.01.00.000","Nivel":4,"Tipo":"I","Inicial":2341513.04,"Descripcion":"SUELDOS BÁSICOS PERSONAL FIJO A TIEMPO COMPLETO","Part":4,"Gene":1,"Espe":1,"Sub":1,"Ordi":0}
+{"Ano":2015,"_id":"04.01.01.10.000","cuentaNo":"04.01.01.10.000","fatherId":"04.01.01.00.000","Nivel":4,"Tipo":"I","Inicial":392115.48000000004,"Descripcion":"SALARIOS A OBREROS EN PUESTOS PEMANENTES A TIEMPO COMPLETO","Part":4,"Gene":1,"Espe":1,"Sub":10,"Ordi":0}
+{"Ano":2015,"_id":"04.01.01.18.002","cuentaNo":"04.01.01.18.002","fatherId":"04.01.01.18.000","Nivel":5,"Tipo":"I","Inicial":100319.19,"Descripcion":"REMUNERACIONES POR HONORARIOS PROFESIONALES","Part":4,"Gene":1,"Espe":1,"Sub":18,"Ordi":2}
+{"Ano":2015,"_id":"04.01.01.36.000","cuentaNo":"04.01.01.36.000","fatherId":"04.01.01.00.000","Nivel":4,"Tipo":"I","Inicial":1300208.52,"Descripcion":"SUELDO BÁSICO DEL PERSONAL DE ALTO NIVEL Y DE DIRECCIÓN","Part":4,"Gene":1,"Espe":1,"Sub":36,"Ordi":0}
+{"Ano":2015,"_id":"04.01.03.00.000","cuentaNo":"04.01.03.00.000","fatherId":"04.01.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"PRIMAS","Part":4,"Gene":1,"Espe":3,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.01.03.02.000","cuentaNo":"04.01.03.02.000","fatherId":"04.01.03.00.000","Nivel":4,"Tipo":"I","Inicial":3793,"Descripcion":"PRIMAS DE TRANSPORTE A EMPLEADOS","Part":4,"Gene":1,"Espe":3,"Sub":2,"Ordi":0}
+{"Ano":2015,"_id":"04.01.03.08.000","cuentaNo":"04.01.03.08.000","fatherId":"04.01.03.00.000","Nivel":4,"Tipo":"I","Inicial":16800,"Descripcion":"PRIMAS DE PROFESIONALIZACIÓN A EMPLEADOS","Part":4,"Gene":1,"Espe":3,"Sub":8,"Ordi":0}
+{"Ano":2015,"_id":"04.01.03.09.000","cuentaNo":"04.01.03.09.000","fatherId":"04.01.03.00.000","Nivel":4,"Tipo":"I","Inicial":2604,"Descripcion":"PRIMAS POR ANTIGUEDAD A EMPLEADOS","Part":4,"Gene":1,"Espe":3,"Sub":9,"Ordi":0}
+{"Ano":2015,"_id":"04.01.03.17.000","cuentaNo":"04.01.03.17.000","fatherId":"04.01.03.00.000","Nivel":4,"Tipo":"I","Inicial":1020,"Descripcion":"PRIMAS DE TRANSPORTE A OBREROS","Part":4,"Gene":1,"Espe":3,"Sub":17,"Ordi":0}
+{"Ano":2015,"_id":"04.01.03.21.000","cuentaNo":"04.01.03.21.000","fatherId":"04.01.03.00.000","Nivel":4,"Tipo":"I","Inicial":744,"Descripcion":"PRIMAS POR ANTIGUEDAD A OBREROS","Part":4,"Gene":1,"Espe":3,"Sub":21,"Ordi":0}
+{"Ano":2015,"_id":"04.01.03.22.000","cuentaNo":"04.01.03.22.000","fatherId":"04.01.03.00.000","Nivel":4,"Tipo":"I","Inicial":480,"Descripcion":"PRIMA DE  PROFESIONALIZACIÓN A OBREROS","Part":4,"Gene":1,"Espe":3,"Sub":22,"Ordi":0}
+{"Ano":2015,"_id":"04.01.03.47.000","cuentaNo":"04.01.03.47.000","fatherId":"04.01.03.00.000","Nivel":4,"Tipo":"I","Inicial":10028.45,"Descripcion":"PRIMAS AL PERSONAL DE ALTO NIVEL Y DE DIRECCIÓN","Part":4,"Gene":1,"Espe":3,"Sub":47,"Ordi":0}
+{"Ano":2015,"_id":"04.01.03.95.000","cuentaNo":"04.01.03.95.000","fatherId":"04.01.03.00.000","Nivel":4,"Tipo":"I","Inicial":9120,"Descripcion":"OTRAS PRIMAS AL PERSONAL DE ALTO NIVEL Y DE DIRECCIÓN","Part":4,"Gene":1,"Espe":3,"Sub":95,"Ordi":0}
+{"Ano":2015,"_id":"04.01.03.97.000","cuentaNo":"04.01.03.97.000","fatherId":"04.01.03.00.000","Nivel":4,"Tipo":"I","Inicial":40230.58,"Descripcion":"OTRAS PRIMAS A EMPLEADOS","Part":4,"Gene":1,"Espe":3,"Sub":97,"Ordi":0}
+{"Ano":2015,"_id":"04.01.03.98.000","cuentaNo":"04.01.03.98.000","fatherId":"04.01.03.00.000","Nivel":4,"Tipo":"I","Inicial":5842.31,"Descripcion":"OTRAS PRIMAS A OBREROS","Part":4,"Gene":1,"Espe":3,"Sub":98,"Ordi":0}
+{"Ano":2015,"_id":"04.01.04.00.000","cuentaNo":"04.01.04.00.000","fatherId":"04.01.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"COMPLEMENTOS DE SUELDOS Y SALARIOS","Part":4,"Gene":1,"Espe":4,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.01.04.08.000","cuentaNo":"04.01.04.08.000","fatherId":"04.01.04.00.000","Nivel":4,"Tipo":"I","Inicial":410400,"Descripcion":"BONO COMPENSATORIO DE ALIMENTACIÓN A EMPLEADOS","Part":4,"Gene":1,"Espe":4,"Sub":8,"Ordi":0}
+{"Ano":2015,"_id":"04.01.04.18.000","cuentaNo":"04.01.04.18.000","fatherId":"04.01.04.00.000","Nivel":4,"Tipo":"I","Inicial":100000,"Descripcion":"BONO COMPENSATORIO DE ALIMENTACIÓN A OBREROS","Part":4,"Gene":1,"Espe":4,"Sub":18,"Ordi":0}
+{"Ano":2015,"_id":"04.01.04.48.000","cuentaNo":"04.01.04.48.000","fatherId":"04.01.04.00.000","Nivel":4,"Tipo":"I","Inicial":3600,"Descripcion":"COMPLEMENTO AL PERSONAL DE ALTO NIVEL Y DE DIRECCIÓN POR GASTOS DE REP","Part":4,"Gene":1,"Espe":4,"Sub":48,"Ordi":0}
+{"Ano":2015,"_id":"04.01.04.51.000","cuentaNo":"04.01.04.51.000","fatherId":"04.01.04.00.000","Nivel":4,"Tipo":"I","Inicial":70440,"Descripcion":"BONO COMPENSATORIO DE ALIMENTACIÓN AL PERSONAL DE ALTO NIVEL Y DE DIR.","Part":4,"Gene":1,"Espe":4,"Sub":51,"Ordi":0}
+{"Ano":2015,"_id":"04.01.05.00.000","cuentaNo":"04.01.05.00.000","fatherId":"04.01.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"AGUINALDOS, UTILIDADES O BONIFICACIÓN LEGAL Y BONO VACACIONAL","Part":4,"Gene":1,"Espe":5,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.01.05.01.000","cuentaNo":"04.01.05.01.000","fatherId":"04.01.05.00.000","Nivel":4,"Tipo":"I","Inicial":430326.33,"Descripcion":"AGUINALDOS A EMPLEADOS","Part":4,"Gene":1,"Espe":5,"Sub":1,"Ordi":0}
+{"Ano":2015,"_id":"04.01.05.03.000","cuentaNo":"04.01.05.03.000","fatherId":"04.01.05.00.000","Nivel":4,"Tipo":"I","Inicial":845381.68,"Descripcion":"BONO VACACIONAL A EMPLEADOS","Part":4,"Gene":1,"Espe":5,"Sub":3,"Ordi":0}
+{"Ano":2015,"_id":"04.01.05.04.000","cuentaNo":"04.01.05.04.000","fatherId":"04.01.05.00.000","Nivel":4,"Tipo":"I","Inicial":50539.78,"Descripcion":"AGUINALDOS A OBREROS","Part":4,"Gene":1,"Espe":5,"Sub":4,"Ordi":0}
+{"Ano":2015,"_id":"04.01.05.06.000","cuentaNo":"04.01.05.06.000","fatherId":"04.01.05.00.000","Nivel":4,"Tipo":"I","Inicial":146647.54,"Descripcion":"BONO VACACIONAL A OBREROS","Part":4,"Gene":1,"Espe":5,"Sub":6,"Ordi":0}
+{"Ano":2015,"_id":"04.01.05.16.000","cuentaNo":"04.01.05.16.000","fatherId":"04.01.05.00.000","Nivel":4,"Tipo":"I","Inicial":150523.87,"Descripcion":"AGUINALDOS AL PERSONAL DE ALTO NIVEL Y DE DIRECCIÓN","Part":4,"Gene":1,"Espe":5,"Sub":16,"Ordi":0}
+{"Ano":2015,"_id":"04.01.05.18.000","cuentaNo":"04.01.05.18.000","fatherId":"04.01.05.00.000","Nivel":4,"Tipo":"I","Inicial":132948.58,"Descripcion":"BONO VACACIONAL AL PERSONAL DE ALTO NIVEL Y DE DIRECCIÓN","Part":4,"Gene":1,"Espe":5,"Sub":18,"Ordi":0}
+{"Ano":2015,"_id":"04.01.06.00.000","cuentaNo":"04.01.06.00.000","fatherId":"04.01.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"APORTES PATRONALES Y LEGALES","Part":4,"Gene":1,"Espe":6,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.01.06.01.000","cuentaNo":"04.01.06.01.000","fatherId":"04.01.06.00.000","Nivel":4,"Tipo":"I","Inicial":120631.02,"Descripcion":"APORTE PATRONAL AL IVSS POR EMPLEADOS","Part":4,"Gene":1,"Espe":6,"Sub":1,"Ordi":0}
+{"Ano":2015,"_id":"04.01.06.03.000","cuentaNo":"04.01.06.03.000","fatherId":"04.01.06.00.000","Nivel":4,"Tipo":"I","Inicial":60841.86,"Descripcion":"APORTE PATRONAL AL FONDO DE JUBILACIONES POR EMPLEADOS","Part":4,"Gene":1,"Espe":6,"Sub":3,"Ordi":0}
+{"Ano":2015,"_id":"04.01.06.04.000","cuentaNo":"04.01.06.04.000","fatherId":"04.01.06.00.000","Nivel":4,"Tipo":"I","Inicial":40894.58,"Descripcion":"APORTE PATRONAL AL FONDO DE PARO FORZOSOS POR EMPLEADOS","Part":4,"Gene":1,"Espe":6,"Sub":4,"Ordi":0}
+{"Ano":2015,"_id":"04.01.06.05.000","cuentaNo":"04.01.06.05.000","fatherId":"04.01.06.00.000","Nivel":4,"Tipo":"I","Inicial":40383.11,"Descripcion":"APORTE PATRONAL AL FONDO DE AHORRO OBLIGARTORIO HABITACIONAL EMPLEADOS","Part":4,"Gene":1,"Espe":6,"Sub":5,"Ordi":0}
+{"Ano":2015,"_id":"04.01.06.10.000","cuentaNo":"04.01.06.10.000","fatherId":"04.01.06.00.000","Nivel":4,"Tipo":"I","Inicial":18448.08,"Descripcion":"APORTE PATRONAL AL IVSS POR OBREROS","Part":4,"Gene":1,"Espe":6,"Sub":10,"Ordi":0}
+{"Ano":2015,"_id":"04.01.06.11.000","cuentaNo":"04.01.06.11.000","fatherId":"04.01.06.00.000","Nivel":4,"Tipo":"I","Inicial":10763.46,"Descripcion":"APORTE PATRONAL AL FONDO DE JUBILACIONES POR OBREROS","Part":4,"Gene":1,"Espe":6,"Sub":11,"Ordi":0}
+{"Ano":2015,"_id":"04.01.06.12.000","cuentaNo":"04.01.06.12.000","fatherId":"04.01.06.00.000","Nivel":4,"Tipo":"I","Inicial":5184.9,"Descripcion":"APORTE PATRONAL AL FONDO DE SEGURO DE PARO FORZOSOS POR OBREROS","Part":4,"Gene":1,"Espe":6,"Sub":12,"Ordi":0}
+{"Ano":2015,"_id":"04.01.06.13.000","cuentaNo":"04.01.06.13.000","fatherId":"04.01.06.00.000","Nivel":4,"Tipo":"I","Inicial":5345.8,"Descripcion":"APORTE PATRONAL AL FONDO DE AHORRO OBLIGATORIO P/LA VIVIENDA P/OBREROS","Part":4,"Gene":1,"Espe":6,"Sub":13,"Ordi":0}
+{"Ano":2015,"_id":"04.01.06.39.000","cuentaNo":"04.01.06.39.000","fatherId":"04.01.06.00.000","Nivel":4,"Tipo":"I","Inicial":60245.7,"Descripcion":"APORTE PATRONAL AL IVSS POR PERSONAL DE ALTO NIVEL Y DE DIRECCIÓN","Part":4,"Gene":1,"Espe":6,"Sub":39,"Ordi":0}
+{"Ano":2015,"_id":"04.01.06.41.000","cuentaNo":"04.01.06.41.000","fatherId":"04.01.06.00.000","Nivel":4,"Tipo":"I","Inicial":31676.26,"Descripcion":"APORTE PATRONAL AL FONDO DE JUBILACIONES P/PERSONAL DE ALTO NIVEL/DIR.","Part":4,"Gene":1,"Espe":6,"Sub":41,"Ordi":0}
+{"Ano":2015,"_id":"04.01.06.42.000","cuentaNo":"04.01.06.42.000","fatherId":"04.01.06.00.000","Nivel":4,"Tipo":"I","Inicial":20379.14,"Descripcion":"APORTE PATRONAL FONDO DE AHORRO OBLIG. P LA VIVIENDA P/.ALTO NIVEL","Part":4,"Gene":1,"Espe":6,"Sub":42,"Ordi":0}
+{"Ano":2015,"_id":"04.01.06.43.000","cuentaNo":"04.01.06.43.000","fatherId":"04.01.06.00.000","Nivel":4,"Tipo":"I","Inicial":16299.9,"Descripcion":"APORTE PATRONAL AL FONDO DE PARO FORZOSO P/PERSONAL DE ALTO NIVEL/DIR.","Part":4,"Gene":1,"Espe":6,"Sub":43,"Ordi":0}
+{"Ano":2015,"_id":"04.01.07.00.000","cuentaNo":"04.01.07.00.000","fatherId":"04.01.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"ASISTENCIA SOCIO-ECONÓMICA","Part":4,"Gene":1,"Espe":7,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.01.07.03.000","cuentaNo":"04.01.07.03.000","fatherId":"04.01.07.00.000","Nivel":4,"Tipo":"I","Inicial":3000,"Descripcion":"AYUDAS POR MATRIMONIOS A EMPLEADOS","Part":4,"Gene":1,"Espe":7,"Sub":3,"Ordi":0}
+{"Ano":2015,"_id":"04.01.07.04.000","cuentaNo":"04.01.07.04.000","fatherId":"04.01.07.00.000","Nivel":4,"Tipo":"I","Inicial":600,"Descripcion":"AYUDAS POR NACIMIENTO DE HIJOS DE EMPLEADOS","Part":4,"Gene":1,"Espe":7,"Sub":4,"Ordi":0}
+{"Ano":2015,"_id":"04.01.07.05.000","cuentaNo":"04.01.07.05.000","fatherId":"04.01.07.00.000","Nivel":4,"Tipo":"I","Inicial":600,"Descripcion":"AYUDA POR DEFUNCIÓN A EMPLEADOS","Part":4,"Gene":1,"Espe":7,"Sub":5,"Ordi":0}
+{"Ano":2015,"_id":"04.01.07.06.000","cuentaNo":"04.01.07.06.000","fatherId":"04.01.07.00.000","Nivel":4,"Tipo":"I","Inicial":15000,"Descripcion":"AYUDAS PARA MEDICINAS, GASTOS MÉDICOS, ODONTOLÓGICOS Y DE HOSP.EMP.","Part":4,"Gene":1,"Espe":7,"Sub":6,"Ordi":0}
+{"Ano":2015,"_id":"04.01.07.07.000","cuentaNo":"04.01.07.07.000","fatherId":"04.01.07.00.000","Nivel":4,"Tipo":"I","Inicial":300023.28,"Descripcion":"APORTE PATRONAL A CAJAS DE AHORROS POR EMPLEADOS","Part":4,"Gene":1,"Espe":7,"Sub":7,"Ordi":0}
+{"Ano":2015,"_id":"04.01.07.08.000","cuentaNo":"04.01.07.08.000","fatherId":"04.01.07.00.000","Nivel":4,"Tipo":"I","Inicial":175700,"Descripcion":"APORTE PATRONAL A LOS SERVICIOS DE SALUD, ACC.PERS.GTOS FUN.EMPLEADOS","Part":4,"Gene":1,"Espe":7,"Sub":8,"Ordi":0}
+{"Ano":2015,"_id":"04.01.07.09.000","cuentaNo":"04.01.07.09.000","fatherId":"04.01.07.00.000","Nivel":4,"Tipo":"I","Inicial":4500,"Descripcion":"AYUDAS A EMPLEADOS PARA ADQUISICIÓN DE UNIFORMES Y ÚTILES ESC.HIJOS","Part":4,"Gene":1,"Espe":7,"Sub":9,"Ordi":0}
+{"Ano":2015,"_id":"04.01.07.10.000","cuentaNo":"04.01.07.10.000","fatherId":"04.01.07.00.000","Nivel":4,"Tipo":"I","Inicial":30000,"Descripcion":"DOTACIÓN DE UNIFORMES A EMPLEADOS","Part":4,"Gene":1,"Espe":7,"Sub":10,"Ordi":0}
+{"Ano":2015,"_id":"04.01.07.11.000","cuentaNo":"04.01.07.11.000","fatherId":"04.01.07.00.000","Nivel":4,"Tipo":"I","Inicial":980,"Descripcion":"APORTE PATRONAL PARA GTOS DE GUARDERÍAS Y PREESCOLAR PARA HIJOS DE EMP","Part":4,"Gene":1,"Espe":7,"Sub":11,"Ordi":0}
+{"Ano":2015,"_id":"04.01.07.12.000","cuentaNo":"04.01.07.12.000","fatherId":"04.01.07.00.000","Nivel":4,"Tipo":"I","Inicial":1400,"Descripcion":"APORTES PARA LA ADQUISICIÓN DE JUGUETES P/HIJOS DEL PERSONAL EMPLEADO","Part":4,"Gene":1,"Espe":7,"Sub":12,"Ordi":0}
+{"Ano":2015,"_id":"04.01.07.19.000","cuentaNo":"04.01.07.19.000","fatherId":"04.01.07.00.000","Nivel":4,"Tipo":"I","Inicial":300,"Descripcion":"AYUDAS POR MATRIMONIO DE OBREROS","Part":4,"Gene":1,"Espe":7,"Sub":19,"Ordi":0}
+{"Ano":2015,"_id":"04.01.07.20.000","cuentaNo":"04.01.07.20.000","fatherId":"04.01.07.00.000","Nivel":4,"Tipo":"I","Inicial":300,"Descripcion":"AYUDA POR NACIMIENTO DE HIJOS DE OBREROS","Part":4,"Gene":1,"Espe":7,"Sub":20,"Ordi":0}
+{"Ano":2015,"_id":"04.01.07.21.000","cuentaNo":"04.01.07.21.000","fatherId":"04.01.07.00.000","Nivel":4,"Tipo":"I","Inicial":300,"Descripcion":"AYUDAS POR DEFUNCIÓN A OBREROS","Part":4,"Gene":1,"Espe":7,"Sub":21,"Ordi":0}
+{"Ano":2015,"_id":"04.01.07.22.000","cuentaNo":"04.01.07.22.000","fatherId":"04.01.07.00.000","Nivel":4,"Tipo":"I","Inicial":4000,"Descripcion":"AYUDAS PARA MEDICINAS, GASTOS MÉDICOS, ODONTOLÓGICOS Y HOSP.A OBREROS","Part":4,"Gene":1,"Espe":7,"Sub":22,"Ordi":0}
+{"Ano":2015,"_id":"04.01.07.23.000","cuentaNo":"04.01.07.23.000","fatherId":"04.01.07.00.000","Nivel":4,"Tipo":"I","Inicial":50043.31,"Descripcion":"APORTE PATRONAL A CAJAS DE AHORRO POR OBREROS","Part":4,"Gene":1,"Espe":7,"Sub":23,"Ordi":0}
+{"Ano":2015,"_id":"04.01.07.24.000","cuentaNo":"04.01.07.24.000","fatherId":"04.01.07.00.000","Nivel":4,"Tipo":"I","Inicial":40500,"Descripcion":"APORTE PATRONAL SERVICIOS DE SALUD, ACC.PERS. Y GTOS FUNERARIOS P/OBR.","Part":4,"Gene":1,"Espe":7,"Sub":24,"Ordi":0}
+{"Ano":2015,"_id":"04.01.07.26.000","cuentaNo":"04.01.07.26.000","fatherId":"04.01.07.00.000","Nivel":4,"Tipo":"I","Inicial":16500,"Descripcion":"DOTACIÓN DE UNIFORMES A OBREROS","Part":4,"Gene":1,"Espe":7,"Sub":26,"Ordi":0}
+{"Ano":2015,"_id":"04.01.07.64.000","cuentaNo":"04.01.07.64.000","fatherId":"04.01.07.00.000","Nivel":4,"Tipo":"I","Inicial":7000,"Descripcion":"AYUDAS POR MATRIMONIO AL PERSONAL DE ALTO NIVEL Y DE DIRECCIÓN","Part":4,"Gene":1,"Espe":7,"Sub":64,"Ordi":0}
+{"Ano":2015,"_id":"04.01.07.65.000","cuentaNo":"04.01.07.65.000","fatherId":"04.01.07.00.000","Nivel":4,"Tipo":"I","Inicial":600,"Descripcion":"AYUDAS POR NACIMIENTO HIJOS PERSONAL DE ALTO NIVEL Y DE DIRECCIÓN","Part":4,"Gene":1,"Espe":7,"Sub":65,"Ordi":0}
+{"Ano":2015,"_id":"04.01.07.66.000","cuentaNo":"04.01.07.66.000","fatherId":"04.01.07.00.000","Nivel":4,"Tipo":"I","Inicial":900,"Descripcion":"AYUDAS POR DEFUNCIÓN AL PERSONAL DE ALTO NIVEL Y DE DIRECCIÓN","Part":4,"Gene":1,"Espe":7,"Sub":66,"Ordi":0}
+{"Ano":2015,"_id":"04.01.07.67.000","cuentaNo":"04.01.07.67.000","fatherId":"04.01.07.00.000","Nivel":4,"Tipo":"I","Inicial":2000,"Descripcion":"AYUDAS PARA MEDICINAS, GTOS MÉDICOS, ODONTOLÓG. Y  HOSP.ALTO NIVEL/DIR","Part":4,"Gene":1,"Espe":7,"Sub":67,"Ordi":0}
+{"Ano":2015,"_id":"04.01.07.68.000","cuentaNo":"04.01.07.68.000","fatherId":"04.01.07.00.000","Nivel":4,"Tipo":"I","Inicial":150953.19,"Descripcion":"APORTE PATRONAL A CAJAS DE AHORRO POR PERSONAL DE ALTO NIVEL /DIR.","Part":4,"Gene":1,"Espe":7,"Sub":68,"Ordi":0}
+{"Ano":2015,"_id":"04.01.07.69.000","cuentaNo":"04.01.07.69.000","fatherId":"04.01.07.00.000","Nivel":4,"Tipo":"I","Inicial":42000,"Descripcion":"APORTE PATRONAL A LOS SERVIC. DE SALUD, ACC.PERS.Y GTOS FUNER.ALTO NIV","Part":4,"Gene":1,"Espe":7,"Sub":69,"Ordi":0}
+{"Ano":2015,"_id":"04.01.07.97.000","cuentaNo":"04.01.07.97.000","fatherId":"04.01.07.00.000","Nivel":4,"Tipo":"D","Inicial":0,"Descripcion":"OTRAS SUBVENCIONES A OBREROS","Part":4,"Gene":1,"Espe":7,"Sub":97,"Ordi":0}
+{"Ano":2015,"_id":"04.01.07.97.001","cuentaNo":"04.01.07.97.001","fatherId":"04.01.07.97.000","Nivel":5,"Tipo":"I","Inicial":5000,"Descripcion":"OTRAS SUBVENCIONES A OBREROS","Part":4,"Gene":1,"Espe":7,"Sub":97,"Ordi":1}
+{"Ano":2015,"_id":"04.01.08.00.000","cuentaNo":"04.01.08.00.000","fatherId":"04.01.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"PRESTACIONES SOCIALES E INDEMNIZACIONES","Part":4,"Gene":1,"Espe":8,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.01.08.01.000","cuentaNo":"04.01.08.01.000","fatherId":"04.01.08.00.000","Nivel":4,"Tipo":"D","Inicial":0,"Descripcion":"PRESTACIONES SOCIALES E INDEMNIZACIONES A EMPLEADOS","Part":4,"Gene":1,"Espe":8,"Sub":1,"Ordi":0}
+{"Ano":2015,"_id":"04.01.08.01.001","cuentaNo":"04.01.08.01.001","fatherId":"04.01.08.01.000","Nivel":5,"Tipo":"I","Inicial":112000,"Descripcion":"FONDO PRESTACIONES SOCIALES A EMPLEADOS","Part":4,"Gene":1,"Espe":8,"Sub":1,"Ordi":1}
+{"Ano":2015,"_id":"04.01.08.02.000","cuentaNo":"04.01.08.02.000","fatherId":"04.01.08.00.000","Nivel":4,"Tipo":"I","Inicial":28000,"Descripcion":"PRESTACIONES SOCIALES E INDEMNIZACIONES A OBREROS","Part":4,"Gene":1,"Espe":8,"Sub":2,"Ordi":0}
+{"Ano":2015,"_id":"04.01.08.07.000","cuentaNo":"04.01.08.07.000","fatherId":"04.01.08.00.000","Nivel":4,"Tipo":"I","Inicial":112000,"Descripcion":"PRESTACIONES SOCIALES E INDEMNIZACIONES AL PERS.ALTO NIVEL Y DIRECCION","Part":4,"Gene":1,"Espe":8,"Sub":7,"Ordi":0}
+{"Ano":2015,"_id":"04.02.00.00.000","cuentaNo":"04.02.00.00.000","fatherId":"04.00.00.00.000","Nivel":2,"Tipo":"D","Inicial":0,"Descripcion":"MATERIALES,  SUMINISTROS Y MERCANCÍAS","Part":4,"Gene":2,"Espe":0,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.02.01.00.000","cuentaNo":"04.02.01.00.000","fatherId":"04.02.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"PRODUCTOS ALIMENTICIOS Y AGROPECUARIOS","Part":4,"Gene":2,"Espe":1,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.02.01.01.000","cuentaNo":"04.02.01.01.000","fatherId":"04.02.01.00.000","Nivel":4,"Tipo":"I","Inicial":14000,"Descripcion":"ALIMENTOS Y BEBIDAS PARA PERSONAS","Part":4,"Gene":2,"Espe":1,"Sub":1,"Ordi":0}
+{"Ano":2015,"_id":"04.02.01.03.000","cuentaNo":"04.02.01.03.000","fatherId":"04.02.01.00.000","Nivel":4,"Tipo":"I","Inicial":2000,"Descripcion":"PRODUCTOS AGRÍCOLAS Y PECUARIOS","Part":4,"Gene":2,"Espe":1,"Sub":3,"Ordi":0}
+{"Ano":2015,"_id":"04.02.03.00.000","cuentaNo":"04.02.03.00.000","fatherId":"04.02.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"TEXTILES Y VESTUARIOS","Part":4,"Gene":2,"Espe":3,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.02.03.01.000","cuentaNo":"04.02.03.01.000","fatherId":"04.02.03.00.000","Nivel":4,"Tipo":"I","Inicial":655.2,"Descripcion":"TEXTILES","Part":4,"Gene":2,"Espe":3,"Sub":1,"Ordi":0}
+{"Ano":2015,"_id":"04.02.03.02.000","cuentaNo":"04.02.03.02.000","fatherId":"04.02.03.00.000","Nivel":4,"Tipo":"I","Inicial":840,"Descripcion":"PRENDAS DE VESTIR","Part":4,"Gene":2,"Espe":3,"Sub":2,"Ordi":0}
+{"Ano":2015,"_id":"04.02.04.00.000","cuentaNo":"04.02.04.00.000","fatherId":"04.02.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"PRODUCTOS DE CUERO Y CAUCHO","Part":4,"Gene":2,"Espe":4,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.02.04.03.000","cuentaNo":"04.02.04.03.000","fatherId":"04.02.04.00.000","Nivel":4,"Tipo":"I","Inicial":10000,"Descripcion":"CAUCHOS Y TRIPAS PARA VEHÍCULOS","Part":4,"Gene":2,"Espe":4,"Sub":3,"Ordi":0}
+{"Ano":2015,"_id":"04.02.05.00.000","cuentaNo":"04.02.05.00.000","fatherId":"04.02.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"PRODUCTOS DE PAPEL, CARTÓN E IMPRESOS","Part":4,"Gene":2,"Espe":5,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.02.05.01.000","cuentaNo":"04.02.05.01.000","fatherId":"04.02.05.00.000","Nivel":4,"Tipo":"I","Inicial":3850,"Descripcion":"PULPA DE MADERA, PAPEL Y CARTÓN","Part":4,"Gene":2,"Espe":5,"Sub":1,"Ordi":0}
+{"Ano":2015,"_id":"04.02.05.03.000","cuentaNo":"04.02.05.03.000","fatherId":"04.02.05.00.000","Nivel":4,"Tipo":"I","Inicial":30000,"Descripcion":"PRODUCTOS DE PAPEL Y CARTÓN PARA OFICINA","Part":4,"Gene":2,"Espe":5,"Sub":3,"Ordi":0}
+{"Ano":2015,"_id":"04.02.05.04.000","cuentaNo":"04.02.05.04.000","fatherId":"04.02.05.00.000","Nivel":4,"Tipo":"I","Inicial":7200,"Descripcion":"LIBROS, REVISTAS Y PERIÓDICOS","Part":4,"Gene":2,"Espe":5,"Sub":4,"Ordi":0}
+{"Ano":2015,"_id":"04.02.05.07.000","cuentaNo":"04.02.05.07.000","fatherId":"04.02.05.00.000","Nivel":4,"Tipo":"I","Inicial":1400,"Descripcion":"PRODUCTOS DE PAPEL Y CARTÓN PARA LA IMPRENTA Y REPRODUCCIÓN","Part":4,"Gene":2,"Espe":5,"Sub":7,"Ordi":0}
+{"Ano":2015,"_id":"04.02.06.00.000","cuentaNo":"04.02.06.00.000","fatherId":"04.02.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"PRODUCTOS QUÍMICOS Y DERIVADOS","Part":4,"Gene":2,"Espe":6,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.02.06.02.000","cuentaNo":"04.02.06.02.000","fatherId":"04.02.06.00.000","Nivel":4,"Tipo":"I","Inicial":840,"Descripcion":"ABONOS, PLAGUICIDAS Y OTROS","Part":4,"Gene":2,"Espe":6,"Sub":2,"Ordi":0}
+{"Ano":2015,"_id":"04.02.06.03.000","cuentaNo":"04.02.06.03.000","fatherId":"04.02.06.00.000","Nivel":4,"Tipo":"I","Inicial":30000,"Descripcion":"TINTAS, PINTURAS Y COLORANTES","Part":4,"Gene":2,"Espe":6,"Sub":3,"Ordi":0}
+{"Ano":2015,"_id":"04.02.06.04.000","cuentaNo":"04.02.06.04.000","fatherId":"04.02.06.00.000","Nivel":4,"Tipo":"I","Inicial":1400,"Descripcion":"PRODUCTOS FARMACÉUTICOS Y MEDICAMENTOS","Part":4,"Gene":2,"Espe":6,"Sub":4,"Ordi":0}
+{"Ano":2015,"_id":"04.02.06.05.000","cuentaNo":"04.02.06.05.000","fatherId":"04.02.06.00.000","Nivel":4,"Tipo":"I","Inicial":1000,"Descripcion":"PRODUCTOS DE TOCADOR","Part":4,"Gene":2,"Espe":6,"Sub":5,"Ordi":0}
+{"Ano":2015,"_id":"04.02.06.06.000","cuentaNo":"04.02.06.06.000","fatherId":"04.02.06.00.000","Nivel":4,"Tipo":"I","Inicial":3000,"Descripcion":"COMBUSTIBLES Y LUBRICANTES","Part":4,"Gene":2,"Espe":6,"Sub":6,"Ordi":0}
+{"Ano":2015,"_id":"04.02.06.08.000","cuentaNo":"04.02.06.08.000","fatherId":"04.02.06.00.000","Nivel":4,"Tipo":"I","Inicial":4200,"Descripcion":"PRODUCTOS Y PLÁSTICOS","Part":4,"Gene":2,"Espe":6,"Sub":8,"Ordi":0}
+{"Ano":2015,"_id":"04.02.07.00.000","cuentaNo":"04.02.07.00.000","fatherId":"04.02.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"PRODUCTOS MINERALES NO METÁLICOS","Part":4,"Gene":2,"Espe":7,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.02.07.01.000","cuentaNo":"04.02.07.01.000","fatherId":"04.02.07.00.000","Nivel":4,"Tipo":"I","Inicial":500,"Descripcion":"PRODUCTOS DE BARRO, LOZA Y PORCELANA","Part":4,"Gene":2,"Espe":7,"Sub":1,"Ordi":0}
+{"Ano":2015,"_id":"04.02.07.02.000","cuentaNo":"04.02.07.02.000","fatherId":"04.02.07.00.000","Nivel":4,"Tipo":"I","Inicial":560,"Descripcion":"VIDRIOS Y PRODUCTOS DE VIDRIO","Part":4,"Gene":2,"Espe":7,"Sub":2,"Ordi":0}
+{"Ano":2015,"_id":"04.02.07.03.000","cuentaNo":"04.02.07.03.000","fatherId":"04.02.07.00.000","Nivel":4,"Tipo":"I","Inicial":700,"Descripcion":"PRODUCTOS DE ARCILLA PARA CONSTRUCCIÓN","Part":4,"Gene":2,"Espe":7,"Sub":3,"Ordi":0}
+{"Ano":2015,"_id":"04.02.07.04.000","cuentaNo":"04.02.07.04.000","fatherId":"04.02.07.00.000","Nivel":4,"Tipo":"I","Inicial":700,"Descripcion":"CEMENTO, CAL Y YESO","Part":4,"Gene":2,"Espe":7,"Sub":4,"Ordi":0}
+{"Ano":2015,"_id":"04.02.08.00.000","cuentaNo":"04.02.08.00.000","fatherId":"04.02.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"PRODUCTOS METÁLICOS","Part":4,"Gene":2,"Espe":8,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.02.08.03.000","cuentaNo":"04.02.08.03.000","fatherId":"04.02.08.00.000","Nivel":4,"Tipo":"I","Inicial":1000,"Descripcion":"HERRAMIENTAS MENORES, CUCHILLERÍA Y ARTÍCULOS GENERALES DE FERRETERÍA","Part":4,"Gene":2,"Espe":8,"Sub":3,"Ordi":0}
+{"Ano":2015,"_id":"04.02.08.09.000","cuentaNo":"04.02.08.09.000","fatherId":"04.02.08.00.000","Nivel":4,"Tipo":"I","Inicial":10000,"Descripcion":"REPUESTOS Y ACCESORIOS PARA EQUIPOS DE TRANSPORTE","Part":4,"Gene":2,"Espe":8,"Sub":9,"Ordi":0}
+{"Ano":2015,"_id":"04.02.08.10.000","cuentaNo":"04.02.08.10.000","fatherId":"04.02.08.00.000","Nivel":4,"Tipo":"I","Inicial":3000,"Descripcion":"REPUESTOS Y ACCESORIOS PARA OTROS EQUIPOS","Part":4,"Gene":2,"Espe":8,"Sub":10,"Ordi":0}
+{"Ano":2015,"_id":"04.02.09.00.000","cuentaNo":"04.02.09.00.000","fatherId":"04.02.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"PRODUCTOS DE MADERA","Part":4,"Gene":2,"Espe":9,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.02.09.02.000","cuentaNo":"04.02.09.02.000","fatherId":"04.02.09.00.000","Nivel":4,"Tipo":"I","Inicial":3000,"Descripcion":"MUEBLES Y ACCESORIOS DE MADERA PARA EDIFICACIONES","Part":4,"Gene":2,"Espe":9,"Sub":2,"Ordi":0}
+{"Ano":2015,"_id":"04.02.09.99.000","cuentaNo":"04.02.09.99.000","fatherId":"04.02.09.00.000","Nivel":4,"Tipo":"I","Inicial":960,"Descripcion":"OTROS PRODUCTTOS DE MADERA","Part":4,"Gene":2,"Espe":9,"Sub":99,"Ordi":0}
+{"Ano":2015,"_id":"04.02.10.00.000","cuentaNo":"04.02.10.00.000","fatherId":"04.02.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"PRODUCTOS VARIOS Y ÚTILES DIVERSOS","Part":4,"Gene":2,"Espe":10,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.02.10.02.000","cuentaNo":"04.02.10.02.000","fatherId":"04.02.10.00.000","Nivel":4,"Tipo":"I","Inicial":4140,"Descripcion":"MATERIALES Y ÚTILES DE LIMPIEZA Y ASEO","Part":4,"Gene":2,"Espe":10,"Sub":2,"Ordi":0}
+{"Ano":2015,"_id":"04.02.10.03.000","cuentaNo":"04.02.10.03.000","fatherId":"04.02.10.00.000","Nivel":4,"Tipo":"I","Inicial":1000,"Descripcion":"UTENSILIOS DE COCINA Y COMEDOR","Part":4,"Gene":2,"Espe":10,"Sub":3,"Ordi":0}
+{"Ano":2015,"_id":"04.02.10.05.000","cuentaNo":"04.02.10.05.000","fatherId":"04.02.10.00.000","Nivel":4,"Tipo":"I","Inicial":5000,"Descripcion":"ÚTILES DE ESCRITORIO, OFICINA Y MATERIALES DE INSTRUCCIÓN","Part":4,"Gene":2,"Espe":10,"Sub":5,"Ordi":0}
+{"Ano":2015,"_id":"04.02.10.06.000","cuentaNo":"04.02.10.06.000","fatherId":"04.02.10.00.000","Nivel":4,"Tipo":"I","Inicial":2000,"Descripcion":"CONDECORACIONES, OFRENDAS Y SIMILARES","Part":4,"Gene":2,"Espe":10,"Sub":6,"Ordi":0}
+{"Ano":2015,"_id":"04.02.10.07.000","cuentaNo":"04.02.10.07.000","fatherId":"04.02.10.00.000","Nivel":4,"Tipo":"I","Inicial":3000,"Descripcion":"PRODUCTOS DE SEGURIDAD EN EL TRABAJO","Part":4,"Gene":2,"Espe":10,"Sub":7,"Ordi":0}
+{"Ano":2015,"_id":"04.02.10.08.000","cuentaNo":"04.02.10.08.000","fatherId":"04.02.10.00.000","Nivel":4,"Tipo":"I","Inicial":28000,"Descripcion":"MATERIALES PARA EQUIPOS DE COMPUTACIÓN","Part":4,"Gene":2,"Espe":10,"Sub":8,"Ordi":0}
+{"Ano":2015,"_id":"04.02.10.09.000","cuentaNo":"04.02.10.09.000","fatherId":"04.02.10.00.000","Nivel":4,"Tipo":"I","Inicial":200,"Descripcion":"ESPECIES TIMBRADAS Y VALORES","Part":4,"Gene":2,"Espe":10,"Sub":9,"Ordi":0}
+{"Ano":2015,"_id":"04.02.10.11.000","cuentaNo":"04.02.10.11.000","fatherId":"04.02.10.00.000","Nivel":4,"Tipo":"I","Inicial":3600,"Descripcion":"MATERIALES ELÉCTRICOS","Part":4,"Gene":2,"Espe":10,"Sub":11,"Ordi":0}
+{"Ano":2015,"_id":"04.02.10.12.000","cuentaNo":"04.02.10.12.000","fatherId":"04.02.10.00.000","Nivel":4,"Tipo":"I","Inicial":2000,"Descripcion":"MATERIALES PARA INSTALACIONES SANITARIAS","Part":4,"Gene":2,"Espe":10,"Sub":12,"Ordi":0}
+{"Ano":2015,"_id":"04.02.10.13.000","cuentaNo":"04.02.10.13.000","fatherId":"04.02.10.00.000","Nivel":4,"Tipo":"I","Inicial":3000,"Descripcion":"MATERAILES FOTOGRÁFICOS","Part":4,"Gene":2,"Espe":10,"Sub":13,"Ordi":0}
+{"Ano":2015,"_id":"04.02.10.99.000","cuentaNo":"04.02.10.99.000","fatherId":"04.02.10.00.000","Nivel":4,"Tipo":"I","Inicial":2000,"Descripcion":"OTROS PRODUCTOS Y ÚTILES DIVERSOS","Part":4,"Gene":2,"Espe":10,"Sub":99,"Ordi":0}
+{"Ano":2015,"_id":"04.02.99.00.000","cuentaNo":"04.02.99.00.000","fatherId":"04.02.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"OTROS MATERIALES Y SUMINISTROS","Part":4,"Gene":2,"Espe":99,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.02.99.01.000","cuentaNo":"04.02.99.01.000","fatherId":"04.02.99.00.000","Nivel":4,"Tipo":"I","Inicial":7000,"Descripcion":"OTROS MATERIALES Y SUMINISTROS","Part":4,"Gene":2,"Espe":99,"Sub":1,"Ordi":0}
+{"Ano":2015,"_id":"04.03.00.00.000","cuentaNo":"04.03.00.00.000","fatherId":"04.00.00.00.000","Nivel":2,"Tipo":"D","Inicial":0,"Descripcion":"SERVICIOS NO PERSONALES","Part":4,"Gene":3,"Espe":0,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.03.01.00.000","cuentaNo":"04.03.01.00.000","fatherId":"04.03.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"ALQUILERES DE INMUEBLES","Part":4,"Gene":3,"Espe":1,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.03.01.01.000","cuentaNo":"04.03.01.01.000","fatherId":"04.03.01.00.000","Nivel":4,"Tipo":"I","Inicial":5000,"Descripcion":"ALQUILERES DE EDIFICIOS Y LOCALES","Part":4,"Gene":3,"Espe":1,"Sub":1,"Ordi":0}
+{"Ano":2015,"_id":"04.03.02.00.000","cuentaNo":"04.03.02.00.000","fatherId":"04.03.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"ALQUILERES DE MAQUINARIA Y EQUIPOS","Part":4,"Gene":3,"Espe":2,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.03.02.02.000","cuentaNo":"04.03.02.02.000","fatherId":"04.03.02.00.000","Nivel":4,"Tipo":"I","Inicial":20000,"Descripcion":"ALQUILERES DE EQUIPOS DE TRANSPORTE, TRACCIÓN Y ELEVACIÓN","Part":4,"Gene":3,"Espe":2,"Sub":2,"Ordi":0}
+{"Ano":2015,"_id":"04.03.04.00.000","cuentaNo":"04.03.04.00.000","fatherId":"04.03.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"SERVICIOS BÁSICOS","Part":4,"Gene":3,"Espe":4,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.03.04.01.000","cuentaNo":"04.03.04.01.000","fatherId":"04.03.04.00.000","Nivel":4,"Tipo":"I","Inicial":24343.75,"Descripcion":"ELECTRICIDAD","Part":4,"Gene":3,"Espe":4,"Sub":1,"Ordi":0}
+{"Ano":2015,"_id":"04.03.04.02.000","cuentaNo":"04.03.04.02.000","fatherId":"04.03.04.00.000","Nivel":4,"Tipo":"I","Inicial":360,"Descripcion":"GAS","Part":4,"Gene":3,"Espe":4,"Sub":2,"Ordi":0}
+{"Ano":2015,"_id":"04.03.04.03.000","cuentaNo":"04.03.04.03.000","fatherId":"04.03.04.00.000","Nivel":4,"Tipo":"I","Inicial":5040,"Descripcion":"AGUA","Part":4,"Gene":3,"Espe":4,"Sub":3,"Ordi":0}
+{"Ano":2015,"_id":"04.03.04.04.001","cuentaNo":"04.03.04.04.001","fatherId":"04.03.04.04.000","Nivel":5,"Tipo":"I","Inicial":15600,"Descripcion":"SERVICIOS DE TELEFONIA PRESTADOS POR ORGANISMOS PÚBLICOS","Part":4,"Gene":3,"Espe":4,"Sub":4,"Ordi":1}
+{"Ano":2015,"_id":"04.03.04.04.002","cuentaNo":"04.03.04.04.002","fatherId":"04.03.04.04.000","Nivel":5,"Tipo":"I","Inicial":9600,"Descripcion":"SERVICIOS DE TELEFONÍA PRESTADOS POR INSTITUCIONES PRIVADAS","Part":4,"Gene":3,"Espe":4,"Sub":4,"Ordi":2}
+{"Ano":2015,"_id":"04.03.04.05.000","cuentaNo":"04.03.04.05.000","fatherId":"04.03.04.00.000","Nivel":4,"Tipo":"I","Inicial":5040,"Descripcion":"SERVICIOS DE COMUNICACIONES","Part":4,"Gene":3,"Espe":4,"Sub":5,"Ordi":0}
+{"Ano":2015,"_id":"04.03.04.06.000","cuentaNo":"04.03.04.06.000","fatherId":"04.03.04.00.000","Nivel":4,"Tipo":"I","Inicial":1400,"Descripcion":"SERVICIO DE ASEO URBANO Y DOMICILIARIO","Part":4,"Gene":3,"Espe":4,"Sub":6,"Ordi":0}
+{"Ano":2015,"_id":"04.03.06.00.000","cuentaNo":"04.03.06.00.000","fatherId":"04.03.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"SERVICIOS DE TRANSPORTE Y ALMACENAJE","Part":4,"Gene":3,"Espe":6,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.03.06.01.000","cuentaNo":"04.03.06.01.000","fatherId":"04.03.06.00.000","Nivel":4,"Tipo":"I","Inicial":336,"Descripcion":"FLETES Y EMBALAJES","Part":4,"Gene":3,"Espe":6,"Sub":1,"Ordi":0}
+{"Ano":2015,"_id":"04.03.06.03.000","cuentaNo":"04.03.06.03.000","fatherId":"04.03.06.00.000","Nivel":4,"Tipo":"I","Inicial":420,"Descripcion":"ESTACIONAMIENTO","Part":4,"Gene":3,"Espe":6,"Sub":3,"Ordi":0}
+{"Ano":2015,"_id":"04.03.07.00.000","cuentaNo":"04.03.07.00.000","fatherId":"04.03.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"SERVICIOS DE INFORMACIÓN, IMPRESIÓN Y RELACIONES PÚBLICAS","Part":4,"Gene":3,"Espe":7,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.03.07.01.000","cuentaNo":"04.03.07.01.000","fatherId":"04.03.07.00.000","Nivel":4,"Tipo":"I","Inicial":5000,"Descripcion":"PUBLICIDAD Y PROPAGANDA","Part":4,"Gene":3,"Espe":7,"Sub":1,"Ordi":0}
+{"Ano":2015,"_id":"04.03.07.02.000","cuentaNo":"04.03.07.02.000","fatherId":"04.03.07.00.000","Nivel":4,"Tipo":"I","Inicial":15000,"Descripcion":"IMPRENTA Y REPRODUCCIÓN","Part":4,"Gene":3,"Espe":7,"Sub":2,"Ordi":0}
+{"Ano":2015,"_id":"04.03.07.03.000","cuentaNo":"04.03.07.03.000","fatherId":"04.03.07.00.000","Nivel":4,"Tipo":"I","Inicial":10000,"Descripcion":"RELACIONES SOCIALES","Part":4,"Gene":3,"Espe":7,"Sub":3,"Ordi":0}
+{"Ano":2015,"_id":"04.03.07.04.000","cuentaNo":"04.03.07.04.000","fatherId":"04.03.07.00.000","Nivel":4,"Tipo":"I","Inicial":10000,"Descripcion":"AVISOS","Part":4,"Gene":3,"Espe":7,"Sub":4,"Ordi":0}
+{"Ano":2015,"_id":"04.03.08.00.000","cuentaNo":"04.03.08.00.000","fatherId":"04.03.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"PRIMAS Y OTROS GASTOS DE SEGUROS Y COMISIONES BANCARIAS","Part":4,"Gene":3,"Espe":8,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.03.08.01.000","cuentaNo":"04.03.08.01.000","fatherId":"04.03.08.00.000","Nivel":4,"Tipo":"I","Inicial":50800,"Descripcion":"PRIMAS Y GASTOS DE SEGUROS","Part":4,"Gene":3,"Espe":8,"Sub":1,"Ordi":0}
+{"Ano":2015,"_id":"04.03.08.02.000","cuentaNo":"04.03.08.02.000","fatherId":"04.03.08.00.000","Nivel":4,"Tipo":"I","Inicial":1610,"Descripcion":"COMISIONES Y GASTOS BANCARIOS","Part":4,"Gene":3,"Espe":8,"Sub":2,"Ordi":0}
+{"Ano":2015,"_id":"04.03.08.03.000","cuentaNo":"04.03.08.03.000","fatherId":"04.03.08.00.000","Nivel":4,"Tipo":"I","Inicial":2800,"Descripcion":"COMISIONES Y GASTOS DE ADQUISICIÓN DE SEGUROS","Part":4,"Gene":3,"Espe":8,"Sub":3,"Ordi":0}
+{"Ano":2015,"_id":"04.03.09.00.000","cuentaNo":"04.03.09.00.000","fatherId":"04.03.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"VAITICOS Y PASAJES","Part":4,"Gene":3,"Espe":9,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.03.09.01.000","cuentaNo":"04.03.09.01.000","fatherId":"04.03.09.00.000","Nivel":4,"Tipo":"I","Inicial":35000,"Descripcion":"VIAÁTICOS Y PASAJES DENTRO DEL PAIS","Part":4,"Gene":3,"Espe":9,"Sub":1,"Ordi":0}
+{"Ano":2015,"_id":"04.03.09.02.000","cuentaNo":"04.03.09.02.000","fatherId":"04.03.09.00.000","Nivel":4,"Tipo":"I","Inicial":15000,"Descripcion":"VIÁTICOS Y PASAJES FUERA DEL PAÍS","Part":4,"Gene":3,"Espe":9,"Sub":2,"Ordi":0}
+{"Ano":2015,"_id":"04.03.10.00.000","cuentaNo":"04.03.10.00.000","fatherId":"04.03.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"SERVICIOS PROFESIONALES Y TÉCNICOS","Part":4,"Gene":3,"Espe":10,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.03.10.01.000","cuentaNo":"04.03.10.01.000","fatherId":"04.03.10.00.000","Nivel":4,"Tipo":"I","Inicial":12000,"Descripcion":"SERVICIOS JURÍDICOS","Part":4,"Gene":3,"Espe":10,"Sub":1,"Ordi":0}
+{"Ano":2015,"_id":"04.03.10.03.000","cuentaNo":"04.03.10.03.000","fatherId":"04.03.10.00.000","Nivel":4,"Tipo":"I","Inicial":15000,"Descripcion":"SERVICIOS DE POCESAMIENTO DE DATOS","Part":4,"Gene":3,"Espe":10,"Sub":3,"Ordi":0}
+{"Ano":2015,"_id":"04.03.10.07.000","cuentaNo":"04.03.10.07.000","fatherId":"04.03.10.00.000","Nivel":4,"Tipo":"I","Inicial":12000,"Descripcion":"SERVICIOS DE CAPACITACIÓN Y ADIESTRAMIENTO","Part":4,"Gene":3,"Espe":10,"Sub":7,"Ordi":0}
+{"Ano":2015,"_id":"04.03.10.09.000","cuentaNo":"04.03.10.09.000","fatherId":"04.03.10.00.000","Nivel":4,"Tipo":"I","Inicial":3000,"Descripcion":"SERVICISO DE LAVANDERÍA Y TINTORERÍA","Part":4,"Gene":3,"Espe":10,"Sub":9,"Ordi":0}
+{"Ano":2015,"_id":"04.03.10.99.000","cuentaNo":"04.03.10.99.000","fatherId":"04.03.10.00.000","Nivel":4,"Tipo":"I","Inicial":3000,"Descripcion":"OTROS SERVICIOS PROFESIONALES Y TÉCNICOS","Part":4,"Gene":3,"Espe":10,"Sub":99,"Ordi":0}
+{"Ano":2015,"_id":"04.03.11.00.000","cuentaNo":"04.03.11.00.000","fatherId":"04.03.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"CONSERVACIÓN Y REAPARACIONES MENORES DE MAQUINARIA Y EQUIPOS","Part":4,"Gene":3,"Espe":11,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.03.11.02.000","cuentaNo":"04.03.11.02.000","fatherId":"04.03.11.00.000","Nivel":4,"Tipo":"I","Inicial":20000,"Descripcion":"CONSERVACIÓN Y REPARACIONES MENORES DE EQUIPOS  TRANSP.TRACCIÓN/ ELEV.","Part":4,"Gene":3,"Espe":11,"Sub":2,"Ordi":0}
+{"Ano":2015,"_id":"04.03.11.07.000","cuentaNo":"04.03.11.07.000","fatherId":"04.03.11.00.000","Nivel":4,"Tipo":"I","Inicial":8000,"Descripcion":"CONSERVACIÓN Y REPARACIONES MENORES DE MÁQUINAS, MUEBLES/DEMÁS EQ.ALOJ","Part":4,"Gene":3,"Espe":11,"Sub":7,"Ordi":0}
+{"Ano":2015,"_id":"04.03.11.99.000","cuentaNo":"04.03.11.99.000","fatherId":"04.03.11.00.000","Nivel":4,"Tipo":"I","Inicial":11000,"Descripcion":"CONSERVACIÓN Y REPARACIONES MENORES DE OTRAS MAQUINARIA Y EQUIPOS","Part":4,"Gene":3,"Espe":11,"Sub":99,"Ordi":0}
+{"Ano":2015,"_id":"04.03.12.00.000","cuentaNo":"04.03.12.00.000","fatherId":"04.03.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"CONSERVACIÓN Y REPARACIONES MENORES DE OBRAS","Part":4,"Gene":3,"Espe":12,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.03.12.01.000","cuentaNo":"04.03.12.01.000","fatherId":"04.03.12.00.000","Nivel":4,"Tipo":"I","Inicial":30000,"Descripcion":"CONSERVACIÓN Y REAPARACIONES MENORES DE OBRAS BIENES DEL DOMINIO PRIVA","Part":4,"Gene":3,"Espe":12,"Sub":1,"Ordi":0}
+{"Ano":2015,"_id":"04.03.18.00.000","cuentaNo":"04.03.18.00.000","fatherId":"04.03.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"IMPUESTOS INDIRECTOS","Part":4,"Gene":3,"Espe":18,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.03.18.01.000","cuentaNo":"04.03.18.01.000","fatherId":"04.03.18.00.000","Nivel":4,"Tipo":"D","Inicial":0,"Descripcion":"IMPUESTO AL VALOR AGREGADO","Part":4,"Gene":3,"Espe":18,"Sub":1,"Ordi":0}
+{"Ano":2015,"_id":"04.03.18.01.001","cuentaNo":"04.03.18.01.001","fatherId":"04.03.18.01.000","Nivel":5,"Tipo":"I","Inicial":65606.39,"Descripcion":"IMPUESTO AL VALOR AGREGADO GASTOS CORRIENTES","Part":4,"Gene":3,"Espe":18,"Sub":1,"Ordi":1}
+{"Ano":2015,"_id":"04.03.18.01.002","cuentaNo":"04.03.18.01.002","fatherId":"04.03.18.01.000","Nivel":5,"Tipo":"I","Inicial":42663.36,"Descripcion":"IMPUESTO AL VALOR AGREGADO GASTOS DE CAPITAL","Part":4,"Gene":3,"Espe":18,"Sub":1,"Ordi":2}
+{"Ano":2015,"_id":"04.03.19.00.000","cuentaNo":"04.03.19.00.000","fatherId":"04.03.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"COMISIONES POR SERVICIOS P/CUMPLIR CON LOS BENEFICIOS SOCIALES","Part":4,"Gene":3,"Espe":19,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.03.19.01.000","cuentaNo":"04.03.19.01.000","fatherId":"04.03.19.00.000","Nivel":4,"Tipo":"I","Inicial":8625,"Descripcion":"COMISIONES POR SERVICIOS P/CUMPLIR CON LOS BENEFICIOS SOCIALES","Part":4,"Gene":3,"Espe":19,"Sub":1,"Ordi":0}
+{"Ano":2015,"_id":"04.04.00.00.000","cuentaNo":"04.04.00.00.000","fatherId":"04.00.00.00.000","Nivel":2,"Tipo":"D","Inicial":0,"Descripcion":"ACTIVOS REALE S","Part":4,"Gene":4,"Espe":0,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.04.01.00.000","cuentaNo":"04.04.01.00.000","fatherId":"04.04.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"REPUESTOS Y REPARACIONES MAYORES","Part":4,"Gene":4,"Espe":1,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.04.01.01.000","cuentaNo":"04.04.01.01.000","fatherId":"04.04.01.00.000","Nivel":4,"Tipo":"D","Inicial":0,"Descripcion":"REPUESTOS MAYORES","Part":4,"Gene":4,"Espe":1,"Sub":1,"Ordi":0}
+{"Ano":2015,"_id":"04.04.01.01.002","cuentaNo":"04.04.01.01.002","fatherId":"04.04.01.01.000","Nivel":5,"Tipo":"I","Inicial":18000,"Descripcion":"REPUESTOS MAYORES P/EQUIPOS DE TRANSP.TRACCIÓN Y ELEVACIÓN","Part":4,"Gene":4,"Espe":1,"Sub":1,"Ordi":2}
+{"Ano":2015,"_id":"04.04.01.01.007","cuentaNo":"04.04.01.01.007","fatherId":"04.04.01.01.000","Nivel":5,"Tipo":"I","Inicial":10000,"Descripcion":"REPUESTOS MAYORES P/MÁQUINAS, MUEBLES Y/DEMÁS EQUIPOS DE OFICINA Y ALO","Part":4,"Gene":4,"Espe":1,"Sub":1,"Ordi":7}
+{"Ano":2015,"_id":"04.04.01.01.099","cuentaNo":"04.04.01.01.099","fatherId":"04.04.01.01.000","Nivel":5,"Tipo":"I","Inicial":3000,"Descripcion":"REPUESTOS MAYORES PARA OTRAS MAQUINARIA Y EQUIPOS","Part":4,"Gene":4,"Espe":1,"Sub":1,"Ordi":99}
+{"Ano":2015,"_id":"04.04.01.02.000","cuentaNo":"04.04.01.02.000","fatherId":"04.04.01.00.000","Nivel":4,"Tipo":"D","Inicial":0,"Descripcion":"REPARACIONES MAYORES DE MAQUINARIA Y EQUIPOS","Part":4,"Gene":4,"Espe":1,"Sub":2,"Ordi":0}
+{"Ano":2015,"_id":"04.04.01.02.002","cuentaNo":"04.04.01.02.002","fatherId":"04.04.01.02.000","Nivel":5,"Tipo":"I","Inicial":12000,"Descripcion":"REPARACIONES MAYORES DE EQUIPOS DE TRANSPORTE, TRACCIÓN Y ELEVACIÓN","Part":4,"Gene":4,"Espe":1,"Sub":2,"Ordi":2}
+{"Ano":2015,"_id":"04.04.01.02.007","cuentaNo":"04.04.01.02.007","fatherId":"04.04.01.02.000","Nivel":5,"Tipo":"I","Inicial":8000,"Descripcion":"REPARACIONES MAYORES DE MÁQUINAS, MUEBLES/DEMÁS EQUIPOS / OFICINA/ ALJ","Part":4,"Gene":4,"Espe":1,"Sub":2,"Ordi":7}
+{"Ano":2015,"_id":"04.04.01.02.099","cuentaNo":"04.04.01.02.099","fatherId":"04.04.01.02.000","Nivel":5,"Tipo":"I","Inicial":3000,"Descripcion":"REPARACIONES MAYORES DE OTRAS MAQUINARIA Y EQUIPOS","Part":4,"Gene":4,"Espe":1,"Sub":2,"Ordi":99}
+{"Ano":2015,"_id":"04.04.02.00.000","cuentaNo":"04.04.02.00.000","fatherId":"04.04.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"CONSERVACIÓN, AMPLIACIONES Y MEJORAS MAYORES DE OBRAS","Part":4,"Gene":4,"Espe":2,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.04.02.01.000","cuentaNo":"04.04.02.01.000","fatherId":"04.04.02.00.000","Nivel":4,"Tipo":"I","Inicial":25000,"Descripcion":"CONSERVACIÓN, AMPLIACIÓN Y MEJORAS MAYORES BIENES DEL DOMINIO PRIVADO","Part":4,"Gene":4,"Espe":2,"Sub":1,"Ordi":0}
+{"Ano":2015,"_id":"04.04.04.00.000","cuentaNo":"04.04.04.00.000","fatherId":"04.04.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"EQUIPOS DE TRANSPORTE TRACCIÓN Y ELEVACIÓN","Part":4,"Gene":4,"Espe":4,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.04.04.01.000","cuentaNo":"04.04.04.01.000","fatherId":"04.04.04.00.000","Nivel":4,"Tipo":"I","Inicial":200000,"Descripcion":"VEHÍCULOS AUTOMOTORES TERRESTRES","Part":4,"Gene":4,"Espe":4,"Sub":1,"Ordi":0}
+{"Ano":2015,"_id":"04.04.05.00.000","cuentaNo":"04.04.05.00.000","fatherId":"04.04.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"EQUIPOS DE COMUNICACIONES Y DE SEÑALAMIENTO","Part":4,"Gene":4,"Espe":5,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.04.05.01.000","cuentaNo":"04.04.05.01.000","fatherId":"04.04.05.00.000","Nivel":4,"Tipo":"I","Inicial":13000,"Descripcion":"EQUIPOS DE TELECOMUNICACIONES","Part":4,"Gene":4,"Espe":5,"Sub":1,"Ordi":0}
+{"Ano":2015,"_id":"04.04.07.00.000","cuentaNo":"04.04.07.00.000","fatherId":"04.04.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"EQUIPOS CIENTÍFICOS, RELIGIOSOS, DE ENSEÑANZA Y RECREACIÓN","Part":4,"Gene":4,"Espe":7,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.04.07.02.000","cuentaNo":"04.04.07.02.000","fatherId":"04.04.07.00.000","Nivel":4,"Tipo":"I","Inicial":1400,"Descripcion":"EQUIPOS DE ENSEÑANZA, DEPORTE Y RECRACIÓN","Part":4,"Gene":4,"Espe":7,"Sub":2,"Ordi":0}
+{"Ano":2015,"_id":"04.04.07.03.000","cuentaNo":"04.04.07.03.000","fatherId":"04.04.07.00.000","Nivel":4,"Tipo":"I","Inicial":1400,"Descripcion":"OBRAS DE ARTE","Part":4,"Gene":4,"Espe":7,"Sub":3,"Ordi":0}
+{"Ano":2015,"_id":"04.04.07.04.000","cuentaNo":"04.04.07.04.000","fatherId":"04.04.07.00.000","Nivel":4,"Tipo":"I","Inicial":6000,"Descripcion":"LIBROS, REVISTAS Y OTROS INSTRUMENTOS DE ENSEÑANZAS","Part":4,"Gene":4,"Espe":7,"Sub":4,"Ordi":0}
+{"Ano":2015,"_id":"04.04.09.00.000","cuentaNo":"04.04.09.00.000","fatherId":"04.04.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"MÁQUINAS,, MUEBLES Y DEMÁS EQUIPOS DE OFICINA Y ALOJAMIENTO","Part":4,"Gene":4,"Espe":9,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.04.09.01.000","cuentaNo":"04.04.09.01.000","fatherId":"04.04.09.00.000","Nivel":4,"Tipo":"I","Inicial":13000,"Descripcion":"MOBILIARIO Y EQUIPOS DE OFICINA","Part":4,"Gene":4,"Espe":9,"Sub":1,"Ordi":0}
+{"Ano":2015,"_id":"04.04.09.02.000","cuentaNo":"04.04.09.02.000","fatherId":"04.04.09.00.000","Nivel":4,"Tipo":"I","Inicial":24000,"Descripcion":"EQUIPOS DE COMPUTACIÓN","Part":4,"Gene":4,"Espe":9,"Sub":2,"Ordi":0}
+{"Ano":2015,"_id":"04.04.09.03.000","cuentaNo":"04.04.09.03.000","fatherId":"04.04.09.00.000","Nivel":4,"Tipo":"I","Inicial":10000,"Descripcion":"MOBILIARIO Y EQUIPOS DE ALOJAMIENTO","Part":4,"Gene":4,"Espe":9,"Sub":3,"Ordi":0}
+{"Ano":2015,"_id":"04.04.09.99.000","cuentaNo":"04.04.09.99.000","fatherId":"04.04.09.00.000","Nivel":4,"Tipo":"I","Inicial":3864,"Descripcion":"OTRAS MÁQUINAS, MUEBLES Y DEMÁS EQUIPOS DE OFICINA Y ALOJAMIENTO","Part":4,"Gene":4,"Espe":9,"Sub":99,"Ordi":0}
+{"Ano":2015,"_id":"04.04.12.00.000","cuentaNo":"04.04.12.00.000","fatherId":"04.04.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"ACTIVOS INTANGIBLES","Part":4,"Gene":4,"Espe":12,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.04.12.04.000","cuentaNo":"04.04.12.04.000","fatherId":"04.04.12.00.000","Nivel":4,"Tipo":"I","Inicial":3864,"Descripcion":"PAQUETES Y PROGRAMAS DE COMPUTACIÓN","Part":4,"Gene":4,"Espe":12,"Sub":4,"Ordi":0}
+{"Ano":2015,"_id":"04.07.00.00.000","cuentaNo":"04.07.00.00.000","fatherId":"04.00.00.00.000","Nivel":2,"Tipo":"D","Inicial":0,"Descripcion":"TRANSFERENCIAS Y DONACIONES","Part":4,"Gene":7,"Espe":0,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.07.01.00.000","cuentaNo":"04.07.01.00.000","fatherId":"04.07.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"TRANSFERENCIAS Y DONACIONES CORRIENTES INTERNAS","Part":4,"Gene":7,"Espe":1,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.07.01.01.000","cuentaNo":"04.07.01.01.000","fatherId":"04.07.01.00.000","Nivel":4,"Tipo":"D","Inicial":0,"Descripcion":"TRANSFERENCIAS CORRIENTES INTERNAS AL SECOR PRIVADO","Part":4,"Gene":7,"Espe":1,"Sub":1,"Ordi":0}
+{"Ano":2015,"_id":"04.07.01.01.001","cuentaNo":"04.07.01.01.001","fatherId":"04.07.01.01.000","Nivel":5,"Tipo":"I","Inicial":300187.52,"Descripcion":"PENSIONES DEL PERSONAL EMPLEADO, OBRERO Y MILITAR","Part":4,"Gene":7,"Espe":1,"Sub":1,"Ordi":1}
+{"Ano":2015,"_id":"04.07.01.01.002","cuentaNo":"04.07.01.01.002","fatherId":"04.07.01.01.000","Nivel":5,"Tipo":"I","Inicial":480578.3,"Descripcion":"JUBILACIONES DEL PERSONAL EMPLEADO, OBRERO Y MILITAR","Part":4,"Gene":7,"Espe":1,"Sub":1,"Ordi":2}
+{"Ano":2015,"_id":"04.07.01.01.009","cuentaNo":"04.07.01.01.009","fatherId":"04.07.01.01.000","Nivel":5,"Tipo":"I","Inicial":35726.17,"Descripcion":"AGUINALDOS AL PERSONAL EMPLEADO, OBRERO Y MILITAR PENSIONADO","Part":4,"Gene":7,"Espe":1,"Sub":1,"Ordi":9}
+{"Ano":2015,"_id":"04.07.01.01.010","cuentaNo":"04.07.01.01.010","fatherId":"04.07.01.01.000","Nivel":5,"Tipo":"I","Inicial":40691.94,"Descripcion":"APORTES A CAJAS DE AHORRO  PERS. EMPLEADO, OBRERO/MILITAR PENSIONADO","Part":4,"Gene":7,"Espe":1,"Sub":1,"Ordi":10}
+{"Ano":2015,"_id":"04.07.01.01.011","cuentaNo":"04.07.01.01.011","fatherId":"04.07.01.01.000","Nivel":5,"Tipo":"I","Inicial":18000,"Descripcion":"APORTES A LOS SRVICIOS DE SALUD, ACC.PERS./GTOS FUNERARIOS PENSIONADOS","Part":4,"Gene":7,"Espe":1,"Sub":1,"Ordi":11}
+{"Ano":2015,"_id":"04.07.01.01.012","cuentaNo":"04.07.01.01.012","fatherId":"04.07.01.01.000","Nivel":5,"Tipo":"I","Inicial":0,"Descripcion":"OTRAS SUBVENCIONES SOCIO-ECONÓMICAS PERS.EMP.OBRERO/MILITAR PENSIONADO","Part":4,"Gene":7,"Espe":1,"Sub":1,"Ordi":12}
+{"Ano":2015,"_id":"04.07.01.01.013","cuentaNo":"04.07.01.01.013","fatherId":"04.07.01.01.000","Nivel":5,"Tipo":"I","Inicial":150905.3,"Descripcion":"AGUINALDOS AL PERSONAL EMPLEADO, OBRERO Y MILITAR JUBILADO","Part":4,"Gene":7,"Espe":1,"Sub":1,"Ordi":13}
+{"Ano":2015,"_id":"04.07.01.01.014","cuentaNo":"04.07.01.01.014","fatherId":"04.07.01.01.000","Nivel":5,"Tipo":"I","Inicial":65268.46,"Descripcion":"APORTES A CAJA DE AHORRO DEL PERS. EMPLEADO, OBRERO/MILITAR JUBILADO","Part":4,"Gene":7,"Espe":1,"Sub":1,"Ordi":14}
+{"Ano":2015,"_id":"04.07.01.01.015","cuentaNo":"04.07.01.01.015","fatherId":"04.07.01.01.000","Nivel":5,"Tipo":"I","Inicial":35552,"Descripcion":"APORTES A LOS SERV.DE SALUD, ACC.PERS.GTOS FUNERARIOS JUBILADO","Part":4,"Gene":7,"Espe":1,"Sub":1,"Ordi":15}
+{"Ano":2015,"_id":"04.07.01.01.016","cuentaNo":"04.07.01.01.016","fatherId":"04.07.01.01.000","Nivel":5,"Tipo":"I","Inicial":0,"Descripcion":"OTRAS SUBVENCIONES SOCIO-ECONÓMICASDEL PERSONAL JUBILADO","Part":4,"Gene":7,"Espe":1,"Sub":1,"Ordi":16}
+{"Ano":2015,"_id":"04.07.01.01.075","cuentaNo":"04.07.01.01.075","fatherId":"04.07.01.01.000","Nivel":5,"Tipo":"I","Inicial":0,"Descripcion":"SUBSIDIOS A ORGANISMOS LABORALES Y GREMIALES","Part":4,"Gene":7,"Espe":1,"Sub":1,"Ordi":75}
+{"Ano":2015,"_id":"04.07.01.06.000","cuentaNo":"04.07.01.06.000","fatherId":"04.07.01.00.000","Nivel":4,"Tipo":"D","Inicial":0,"Descripcion":"JUBILACIONES DE ALTOS FUNCIONRIOS Y ALTAS FUNCIONARIAS DEL PODER PÚB.","Part":4,"Gene":7,"Espe":1,"Sub":6,"Ordi":0}
+{"Ano":2015,"_id":"04.07.01.06.002","cuentaNo":"04.07.01.06.002","fatherId":"04.07.01.06.000","Nivel":5,"Tipo":"I","Inicial":507894.17,"Descripcion":"JUBILACIONES DEL PERSONAL DE ALTO NIVEL Y DE DIRECCIÓN","Part":4,"Gene":7,"Espe":1,"Sub":6,"Ordi":2}
+{"Ano":2015,"_id":"04.07.01.06.007","cuentaNo":"04.07.01.06.007","fatherId":"04.07.01.06.000","Nivel":5,"Tipo":"I","Inicial":300085.61,"Descripcion":"AGUINALDOS DEL PERSONAL JUBILADO DE ALTO NIVEL Y DE DIERCCIÓN","Part":4,"Gene":7,"Espe":1,"Sub":6,"Ordi":7}
+{"Ano":2015,"_id":"04.07.01.06.012","cuentaNo":"04.07.01.06.012","fatherId":"04.07.01.06.000","Nivel":5,"Tipo":"I","Inicial":200710.31,"Descripcion":"APORTES ACAJA DE AHORRO DEL PERSONAL JUBILADO DE ALTO NIVEL Y DE DIER.","Part":4,"Gene":7,"Espe":1,"Sub":6,"Ordi":12}
+{"Ano":2015,"_id":"04.07.01.06.017","cuentaNo":"04.07.01.06.017","fatherId":"04.07.01.06.000","Nivel":5,"Tipo":"I","Inicial":25000,"Descripcion":"APORTES A LOS SERV. DE SALUD, ACC.PERS./GTOS FUNERARIOS JUBILADOS ALTO","Part":4,"Gene":7,"Espe":1,"Sub":6,"Ordi":17}
+{"Ano":2015,"_id":"04.07.01.06.099","cuentaNo":"04.07.01.06.099","fatherId":"04.07.01.06.000","Nivel":5,"Tipo":"I","Inicial":5500,"Descripcion":"OTRAS SUBVENCIONES DEL PERSONAL JUBILADO DE ALTO NIVEL Y DE DIRECCIÓN","Part":4,"Gene":7,"Espe":1,"Sub":6,"Ordi":99}
+{"Ano":2015,"_id":"04.07.01.12.001","cuentaNo":"04.07.01.12.001","fatherId":"04.07.01.12.000","Nivel":5,"Tipo":"I","Inicial":3920,"Descripcion":"APORTE PATRONAL GTOS FUNERARIOS AL PERS.EMP.OBRERO/MILITAR PENSIONADO","Part":4,"Gene":7,"Espe":1,"Sub":12,"Ordi":1}
+{"Ano":2015,"_id":"04.07.01.12.002","cuentaNo":"04.07.01.12.002","fatherId":"04.07.01.12.000","Nivel":5,"Tipo":"I","Inicial":1000,"Descripcion":"AYUDAS GTOS MEDICOS AL PERS.EMPLEADO OBRERO/MILITAR PENSIONADO","Part":4,"Gene":7,"Espe":1,"Sub":12,"Ordi":2}
+{"Ano":2015,"_id":"04.07.01.12.003","cuentaNo":"04.07.01.12.003","fatherId":"04.07.01.12.000","Nivel":5,"Tipo":"I","Inicial":100,"Descripcion":"AYUDAS P/ADQUISICIÓN DE UTILES ESC.HIJOS  PERS.EMP.OBRERO PENSIONADO","Part":4,"Gene":7,"Espe":1,"Sub":12,"Ordi":3}
+{"Ano":2015,"_id":"04.07.01.12.004","cuentaNo":"04.07.01.12.004","fatherId":"04.07.01.12.000","Nivel":5,"Tipo":"I","Inicial":300,"Descripcion":"AYUDAS P/GTOS DE DEFUNCIÓN PERS.EMP.OBRERO/MILITAR PENSIONADO","Part":4,"Gene":7,"Espe":1,"Sub":12,"Ordi":4}
+{"Ano":2015,"_id":"04.07.01.16.001","cuentaNo":"04.07.01.16.001","fatherId":"04.07.01.16.000","Nivel":5,"Tipo":"I","Inicial":3000,"Descripcion":"AYUDA ALIMENTARIA","Part":4,"Gene":7,"Espe":1,"Sub":16,"Ordi":1}
+{"Ano":2015,"_id":"04.07.01.16.002","cuentaNo":"04.07.01.16.002","fatherId":"04.07.01.16.000","Nivel":5,"Tipo":"I","Inicial":3500,"Descripcion":"AYUDA GASTOS MÉDICOS AL PERSONAL EMPLEADO, OBRERO/MILITAR JUBILADO","Part":4,"Gene":7,"Espe":1,"Sub":16,"Ordi":2}
+{"Ano":2015,"_id":"04.07.01.16.003","cuentaNo":"04.07.01.16.003","fatherId":"04.07.01.16.000","Nivel":5,"Tipo":"I","Inicial":200,"Descripcion":"AYUDA P/ADQUISICIÓN DE UTILES ESC.DEL PERS.EMPLEADO, OBRERO/M JUBILADO","Part":4,"Gene":7,"Espe":1,"Sub":16,"Ordi":3}
+{"Ano":2015,"_id":"04.07.01.16.004","cuentaNo":"04.07.01.16.004","fatherId":"04.07.01.16.000","Nivel":5,"Tipo":"I","Inicial":600,"Descripcion":"AYUDA GASTOS DE DEFUNCIÓN AL PERS.EMPLEADO, OBRER /MILITAR JUBILADO","Part":4,"Gene":7,"Espe":1,"Sub":16,"Ordi":4}
+{"Ano":2015,"_id":"04.07.01.75.001","cuentaNo":"04.07.01.75.001","fatherId":"04.07.01.75.000","Nivel":5,"Tipo":"I","Inicial":4000,"Descripcion":"ASOCIACIÓN BOLIVARIANA DE PROCURADORES DEL EDO SOCIALISTA(ABPES)","Part":4,"Gene":7,"Espe":1,"Sub":75,"Ordi":1}
+{"Ano":2015,"_id":"04.08.00.00.000","cuentaNo":"04.08.00.00.000","fatherId":"04.00.00.00.000","Nivel":2,"Tipo":"D","Inicial":0,"Descripcion":"OTROS GASTOS","Part":4,"Gene":8,"Espe":0,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.08.08.00.000","cuentaNo":"04.08.08.00.000","fatherId":"04.08.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"INDEMNIZACIONES Y SANCIONES PECUNARIAS","Part":4,"Gene":8,"Espe":8,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.08.08.01.000","cuentaNo":"04.08.08.01.000","fatherId":"04.08.08.00.000","Nivel":4,"Tipo":"D","Inicial":0,"Descripcion":"INDEMNIZACIONES POR DAÑOS Y PERJUICIOS","Part":4,"Gene":8,"Espe":8,"Sub":1,"Ordi":0}
+{"Ano":2015,"_id":"04.08.08.01.002","cuentaNo":"04.08.08.01.002","fatherId":"04.08.08.01.000","Nivel":5,"Tipo":"I","Inicial":35000,"Descripcion":"INDEMNIZACIONES POR DAÑOS Y PERJUICIOS OCASIONADOS POR ENTES DESCENT.","Part":4,"Gene":8,"Espe":8,"Sub":1,"Ordi":2}
+{"Ano":2015,"_id":"04.11.00.00.000","cuentaNo":"04.11.00.00.000","fatherId":"04.00.00.00.000","Nivel":2,"Tipo":"D","Inicial":0,"Descripcion":"DISMINUCIÓN DE PASIVOS","Part":4,"Gene":11,"Espe":0,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.11.11.00.000","cuentaNo":"04.11.11.00.000","fatherId":"04.11.00.00.000","Nivel":3,"Tipo":"D","Inicial":0,"Descripcion":"OBLIGACIONES DE EJERCICIOS ANTERIORES","Part":4,"Gene":11,"Espe":11,"Sub":0,"Ordi":0}
+{"Ano":2015,"_id":"04.11.11.04.000","cuentaNo":"04.11.11.04.000","fatherId":"04.11.11.00.000","Nivel":4,"Tipo":"D","Inicial":0,"Descripcion":"COMPROMISOS PENDIENTES DE EJERCICIOS ANTERIORES","Part":4,"Gene":11,"Espe":11,"Sub":4,"Ordi":0}
+{"Ano":2015,"_id":"04.11.11.04.001","cuentaNo":"04.11.11.04.001","fatherId":"04.11.11.04.000","Nivel":5,"Tipo":"I","Inicial":35000,"Descripcion":"COMPROMISOS PENDIENTES DE EJERCICIOS ANTERIORES","Part":4,"Gene":11,"Espe":11,"Sub":4,"Ordi":1}
+{"Ano":2015,"_id":"04.11.11.05.000","cuentaNo":"04.11.11.05.000","fatherId":"04.11.11.00.000","Nivel":4,"Tipo":"I","Inicial":79113.14,"Descripcion":"PRESTACIONES DE ANTIGUEDAD ORIGINADAS POR LA APLICACIÓN DE LA LEY ORGC","Part":4,"Gene":11,"Espe":11,"Sub":5,"Ordi":0}
+{"Inicial":0,"_id":"04.11.11.05.000"}
+{"Inicial":0,"_id":"04.11.11.04.001"}
+{"Inicial":35000,"_id":"04.11.11.04.000"}
+{"Inicial":79113.14,"_id":"04.11.11.00.000"}
+{"Inicial":0,"_id":"04.11.00.00.000"}
+{"Inicial":0,"_id":"04.08.08.01.002"}
+{"Inicial":35000,"_id":"04.08.08.01.000"}
+{"Inicial":0,"_id":"04.08.08.00.000"}
+{"Inicial":0,"_id":"04.08.00.00.000"}
+{"Inicial":0,"_id":"04.07.01.75.001"}
+{"Inicial":0,"_id":"04.07.01.16.004"}
+{"Inicial":0,"_id":"04.07.01.16.003"}
+{"Inicial":0,"_id":"04.07.01.16.002"}
+{"Inicial":0,"_id":"04.07.01.16.001"}
+{"Inicial":0,"_id":"04.07.01.12.004"}
+{"Inicial":0,"_id":"04.07.01.12.003"}
+{"Inicial":0,"_id":"04.07.01.12.002"}
+{"Inicial":0,"_id":"04.07.01.12.001"}
+{"Inicial":0,"_id":"04.07.01.06.099"}
+{"Inicial":0,"_id":"04.07.01.06.017"}
+{"Inicial":0,"_id":"04.07.01.06.012"}
+{"Inicial":0,"_id":"04.07.01.06.007"}
+{"Inicial":0,"_id":"04.07.01.06.002"}
+{"Inicial":1039190.0900000001,"_id":"04.07.01.06.000"}
+{"Inicial":0,"_id":"04.07.01.01.075"}
+{"Inicial":0,"_id":"04.07.01.01.016"}
+{"Inicial":0,"_id":"04.07.01.01.015"}
+{"Inicial":0,"_id":"04.07.01.01.014"}
+{"Inicial":0,"_id":"04.07.01.01.013"}
+{"Inicial":0,"_id":"04.07.01.01.012"}
+{"Inicial":0,"_id":"04.07.01.01.011"}
+{"Inicial":0,"_id":"04.07.01.01.010"}
+{"Inicial":0,"_id":"04.07.01.01.009"}
+{"Inicial":0,"_id":"04.07.01.01.002"}
+{"Inicial":0,"_id":"04.07.01.01.001"}
+{"Inicial":1126909.6900000002,"_id":"04.07.01.01.000"}
+{"Inicial":0,"_id":"04.07.01.00.000"}
+{"Inicial":0,"_id":"04.07.00.00.000"}
+{"Inicial":0,"_id":"04.04.12.04.000"}
+{"Inicial":3864,"_id":"04.04.12.00.000"}
+{"Inicial":0,"_id":"04.04.09.99.000"}
+{"Inicial":0,"_id":"04.04.09.03.000"}
+{"Inicial":0,"_id":"04.04.09.02.000"}
+{"Inicial":0,"_id":"04.04.09.01.000"}
+{"Inicial":50864,"_id":"04.04.09.00.000"}
+{"Inicial":0,"_id":"04.04.07.04.000"}
+{"Inicial":0,"_id":"04.04.07.03.000"}
+{"Inicial":0,"_id":"04.04.07.02.000"}
+{"Inicial":8800,"_id":"04.04.07.00.000"}
+{"Inicial":0,"_id":"04.04.05.01.000"}
+{"Inicial":13000,"_id":"04.04.05.00.000"}
+{"Inicial":0,"_id":"04.04.04.01.000"}
+{"Inicial":200000,"_id":"04.04.04.00.000"}
+{"Inicial":0,"_id":"04.04.02.01.000"}
+{"Inicial":25000,"_id":"04.04.02.00.000"}
+{"Inicial":0,"_id":"04.04.01.02.099"}
+{"Inicial":0,"_id":"04.04.01.02.007"}
+{"Inicial":0,"_id":"04.04.01.02.002"}
+{"Inicial":23000,"_id":"04.04.01.02.000"}
+{"Inicial":0,"_id":"04.04.01.01.099"}
+{"Inicial":0,"_id":"04.04.01.01.007"}
+{"Inicial":0,"_id":"04.04.01.01.002"}
+{"Inicial":31000,"_id":"04.04.01.01.000"}
+{"Inicial":0,"_id":"04.04.01.00.000"}
+{"Inicial":0,"_id":"04.04.00.00.000"}
+{"Inicial":0,"_id":"04.03.19.01.000"}
+{"Inicial":8625,"_id":"04.03.19.00.000"}
+{"Inicial":0,"_id":"04.03.18.01.002"}
+{"Inicial":0,"_id":"04.03.18.01.001"}
+{"Inicial":108269.75,"_id":"04.03.18.01.000"}
+{"Inicial":0,"_id":"04.03.18.00.000"}
+{"Inicial":0,"_id":"04.03.12.01.000"}
+{"Inicial":30000,"_id":"04.03.12.00.000"}
+{"Inicial":0,"_id":"04.03.11.99.000"}
+{"Inicial":0,"_id":"04.03.11.07.000"}
+{"Inicial":0,"_id":"04.03.11.02.000"}
+{"Inicial":39000,"_id":"04.03.11.00.000"}
+{"Inicial":0,"_id":"04.03.10.99.000"}
+{"Inicial":0,"_id":"04.03.10.09.000"}
+{"Inicial":0,"_id":"04.03.10.07.000"}
+{"Inicial":0,"_id":"04.03.10.03.000"}
+{"Inicial":0,"_id":"04.03.10.01.000"}
+{"Inicial":45000,"_id":"04.03.10.00.000"}
+{"Inicial":0,"_id":"04.03.09.02.000"}
+{"Inicial":0,"_id":"04.03.09.01.000"}
+{"Inicial":50000,"_id":"04.03.09.00.000"}
+{"Inicial":0,"_id":"04.03.08.03.000"}
+{"Inicial":0,"_id":"04.03.08.02.000"}
+{"Inicial":0,"_id":"04.03.08.01.000"}
+{"Inicial":55210,"_id":"04.03.08.00.000"}
+{"Inicial":0,"_id":"04.03.07.04.000"}
+{"Inicial":0,"_id":"04.03.07.03.000"}
+{"Inicial":0,"_id":"04.03.07.02.000"}
+{"Inicial":0,"_id":"04.03.07.01.000"}
+{"Inicial":40000,"_id":"04.03.07.00.000"}
+{"Inicial":0,"_id":"04.03.06.03.000"}
+{"Inicial":0,"_id":"04.03.06.01.000"}
+{"Inicial":756,"_id":"04.03.06.00.000"}
+{"Inicial":0,"_id":"04.03.04.06.000"}
+{"Inicial":0,"_id":"04.03.04.05.000"}
+{"Inicial":0,"_id":"04.03.04.04.002"}
+{"Inicial":0,"_id":"04.03.04.04.001"}
+{"Inicial":0,"_id":"04.03.04.03.000"}
+{"Inicial":0,"_id":"04.03.04.02.000"}
+{"Inicial":0,"_id":"04.03.04.01.000"}
+{"Inicial":36183.75,"_id":"04.03.04.00.000"}
+{"Inicial":0,"_id":"04.03.02.02.000"}
+{"Inicial":20000,"_id":"04.03.02.00.000"}
+{"Inicial":0,"_id":"04.03.01.01.000"}
+{"Inicial":5000,"_id":"04.03.01.00.000"}
+{"Inicial":0,"_id":"04.03.00.00.000"}
+{"Inicial":0,"_id":"04.02.99.01.000"}
+{"Inicial":7000,"_id":"04.02.99.00.000"}
+{"Inicial":0,"_id":"04.02.10.99.000"}
+{"Inicial":0,"_id":"04.02.10.13.000"}
+{"Inicial":0,"_id":"04.02.10.12.000"}
+{"Inicial":0,"_id":"04.02.10.11.000"}
+{"Inicial":0,"_id":"04.02.10.09.000"}
+{"Inicial":0,"_id":"04.02.10.08.000"}
+{"Inicial":0,"_id":"04.02.10.07.000"}
+{"Inicial":0,"_id":"04.02.10.06.000"}
+{"Inicial":0,"_id":"04.02.10.05.000"}
+{"Inicial":0,"_id":"04.02.10.03.000"}
+{"Inicial":0,"_id":"04.02.10.02.000"}
+{"Inicial":53940,"_id":"04.02.10.00.000"}
+{"Inicial":0,"_id":"04.02.09.99.000"}
+{"Inicial":0,"_id":"04.02.09.02.000"}
+{"Inicial":3960,"_id":"04.02.09.00.000"}
+{"Inicial":0,"_id":"04.02.08.10.000"}
+{"Inicial":0,"_id":"04.02.08.09.000"}
+{"Inicial":0,"_id":"04.02.08.03.000"}
+{"Inicial":14000,"_id":"04.02.08.00.000"}
+{"Inicial":0,"_id":"04.02.07.04.000"}
+{"Inicial":0,"_id":"04.02.07.03.000"}
+{"Inicial":0,"_id":"04.02.07.02.000"}
+{"Inicial":0,"_id":"04.02.07.01.000"}
+{"Inicial":2460,"_id":"04.02.07.00.000"}
+{"Inicial":0,"_id":"04.02.06.08.000"}
+{"Inicial":0,"_id":"04.02.06.06.000"}
+{"Inicial":0,"_id":"04.02.06.05.000"}
+{"Inicial":0,"_id":"04.02.06.04.000"}
+{"Inicial":0,"_id":"04.02.06.03.000"}
+{"Inicial":0,"_id":"04.02.06.02.000"}
+{"Inicial":40440,"_id":"04.02.06.00.000"}
+{"Inicial":0,"_id":"04.02.05.07.000"}
+{"Inicial":0,"_id":"04.02.05.04.000"}
+{"Inicial":0,"_id":"04.02.05.03.000"}
+{"Inicial":0,"_id":"04.02.05.01.000"}
+{"Inicial":42450,"_id":"04.02.05.00.000"}
+{"Inicial":0,"_id":"04.02.04.03.000"}
+{"Inicial":10000,"_id":"04.02.04.00.000"}
+{"Inicial":0,"_id":"04.02.03.02.000"}
+{"Inicial":0,"_id":"04.02.03.01.000"}
+{"Inicial":1495.2,"_id":"04.02.03.00.000"}
+{"Inicial":0,"_id":"04.02.01.03.000"}
+{"Inicial":0,"_id":"04.02.01.01.000"}
+{"Inicial":16000,"_id":"04.02.01.00.000"}
+{"Inicial":0,"_id":"04.02.00.00.000"}
+{"Inicial":0,"_id":"04.01.08.07.000"}
+{"Inicial":0,"_id":"04.01.08.02.000"}
+{"Inicial":0,"_id":"04.01.08.01.001"}
+{"Inicial":112000,"_id":"04.01.08.01.000"}
+{"Inicial":140000,"_id":"04.01.08.00.000"}
+{"Inicial":0,"_id":"04.01.07.97.001"}
+{"Inicial":5000,"_id":"04.01.07.97.000"}
+{"Inicial":0,"_id":"04.01.07.69.000"}
+{"Inicial":0,"_id":"04.01.07.68.000"}
+{"Inicial":0,"_id":"04.01.07.67.000"}
+{"Inicial":0,"_id":"04.01.07.66.000"}
+{"Inicial":0,"_id":"04.01.07.65.000"}
+{"Inicial":0,"_id":"04.01.07.64.000"}
+{"Inicial":0,"_id":"04.01.07.26.000"}
+{"Inicial":0,"_id":"04.01.07.24.000"}
+{"Inicial":0,"_id":"04.01.07.23.000"}
+{"Inicial":0,"_id":"04.01.07.22.000"}
+{"Inicial":0,"_id":"04.01.07.21.000"}
+{"Inicial":0,"_id":"04.01.07.20.000"}
+{"Inicial":0,"_id":"04.01.07.19.000"}
+{"Inicial":0,"_id":"04.01.07.12.000"}
+{"Inicial":0,"_id":"04.01.07.11.000"}
+{"Inicial":0,"_id":"04.01.07.10.000"}
+{"Inicial":0,"_id":"04.01.07.09.000"}
+{"Inicial":0,"_id":"04.01.07.08.000"}
+{"Inicial":0,"_id":"04.01.07.07.000"}
+{"Inicial":0,"_id":"04.01.07.06.000"}
+{"Inicial":0,"_id":"04.01.07.05.000"}
+{"Inicial":0,"_id":"04.01.07.04.000"}
+{"Inicial":0,"_id":"04.01.07.03.000"}
+{"Inicial":847199.78,"_id":"04.01.07.00.000"}
+{"Inicial":0,"_id":"04.01.06.43.000"}
+{"Inicial":0,"_id":"04.01.06.42.000"}
+{"Inicial":0,"_id":"04.01.06.41.000"}
+{"Inicial":0,"_id":"04.01.06.39.000"}
+{"Inicial":0,"_id":"04.01.06.13.000"}
+{"Inicial":0,"_id":"04.01.06.12.000"}
+{"Inicial":0,"_id":"04.01.06.11.000"}
+{"Inicial":0,"_id":"04.01.06.10.000"}
+{"Inicial":0,"_id":"04.01.06.05.000"}
+{"Inicial":0,"_id":"04.01.06.04.000"}
+{"Inicial":0,"_id":"04.01.06.03.000"}
+{"Inicial":0,"_id":"04.01.06.01.000"}
+{"Inicial":431093.8100000001,"_id":"04.01.06.00.000"}
+{"Inicial":0,"_id":"04.01.05.18.000"}
+{"Inicial":0,"_id":"04.01.05.16.000"}
+{"Inicial":0,"_id":"04.01.05.06.000"}
+{"Inicial":0,"_id":"04.01.05.04.000"}
+{"Inicial":0,"_id":"04.01.05.03.000"}
+{"Inicial":0,"_id":"04.01.05.01.000"}
+{"Inicial":1756367.7800000003,"_id":"04.01.05.00.000"}
+{"Inicial":0,"_id":"04.01.04.51.000"}
+{"Inicial":0,"_id":"04.01.04.48.000"}
+{"Inicial":0,"_id":"04.01.04.18.000"}
+{"Inicial":0,"_id":"04.01.04.08.000"}
+{"Inicial":584440,"_id":"04.01.04.00.000"}
+{"Inicial":0,"_id":"04.01.03.98.000"}
+{"Inicial":0,"_id":"04.01.03.97.000"}
+{"Inicial":0,"_id":"04.01.03.95.000"}
+{"Inicial":0,"_id":"04.01.03.47.000"}
+{"Inicial":0,"_id":"04.01.03.22.000"}
+{"Inicial":0,"_id":"04.01.03.21.000"}
+{"Inicial":0,"_id":"04.01.03.17.000"}
+{"Inicial":0,"_id":"04.01.03.09.000"}
+{"Inicial":0,"_id":"04.01.03.08.000"}
+{"Inicial":0,"_id":"04.01.03.02.000"}
+{"Inicial":90662.34,"_id":"04.01.03.00.000"}
+{"Inicial":0,"_id":"04.01.01.36.000"}
+{"Inicial":0,"_id":"04.01.01.18.002"}
+{"Inicial":0,"_id":"04.01.01.10.000"}
+{"Inicial":0,"_id":"04.01.01.01.000"}
+{"Inicial":4033837.04,"_id":"04.01.01.00.000"}
+{"Inicial":0,"_id":"04.01.00.00.000"}
+{"Inicial":0,"_id":"04.00.00.00.000"}

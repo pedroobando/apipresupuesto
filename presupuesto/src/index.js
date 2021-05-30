@@ -1,76 +1,81 @@
-let cuenta = require("../json/cuentas.json");
+const cuenta = require("../json/cuentas.json");
+const cuentaCompromiso = require("../json/comprometido.json");
+// let cuenta = require("../json/modificaciones.json");
 
-const ceroleft = (valor, cantidad) => {
-  return valor.toString().padStart(cantidad, "0");
+const {
+  ceroleft,
+  ordenCuenta,
+  ordenCuentaDesc,
+  numeroCuenta,
+  addCuentaNo,
+  sumaCuenta,
+  consolaCompromiso,
+  consolaPresup,
+} = require("./util");
+
+// Cuentas de Presupuesto
+const cuentasPresupuesto = (cuentaOriginal, anoTrabajo) => {
+  const cuenta = addCuentaNo(cuentaOriginal);
+
+  const ctasDeGrupo = cuenta.filter((cta) => cta.Año == anoTrabajo).sort(ordenCuentaDesc);
+  let ctaAjustada = cuenta.filter((cta) => cta.Año == anoTrabajo).sort(ordenCuentaDesc);
+
+  ctasDeGrupo.map((laCta) => {
+    let findFather = ctaAjustada.find((cta) => cta.cuentaNo == laCta.fatherId);
+    if (findFather) {
+      findFather = {
+        ...findFather,
+        Inicial: sumaCuenta(ctaAjustada, "Inicial", "fatherId", findFather.cuentaNo),
+      };
+      ctaAjustada = [
+        ...ctaAjustada.filter((ctaAj) => ctaAj.cuentaNo !== findFather.cuentaNo),
+        findFather,
+      ];
+    } else {
+      console.log(`${laCta.fatherId} - not found`);
+    }
+  });
+
+  // Ordena de nuevo la cuenta
+  return ctaAjustada.sort(ordenCuenta);
 };
 
-const ordenCuenta = (a, b) =>
-  a.cuentaNo > b.cuentaNo ? 1 : a.cuentaNo < b.cuentaNo ? -1 : 0;
+const cuentasCompromiso = (cuentaOriginal, anoTrabajo) => {
+  const cuenta = addCuentaNo(cuentaOriginal);
 
-const ordenCuentaDesc = (a, b) =>
-  a.cuentaNo < b.cuentaNo ? 1 : a.cuentaNo > b.cuentaNo ? -1 : 0;
+  const ctasDeGrupo = cuenta.filter((cta) => cta.Año == anoTrabajo).sort(ordenCuentaDesc);
+  let ctaAjustadaComp = cuenta.filter((cta) => cta.Año == anoTrabajo).sort(ordenCuenta);
 
-const consolaShow = (record, separador) =>
-  `${record.cuentaNo} ${record.fatherId} ${record.Nivel} ${separador} ${record.Descripcion} -  ${record.Inicial}`;
+  ctasDeGrupo.map((laCta) => {
+    let findFather = ctaAjustadaComp.find((cta) => cta.cuentaNo == laCta.fatherId);
+    if (findFather) {
+      findFather = {
+        ...findFather,
+        MontoComprometido: sumaCuenta(
+          ctaAjustadaComp,
+          "MontoComprometido",
+          "fatherId",
+          findFather.cuentaNo
+        ),
+      };
+      ctaAjustadaComp = [
+        ...ctaAjustadaComp.filter((ctaAj) => ctaAj.cuentaNo !== findFather.cuentaNo),
+        findFather,
+      ];
+    } else {
+      setTimeout(() => {
+        console.log(`${laCta.fatherId} - not found - Estas cuentas tienen que crearce`);
+      }, 2000);
+    }
+  });
 
-const numeroCuenta = (cta) =>
-  `${ceroleft(cta.Part, 2)}.${ceroleft(cta.Gene, 2)}.${ceroleft(cta.Espe, 2)}.${ceroleft(
-    cta.Sub,
-    2
-  )}.${ceroleft(cta.Ordi, 3)}`;
-
-const sumaPadre = (laColleccion, elPadre) => {
-  var total = 0;
-  laColleccion
-    .filter((item) => item.fatherId == elPadre)
-    .forEach((element) => {
-      total += element.Inicial;
-    });
-  return total;
+  // Ordena de nuevo la cuenta
+  return ctaAjustadaComp.sort(ordenCuenta);
 };
-
-// Agregar Registro
-cuenta = cuenta.map((cta) => ({
-  ...cta,
-  cuentaNo: numeroCuenta(cta),
-  fatherId:
-    cta.Nivel == 5
-      ? numeroCuenta(cta).slice(0, -4) + ".000"
-      : cta.Nivel == 4
-      ? numeroCuenta(cta).slice(0, -7) + ".00.000"
-      : cta.Nivel == 3
-      ? numeroCuenta(cta).slice(0, -10) + ".00.00.000"
-      : cta.Nivel == 2
-      ? numeroCuenta(cta).slice(0, -13) + ".00.00.00.000"
-      : numeroCuenta(cta).slice(0, -13) + ".00.00.00.000",
-}));
-
-// Ordenar Cuenta
-// cuenta = cuenta.sort(ordenCuentaDesc);
-// cuenta = cuenta.sort((a, b) =>
-//   a.cuentaNo > b.cuentaNo ? 1 : a.cuentaNo < b.cuentaNo ? -1 : 0
-// );
-
-// Filtrar la Cuenta  de Grupo & el Ano.
-const ctasDeGrupo = cuenta.filter((cta) => cta.Año == 2015).sort(ordenCuentaDesc);
-let ctaAjustada = cuenta.filter((cta) => cta.Año == 2015).sort(ordenCuentaDesc);
-
-ctasDeGrupo.map((laCta) => {
-  let findFather = ctaAjustada.find((cta) => cta.cuentaNo == laCta.fatherId);
-  if (findFather) {
-    // findFather = { ...findFather, Inicial: findFather.Inicial + laCta.Inicial };
-    findFather = { ...findFather, Inicial: sumaPadre(ctaAjustada, findFather.cuentaNo) };
-    ctaAjustada = [
-      ...ctaAjustada.filter((ctaAj) => ctaAj.cuentaNo !== findFather.cuentaNo),
-      findFather,
-    ];
-  } else {
-    console.log(`${laCta.fatherId} - not found`);
-  }
-});
-
-// Ordena de nuevo la cuenta
-ctaAjustada = ctaAjustada.sort(ordenCuenta);
 
 // Imprime la cuenta
-ctaAjustada.map((cta) => console.log(consolaShow(cta, cta.Tipo !== "D" ? "---" : "==>")));
+cuentasPresupuesto(cuenta, 2015).map((cta) => console.log(consolaPresup(cta)));
+
+cuentasCompromiso(cuentaCompromiso, 2015).map((cta) =>
+  console.log(consolaCompromiso(cta))
+);
