@@ -31,12 +31,7 @@ const cuentaPagado = (anoTrabajo) => {
 
     findFather = {
       ...findFather,
-      MontoComprometido: sumaCuenta(
-        ctaAjustada,
-        "MontoPag",
-        "fatherId",
-        findFather.cuentaNo
-      ),
+      MontoPag: sumaCuenta(ctaAjustada, "MontoPag", "fatherId", findFather.cuentaNo),
     };
     ctaAjustada = [
       ...ctaAjustada.filter((ctaAj) => ctaAj.cuentaNo !== findFather.cuentaNo),

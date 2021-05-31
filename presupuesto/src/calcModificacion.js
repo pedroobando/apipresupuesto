@@ -1,4 +1,4 @@
-const cuentaOriginal = require("../json/causado.json");
+const cuentaOriginal = require("../json/modificaciones.json");
 
 const {
   ordenCuenta,
@@ -9,7 +9,7 @@ const {
   numeroCuentaCreateFather,
 } = require("./util");
 
-const cuentaCausado = (anoTrabajo) => {
+const cuentaModificacion = (anoTrabajo) => {
   const cuenta = addCuentaNo(cuentaOriginal);
 
   const ctasDeGrupo = cuenta.filter((cta) => cta.Año == anoTrabajo).sort(ordenCuentaDesc);
@@ -24,19 +24,14 @@ const cuentaCausado = (anoTrabajo) => {
         fatherId: numeroCuentaCreateFather(laCta.fatherId),
         Referencia: "0000000",
         Observaciones: "<< CUENTA FALTANTE >>",
-        MontoCausado: 0,
+        MontoMod: 0,
       };
       ctaAjustada = [...ctaAjustada, findFather];
     }
 
     findFather = {
       ...findFather,
-      MontoCausado: sumaCuenta(
-        ctaAjustada,
-        "MontoCausado",
-        "fatherId",
-        findFather.cuentaNo
-      ),
+      MontoMod: sumaCuenta(ctaAjustada, "MontoMod", "fatherId", findFather.cuentaNo),
     };
     ctaAjustada = [
       ...ctaAjustada.filter((ctaAj) => ctaAj.cuentaNo !== findFather.cuentaNo),
@@ -48,4 +43,4 @@ const cuentaCausado = (anoTrabajo) => {
   return ctaAjustada.sort(ordenCuenta);
 };
 
-module.exports = { cuentaCausado };
+module.exports = { cuentaModificacion };

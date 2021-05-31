@@ -1,5 +1,7 @@
 "use strict";
 
+const chalk = require("chalk");
+
 const ceroleft = (valor, cantidad) => {
   return valor.toString().padStart(cantidad, "0");
 };
@@ -11,12 +13,21 @@ const ordenCuentaDesc = (a, b) =>
   a.cuentaNo < b.cuentaNo ? 1 : a.cuentaNo > b.cuentaNo ? -1 : 0;
 
 const consolaPresup = (record) =>
-  `${record.cuentaNo} ${record.fatherId} ${record.Tipo !== "D" ? "---" : "==>"} ${
-    record.Descripcion
-  } -  ${record.Inicial}`;
+  `${chalk.blueBright(record.cuentaNo)} |${chalk.blue(record.fatherId)} |${
+    record.Tipo !== "D" ? "---" : "==>"
+  } |${chalk.yellow(record.Descripcion)} |${chalk.blue(record.Inicial)}`;
 
 const consolaCompromiso = (record) =>
-  `${record.cuentaNo} ${record.fatherId} --- ${record.Referencia} ${record.Observaciones} -  ${record.MontoComprometido}`;
+  `${record.cuentaNo} |${record.fatherId} |${record.Referencia} |${record.Observaciones}  |${record.MontoComprometido}`;
+
+const consolaCausado = (record) =>
+  `${record.cuentaNo} |${record.fatherId} |${record.Referencia} |${record.Observaciones}  |${record.MontoCausado}`;
+
+const consolaPagado = (record) =>
+  `${record.cuentaNo} |${record.fatherId} |${record.Referencia} |${record.Observaciones}  |${record.MontoPag}`;
+
+const consolaModif = (record) =>
+  `${record.cuentaNo} |${record.fatherId} |${record.TipoMod} |${record.Observaciones}  |${record.MontoMod}`;
 
 const numeroCuenta = (cta) =>
   `${ceroleft(cta.Part, 2)}.${ceroleft(cta.Gene, 2)}.${ceroleft(cta.Espe, 2)}.${ceroleft(
@@ -85,4 +96,7 @@ module.exports = {
   sumaCuenta,
   consolaCompromiso,
   consolaPresup,
+  consolaCausado,
+  consolaPagado,
+  consolaModif,
 };
