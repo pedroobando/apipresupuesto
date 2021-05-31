@@ -24,6 +24,28 @@ const numeroCuenta = (cta) =>
     2
   )}.${ceroleft(cta.Ordi, 3)}`;
 
+const numeroCuentaFather = (cta) =>
+  cta.Ordi > 0
+    ? numeroCuenta(cta).slice(0, -4) + ".000"
+    : cta.Ordi == 0 && cta.Sub > 0
+    ? numeroCuenta(cta).slice(0, -7) + ".00.000"
+    : cta.Ordi == 0 && cta.Sub == 0 && cta.Espe > 0
+    ? numeroCuenta(cta).slice(0, -10) + ".00.00.000"
+    : cta.Ordi == 0 && cta.Sub == 0 && cta.Espe == 0 && cta.Gene > 0
+    ? numeroCuenta(cta).slice(0, -13) + ".00.00.00.000"
+    : numeroCuenta(cta).slice(0, -13) + ".00.00.00.000";
+
+const numeroCuentaCreateFather = (cuentaNo = "01.01.01.01.001") =>
+  cuentaNo.slice(12, 0) >= "001"
+    ? cuentaNo.slice(0, -4) + ".000"
+    : cuentaNo.slice(9, -4) >= "01"
+    ? cuentaNo.slice(0, -7) + ".00.000"
+    : cuentaNo.slice(6, -7) >= "01"
+    ? cuentaNo.slice(0, -10) + ".00.00.000"
+    : cuentaNo.slice(3, -10) >= "01"
+    ? cuentaNo.slice(0, -13) + ".00.00.00.000"
+    : "00.00.00.00.000";
+
 const sumaCuenta = (laColleccion, amoutName, accountName, accountFather) => {
   var total = 0;
   laColleccion
@@ -49,16 +71,7 @@ const addCuentaNo = (laColleccion) =>
     ...cta,
     // cuentaId: `${cta.Año}.${numeroCuenta(cta)}`,
     cuentaNo: numeroCuenta(cta),
-    fatherId:
-      cta.Ordi > 0
-        ? numeroCuenta(cta).slice(0, -4) + ".000"
-        : cta.Ordi == 0 && cta.Sub > 0
-        ? numeroCuenta(cta).slice(0, -7) + ".00.000"
-        : cta.Ordi == 0 && cta.Sub == 0 && cta.Espe > 0
-        ? numeroCuenta(cta).slice(0, -10) + ".00.00.000"
-        : cta.Ordi == 0 && cta.Sub == 0 && cta.Espe == 0 && cta.Gene > 0
-        ? numeroCuenta(cta).slice(0, -13) + ".00.00.00.000"
-        : numeroCuenta(cta).slice(0, -13) + ".00.00.00.000",
+    fatherId: numeroCuentaFather(cta),
   }));
 
 module.exports = {
@@ -66,6 +79,7 @@ module.exports = {
   ordenCuenta,
   ordenCuentaDesc,
   numeroCuenta,
+  numeroCuentaCreateFather,
   sumaPadre,
   addCuentaNo,
   sumaCuenta,
