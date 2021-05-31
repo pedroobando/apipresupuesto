@@ -16,7 +16,7 @@ const {
   consolaModif,
 } = require("./util");
 
-const AnoActivo = 2019;
+const AnoActivo = 2017;
 
 // Imprime la cuenta
 const ctaPresup = cuentaPresupuesto(AnoActivo).map((cta) => ({
