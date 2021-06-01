@@ -1,4 +1,4 @@
-const cuentaOriginal = require("../json/modificaciones.json");
+const cuentaOriginal = require("../../json/modificaciones.json");
 
 const {
   ordenCuenta,
@@ -25,6 +25,10 @@ const cuentaModificacion = (anoTrabajo) => {
         Referencia: "0000000",
         Observaciones: "<< CUENTA FALTANTE >>",
         MontoMod: 0,
+        Dia: 1,
+        Mes: 1,
+        Año: anoTrabajo,
+        TipoMod: "CF",
       };
       ctaAjustada = [...ctaAjustada, findFather];
     }

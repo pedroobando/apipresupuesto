@@ -1,4 +1,4 @@
-const cuentaOriginal = require("../json/cuentas.json");
+const cuentaOriginal = require("../../json/cuentas.json");
 
 const {
   ceroleft,

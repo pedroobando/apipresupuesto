@@ -1,4 +1,4 @@
-const cuentaOriginal = require("../json/comprometido.json");
+const cuentaOriginal = require("../../json/comprometido.json");
 
 const {
   ordenCuenta,
@@ -17,6 +17,7 @@ const cuentaCompromiso = (anoTrabajo) => {
 
   ctasDeGrupo.map((laCta) => {
     let findFather = ctaAjustadaComp.find((cta) => cta.cuentaNo == laCta.fatherId);
+    const notfindFather = !!findFather;
 
     if (!findFather) {
       findFather = {
@@ -25,6 +26,9 @@ const cuentaCompromiso = (anoTrabajo) => {
         Referencia: "0000000",
         Observaciones: "<< CUENTA FALTANTE >>",
         MontoComprometido: 0,
+        Dia: 31,
+        Mes: 12,
+        Año: anoTrabajo,
       };
       ctaAjustadaComp = [...ctaAjustadaComp, findFather];
     }
@@ -38,16 +42,11 @@ const cuentaCompromiso = (anoTrabajo) => {
         findFather.cuentaNo
       ),
     };
+
     ctaAjustadaComp = [
       ...ctaAjustadaComp.filter((ctaAj) => ctaAj.cuentaNo !== findFather.cuentaNo),
       findFather,
     ];
-
-    // else {
-    //   setTimeout(() => {
-    //     console.log(`${laCta.fatherId} - not found - Estas cuentas tienen que crearce`);
-    //   }, 2000);
-    // }
   });
 
   // Ordena de nuevo la cuenta

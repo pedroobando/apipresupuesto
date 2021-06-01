@@ -58,13 +58,13 @@ const numeroCuentaCreateFather = (cuentaNo = "01.01.01.01.001") =>
     : "00.00.00.00.000";
 
 const sumaCuenta = (laColleccion, amoutName, accountName, accountFather) => {
-  var total = 0;
+  var totSumaCuenta = 0;
   laColleccion
     .filter((item) => item[accountName] == accountFather)
     .forEach((element) => {
-      total += element[amoutName];
+      totSumaCuenta += element[amoutName];
     });
-  return total;
+  return totSumaCuenta;
 };
 
 const sumaPadre = (laColleccion, elPadre) => {

@@ -1,4 +1,4 @@
-const cuentaOriginal = require("../json/causado.json");
+const cuentaOriginal = require("../../json/causado.json");
 
 const {
   ordenCuenta,
@@ -25,6 +25,9 @@ const cuentaCausado = (anoTrabajo) => {
         Referencia: "0000000",
         Observaciones: "<< CUENTA FALTANTE >>",
         MontoCausado: 0,
+        Dia: 31,
+        Mes: 12,
+        Año: anoTrabajo,
       };
       ctaAjustada = [...ctaAjustada, findFather];
     }
