@@ -1,5 +1,4 @@
 const cuentaOriginal = require("../../json/comprometido.json");
-const cuentaPresup = require("../../json/cuentas.json");
 
 const {
   ordenCuenta,
@@ -8,49 +7,20 @@ const {
   sumaCuenta,
   numeroCuentaFather,
   numeroCuentaCreateFather,
+  verificarCuenta,
 } = require("./util");
 
-const verificarCuenta = (anoTrabajo) => {
-  let plantCuentas = cuentaPresup
-    .filter((cta) => cta.Año == anoTrabajo)
-    .sort(ordenCuenta);
-  let cuentaVerificar = cuentaOriginal
-    .filter((cta) => cta.Año == anoTrabajo)
-    .sort(ordenCuenta);
-
-  plantCuentas = addCuentaNo(plantCuentas);
-  cuentaVerificar = addCuentaNo(cuentaVerificar);
-
-  plantCuentas.map((ctaFind) => {
-    const cuentaExiste = cuentaVerificar.find(
-      (laCta) => laCta.cuentaNo == ctaFind.cuentaNo
-    );
-    if (!cuentaExiste) {
-      const findFather = {
-        cuentaNo: ctaFind.cuentaNo,
-        fatherId: numeroCuentaCreateFather(ctaFind.cuentaNo),
-        Referencia: "0000000",
-        Observaciones: ctaFind.Descripcion,
-        MontoComprometido: 0,
-        Dia: 31,
-        Mes: 12,
-        Año: anoTrabajo,
-      };
-      cuentaVerificar = [...cuentaVerificar, findFather];
-    }
-  });
-
-  return cuentaVerificar;
-};
-
 const cuentaCompromiso = (anoTrabajo) => {
-  const ctasPorAno = verificarCuenta(anoTrabajo).sort(ordenCuentaDesc);
+  const ctasPorAno = verificarCuenta(
+    anoTrabajo,
+    cuentaOriginal,
+    "MontoComprometido"
+  ).sort(ordenCuentaDesc);
 
-  let ctaAjustadaComp = ctasPorAno.sort(ordenCuenta);
+  let ctaAjustada = ctasPorAno.filter((cta) => cta.Año == anoTrabajo).sort(ordenCuenta);
 
   ctasPorAno.map((laCta) => {
-    let findFather = ctaAjustadaComp.find((cta) => cta.cuentaNo == laCta.fatherId);
-    const notfindFather = !!findFather;
+    let findFather = ctaAjustada.find((cta) => cta.cuentaNo == laCta.fatherId);
 
     if (!findFather) {
       findFather = {
@@ -59,31 +29,29 @@ const cuentaCompromiso = (anoTrabajo) => {
         Referencia: "0000000",
         Observaciones: "<< CUENTA FALTANTE >>",
         MontoComprometido: 0,
-        Dia: 31,
-        Mes: 12,
+        Dia: 01,
+        Mes: 01,
         Año: anoTrabajo,
       };
-      ctaAjustadaComp = [...ctaAjustadaComp, findFather];
+      ctaAjustada = [...ctaAjustada, findFather];
     }
 
     findFather = {
       ...findFather,
       MontoComprometido: sumaCuenta(
-        ctaAjustadaComp,
+        ctaAjustada,
         "MontoComprometido",
         "fatherId",
         findFather.cuentaNo
       ),
     };
-
-    ctaAjustadaComp = [
-      ...ctaAjustadaComp.filter((ctaAj) => ctaAj.cuentaNo !== findFather.cuentaNo),
+    ctaAjustada = [
+      ...ctaAjustada.filter((ctaAj) => ctaAj.cuentaNo !== findFather.cuentaNo),
       findFather,
     ];
   });
 
-  // Ordena de nuevo la cuenta
-  return ctaAjustadaComp.sort(ordenCuenta);
+  return ctaAjustada.sort(ordenCuenta);
 };
 
 module.exports = { cuentaCompromiso };

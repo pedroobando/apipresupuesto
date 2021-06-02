@@ -1,9 +1,9 @@
 "use strict";
-
 const chalk = require("chalk");
+const cuentaPresup = require("../../json/cuentas.json");
 
 const ceroleft = (valor, cantidad) => {
-  return valor.toString().padStart(cantidad, "0");
+  return valor?.toString().padStart(cantidad, "0");
 };
 
 const ordenCuenta = (a, b) =>
@@ -85,6 +85,39 @@ const addCuentaNo = (laColleccion) =>
     fatherId: numeroCuentaFather(cta),
   }));
 
+const verificarCuenta = (anoTrabajo, cuentaAVerificar, nombreMonto) => {
+  let plantCuentas = cuentaPresup
+    .filter((cta) => cta.Año == anoTrabajo)
+    .sort(ordenCuenta);
+  let cuentaVerificar = cuentaAVerificar
+    .filter((cta) => cta.Año == anoTrabajo)
+    .sort(ordenCuenta);
+
+  plantCuentas = addCuentaNo(plantCuentas);
+  cuentaVerificar = addCuentaNo(cuentaVerificar);
+
+  plantCuentas.map((ctaFind) => {
+    const cuentaExiste = cuentaVerificar.find(
+      (laCta) => laCta.cuentaNo == ctaFind.cuentaNo
+    );
+    if (!cuentaExiste) {
+      const findFather = {
+        cuentaNo: ctaFind.cuentaNo,
+        fatherId: numeroCuentaCreateFather(ctaFind.cuentaNo),
+        Referencia: "0000000",
+        Observaciones: ctaFind.Descripcion,
+        [nombreMonto]: 0,
+        Dia: 30,
+        Mes: 12,
+        Año: anoTrabajo,
+      };
+      cuentaVerificar = [...cuentaVerificar, findFather];
+    }
+  });
+
+  return cuentaVerificar;
+};
+
 module.exports = {
   ceroleft,
   ordenCuenta,
@@ -99,4 +132,5 @@ module.exports = {
   consolaCausado,
   consolaPagado,
   consolaModif,
+  verificarCuenta,
 };
