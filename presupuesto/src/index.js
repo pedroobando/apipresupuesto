@@ -19,6 +19,8 @@ const {
 
 const AnoActivo = 2017;
 
+const formatoFecha = (cta) =>
+  new Date(`${cta.Año}-${ceroleft(cta.Mes, 2)}-${ceroleft(cta.Dia, 2)}T00:01:40`);
 // Imprime la cuenta
 const ctaPresup = cuentaPresupuesto(AnoActivo).map((cta) => ({
   cuentaNo: cta.cuentaNo,
@@ -31,7 +33,7 @@ const ctaModifi = cuentaModificacion(AnoActivo).map((cta) => ({
   cuentaNo: cta.cuentaNo,
   cuentaGrupo: cta.fatherId,
   tipoModific: cta.TipoMod,
-  fecha: new Date(`${cta.Año}-${ceroleft(cta.Mes, 2)}-${ceroleft(cta.Dia, 2)}T00:01:40`),
+  fecha: formatoFecha(cta),
   Observacion: cta.Observaciones,
   Monto: cta.MontoMod,
 }));
@@ -41,9 +43,11 @@ const ctaCompromiso = cuentaCompromiso(AnoActivo).map((cta) => ({
   cuentaGrupo: cta.fatherId,
   referencia: cta.Referencia,
   correlativo: cta.CorrComp,
-  fecha: new Date(`${cta.Año}-${ceroleft(cta.Mes, 2)}-${ceroleft(cta.Dia, 2)}T00:01:40`),
+  fecha: formatoFecha(cta),
+  nombreCuenta: cta.nombreCuenta,
   Observacion: cta.Observaciones,
   Monto: cta.MontoComprometido,
+  // Nivel: cta.Nivel,
 }));
 
 const ctaCausado = cuentaCausado(AnoActivo).map((cta) => ({
@@ -51,7 +55,7 @@ const ctaCausado = cuentaCausado(AnoActivo).map((cta) => ({
   cuentaGrupo: cta.fatherId,
   referencia: cta.Referencia,
   correlativo: cta.CorrC,
-  fecha: new Date(`${cta.Año}-${ceroleft(cta.Mes, 2)}-${ceroleft(cta.Dia, 2)}T00:01:40`),
+  fecha: formatoFecha(cta),
   Observacion: cta.Observaciones,
   Monto: cta.MontoCausado,
 }));
@@ -61,7 +65,7 @@ const ctaPagado = cuentaPagado(AnoActivo).map((cta) => ({
   cuentaGrupo: cta.fatherId,
   referencia: cta.Referencia,
   correlativo: cta.CorrP,
-  fecha: new Date(`${cta.Año}-${ceroleft(cta.Mes, 2)}-${ceroleft(cta.Dia, 2)}T00:01:40`),
+  fecha: formatoFecha(cta),
   Observacion: cta.Observaciones,
   Monto: cta.MontoPag,
 }));

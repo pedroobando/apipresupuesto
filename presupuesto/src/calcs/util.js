@@ -85,11 +85,11 @@ const addCuentaNo = (laColleccion) =>
     fatherId: numeroCuentaFather(cta),
   }));
 
-const verificarCuenta = (anoTrabajo, cuentaAVerificar, nombreMonto) => {
+const verificarCuenta = (anoTrabajo, cuentaOrigen, nombreMonto) => {
   let plantCuentas = cuentaPresup
     .filter((cta) => cta.Año == anoTrabajo)
     .sort(ordenCuenta);
-  let cuentaVerificar = cuentaAVerificar
+  let cuentaVerificar = cuentaOrigen
     .filter((cta) => cta.Año == anoTrabajo)
     .sort(ordenCuenta);
 
@@ -97,7 +97,7 @@ const verificarCuenta = (anoTrabajo, cuentaAVerificar, nombreMonto) => {
   cuentaVerificar = addCuentaNo(cuentaVerificar);
 
   plantCuentas.map((ctaFind) => {
-    const cuentaExiste = cuentaVerificar.find(
+    let cuentaExiste = cuentaVerificar.find(
       (laCta) => laCta.cuentaNo == ctaFind.cuentaNo
     );
     if (!cuentaExiste) {
@@ -105,13 +105,25 @@ const verificarCuenta = (anoTrabajo, cuentaAVerificar, nombreMonto) => {
         cuentaNo: ctaFind.cuentaNo,
         fatherId: numeroCuentaCreateFather(ctaFind.cuentaNo),
         Referencia: "0000000",
-        Observaciones: ctaFind.Descripcion,
+        nombreCuenta: ctaFind.Descripcion,
+        Observaciones: "",
         [nombreMonto]: 0,
         Dia: 30,
         Mes: 12,
         Año: anoTrabajo,
+        Nivel: ctaFind.Nivel,
       };
       cuentaVerificar = [...cuentaVerificar, findFather];
+    } else {
+      cuentaExiste = {
+        ...cuentaExiste,
+        nombreCuenta: ctaFind.Descripcion,
+        Nivel: ctaFind.Nivel,
+      };
+      cuentaVerificar = [
+        ...cuentaVerificar.filter((cta) => cta.cuentaNo !== ctaFind.cuentaNo),
+        cuentaExiste,
+      ];
     }
   });
 

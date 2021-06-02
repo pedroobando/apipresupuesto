@@ -27,11 +27,13 @@ const cuentaCompromiso = (anoTrabajo) => {
         cuentaNo: laCta.fatherId,
         fatherId: numeroCuentaCreateFather(laCta.fatherId),
         Referencia: "0000000",
+        nombreCuenta: "<< CUENTA FALTANTE >>",
         Observaciones: "<< CUENTA FALTANTE >>",
         MontoComprometido: 0,
         Dia: 01,
         Mes: 01,
         Año: anoTrabajo,
+        Nivel: 1,
       };
       ctaAjustada = [...ctaAjustada, findFather];
     }
