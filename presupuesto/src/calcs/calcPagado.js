@@ -7,15 +7,17 @@ const {
   sumaCuenta,
   numeroCuentaFather,
   numeroCuentaCreateFather,
+  verificarCuenta,
 } = require("./util");
 
 const cuentaPagado = (anoTrabajo) => {
-  const cuenta = addCuentaNo(cuentaOriginal);
+  const ctasPorAno = verificarCuenta(anoTrabajo, cuentaOriginal, "MontoPag").sort(
+    ordenCuentaDesc
+  );
 
-  const ctasDeGrupo = cuenta.filter((cta) => cta.Año == anoTrabajo).sort(ordenCuentaDesc);
-  let ctaAjustada = cuenta.filter((cta) => cta.Año == anoTrabajo).sort(ordenCuenta);
+  let ctaAjustada = ctasPorAno.filter((cta) => cta.Año == anoTrabajo).sort(ordenCuenta);
 
-  ctasDeGrupo.map((laCta) => {
+  ctasPorAno.map((laCta) => {
     let findFather = ctaAjustada.find((cta) => cta.cuentaNo == laCta.fatherId);
 
     if (!findFather) {
@@ -23,11 +25,13 @@ const cuentaPagado = (anoTrabajo) => {
         cuentaNo: laCta.fatherId,
         fatherId: numeroCuentaCreateFather(laCta.fatherId),
         Referencia: "0000000",
+        nombreCuenta: "<< CUENTA FALTANTE >>",
         Observaciones: "<< CUENTA FALTANTE >>",
         MontoPag: 0,
-        Dia: 31,
-        Mes: 12,
+        Dia: 01,
+        Mes: 01,
         Año: anoTrabajo,
+        Nivel: 1,
       };
       ctaAjustada = [...ctaAjustada, findFather];
     }
@@ -41,8 +45,6 @@ const cuentaPagado = (anoTrabajo) => {
       findFather,
     ];
   });
-
-  // Ordena de nuevo la cuenta
   return ctaAjustada.sort(ordenCuenta);
 };
 
