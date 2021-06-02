@@ -5,7 +5,7 @@ const XLSX = require("xlsx");
 
 const { cuentaPresupuesto } = require("./calcs/calcPresupueto");
 const { cuentaModificacion } = require("./calcs/calcModificacion");
-const { cuentaCompromiso } = require("./calcs/calcCompromiso");
+const { cuentaCompromiso, verificarCuenta } = require("./calcs/calcCompromiso");
 const { cuentaCausado } = require("./calcs/calcCausado");
 const { cuentaPagado } = require("./calcs/calcPagado");
 
@@ -66,6 +66,16 @@ const ctaPagado = cuentaPagado(AnoActivo).map((cta) => ({
   Monto: cta.MontoPag,
 }));
 
+// const ctaVerficar = verificarCuenta(AnoActivo).map((cta) => ({
+//   cuentaNo: cta.cuentaNo,
+//   cuentaGrupo: cta.fatherId,
+//   referencia: cta.Referencia,
+//   correlativo: cta.CorrP,
+//   fecha: new Date(`${cta.Año}-${ceroleft(cta.Mes, 2)}-${ceroleft(cta.Dia, 2)}T00:01:40`),
+//   Observacion: cta.Observaciones,
+//   Monto: cta.MontoComprometido,
+// }));
+
 // const ctaCompro = cuentaCompromiso(AnoActivo).map((cta) =>
 //   console.log(consolaCompromiso(cta))
 // );
@@ -117,12 +127,16 @@ const hojaCausado = XLSX.utils.json_to_sheet(ctaCausado, formatoCellDate);
 const hojaPagado = XLSX.utils.json_to_sheet(ctaPagado, formatoCellDate);
 const hojaEjecucion = XLSX.utils.json_to_sheet(ctaEjecucion, formatoCellDate);
 
+// const hojaVerificar = XLSX.utils.json_to_sheet(ctaVerficar, formatoCellDate);
+
 XLSX.utils.book_append_sheet(libroExcel, hojaPresupuesto, `Presupuesto ${AnoActivo}`);
 XLSX.utils.book_append_sheet(libroExcel, hojaModificacion, `Modificaciones ${AnoActivo}`);
 XLSX.utils.book_append_sheet(libroExcel, hojaComprometido, `Comprometido ${AnoActivo}`);
 XLSX.utils.book_append_sheet(libroExcel, hojaCausado, `Causado ${AnoActivo}`);
 XLSX.utils.book_append_sheet(libroExcel, hojaPagado, `Pagado ${AnoActivo}`);
 XLSX.utils.book_append_sheet(libroExcel, hojaEjecucion, `Ejecucion ${AnoActivo}`);
+
+// XLSX.utils.book_append_sheet(libroExcel, hojaVerificar, `Verificacion ${AnoActivo}`);
 
 XLSX.writeFile(libroExcel, `./presupuesto_${AnoActivo}.xlsx`);
 

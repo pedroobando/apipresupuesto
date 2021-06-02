@@ -14,12 +14,14 @@ const {
 
 // Cuentas de Presupuesto
 const cuentaPresupuesto = (anoTrabajo) => {
-  const cuenta = addCuentaNo(cuentaOriginal);
+  const ctasPorAno = addCuentaNo(
+    cuentaOriginal.filter((cta) => cta.Año == anoTrabajo).sort(ordenCuentaDesc)
+  );
+  let ctaAjustada = addCuentaNo(
+    cuentaOriginal.filter((cta) => cta.Año == anoTrabajo).sort(ordenCuentaDesc)
+  );
 
-  const ctasDeGrupo = cuenta.filter((cta) => cta.Año == anoTrabajo).sort(ordenCuentaDesc);
-  let ctaAjustada = cuenta.filter((cta) => cta.Año == anoTrabajo).sort(ordenCuentaDesc);
-
-  ctasDeGrupo.map(
+  ctasPorAno.map(
     (laCta) => {
       let findFather = ctaAjustada.find((cta) => cta.cuentaNo == laCta.fatherId);
 
