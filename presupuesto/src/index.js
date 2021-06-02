@@ -34,8 +34,10 @@ const ctaModifi = cuentaModificacion(AnoActivo).map((cta) => ({
   cuentaGrupo: cta.fatherId,
   tipoModific: cta.TipoMod,
   fecha: formatoFecha(cta),
+  nombreCuenta: cta.nombreCuenta,
   Observacion: cta.Observaciones,
   Monto: cta.MontoMod,
+  // Nivel: cta.Nivel,
 }));
 
 const ctaCompromiso = cuentaCompromiso(AnoActivo).map((cta) => ({
@@ -58,6 +60,7 @@ const ctaCausado = cuentaCausado(AnoActivo).map((cta) => ({
   fecha: formatoFecha(cta),
   Observacion: cta.Observaciones,
   Monto: cta.MontoCausado,
+  // Nivel: cta.Nivel,
 }));
 
 const ctaPagado = cuentaPagado(AnoActivo).map((cta) => ({
@@ -68,6 +71,7 @@ const ctaPagado = cuentaPagado(AnoActivo).map((cta) => ({
   fecha: formatoFecha(cta),
   Observacion: cta.Observaciones,
   Monto: cta.MontoPag,
+  // Nivel: cta.Nivel,
 }));
 
 // const ctaVerficar = verificarCuenta(AnoActivo).map((cta) => ({

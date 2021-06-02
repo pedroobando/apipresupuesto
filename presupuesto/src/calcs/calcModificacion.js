@@ -7,15 +7,17 @@ const {
   sumaCuenta,
   numeroCuentaFather,
   numeroCuentaCreateFather,
+  verificarCuenta,
 } = require("./util");
 
 const cuentaModificacion = (anoTrabajo) => {
-  const cuenta = addCuentaNo(cuentaOriginal);
+  const ctasPorAno = verificarCuenta(anoTrabajo, cuentaOriginal, "MontoMod").sort(
+    ordenCuentaDesc
+  );
 
-  const ctasDeGrupo = cuenta.filter((cta) => cta.Año == anoTrabajo).sort(ordenCuentaDesc);
-  let ctaAjustada = cuenta.filter((cta) => cta.Año == anoTrabajo).sort(ordenCuenta);
+  let ctaAjustada = ctasPorAno.filter((cta) => cta.Año == anoTrabajo).sort(ordenCuenta);
 
-  ctasDeGrupo.map((laCta) => {
+  ctasPorAno.map((laCta) => {
     let findFather = ctaAjustada.find((cta) => cta.cuentaNo == laCta.fatherId);
 
     if (!findFather) {
@@ -23,12 +25,14 @@ const cuentaModificacion = (anoTrabajo) => {
         cuentaNo: laCta.fatherId,
         fatherId: numeroCuentaCreateFather(laCta.fatherId),
         Referencia: "0000000",
+        nombreCuenta: "<< CUENTA FALTANTE >>",
         Observaciones: "<< CUENTA FALTANTE >>",
         MontoMod: 0,
-        Dia: 1,
-        Mes: 1,
+        Dia: 01,
+        Mes: 01,
         Año: anoTrabajo,
         TipoMod: "CF",
+        Nivel: 1,
       };
       ctaAjustada = [...ctaAjustada, findFather];
     }
@@ -42,9 +46,45 @@ const cuentaModificacion = (anoTrabajo) => {
       findFather,
     ];
   });
-
-  // Ordena de nuevo la cuenta
   return ctaAjustada.sort(ordenCuenta);
 };
+
+// const cuentaModificacion = (anoTrabajo) => {
+//   const cuenta = addCuentaNo(cuentaOriginal);
+
+//   const ctasDeGrupo = cuenta.filter((cta) => cta.Año == anoTrabajo).sort(ordenCuentaDesc);
+//   let ctaAjustada = cuenta.filter((cta) => cta.Año == anoTrabajo).sort(ordenCuenta);
+
+//   ctasDeGrupo.map((laCta) => {
+//     let findFather = ctaAjustada.find((cta) => cta.cuentaNo == laCta.fatherId);
+
+//     if (!findFather) {
+//       findFather = {
+//         cuentaNo: laCta.fatherId,
+//         fatherId: numeroCuentaCreateFather(laCta.fatherId),
+//         Referencia: "0000000",
+//         Observaciones: "<< CUENTA FALTANTE >>",
+//         MontoMod: 0,
+//         Dia: 1,
+//         Mes: 1,
+//         Año: anoTrabajo,
+//         TipoMod: "CF",
+//       };
+//       ctaAjustada = [...ctaAjustada, findFather];
+//     }
+
+//     findFather = {
+//       ...findFather,
+//       MontoMod: sumaCuenta(ctaAjustada, "MontoMod", "fatherId", findFather.cuentaNo),
+//     };
+//     ctaAjustada = [
+//       ...ctaAjustada.filter((ctaAj) => ctaAj.cuentaNo !== findFather.cuentaNo),
+//       findFather,
+//     ];
+//   });
+
+//   // Ordena de nuevo la cuenta
+//   return ctaAjustada.sort(ordenCuenta);
+// };
 
 module.exports = { cuentaModificacion };
