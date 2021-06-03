@@ -40,19 +40,21 @@ const getModificado = async (req, res = response) => {
   try {
     const resultPresup = await query(
       cnndb,
-      `Select * from Modificaciones where Año >= ${year} and Año <= ${year} ${orderBy}`
+      `Select * from Cuentas where Año >= ${year} and Año <= ${year} ${orderBy}`
     );
     const resultModif = await query(
       cnndb,
       `Select * from Modificaciones where Año >= ${year} and Año <= ${year} ${orderBy}`
     );
-    const resultCuenta = await cuentaModificacion(resultPresup, resultModif);
+    const resultCuenta = cuentaModificacion(resultPresup, resultModif);
     return res.status(200).json(resultCuenta);
   } catch (error) {
+    console.log(error);
     res.status(500).json({
       ok: false,
       data: {
         message: 'Consulte con el administrador',
+        modulo: 'getModificado',
       },
       error,
     });

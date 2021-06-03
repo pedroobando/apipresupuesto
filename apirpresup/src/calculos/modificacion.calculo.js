@@ -1,16 +1,12 @@
 const {
   ordenCuenta,
   ordenCuentaDesc,
-  addCuentaNo,
   sumaCuenta,
   verificarCuenta,
   numeroCuentaCreateFather,
 } = require('../helpers/utilCuentas');
 
 const cuentaModificacion = (cuentaPresup, cuentaRevisar) => {
-  // const ctasPorAno = addCuentaNo(cuentaOriginal).sort(ordenCuentaDesc);
-  // let ctaAjustada = addCuentaNo(cuentaOriginal).sort(ordenCuentaDesc);
-
   const ctasPorAno = verificarCuenta(cuentaPresup, cuentaRevisar, 'MontoMod').sort(
     ordenCuentaDesc
   );
@@ -30,7 +26,7 @@ const cuentaModificacion = (cuentaPresup, cuentaRevisar) => {
         MontoMod: 0,
         Dia: 01,
         Mes: 01,
-        Año: anoTrabajo,
+        Año: laCta.Año,
         TipoMod: 'CF',
         Nivel: 1,
       };
