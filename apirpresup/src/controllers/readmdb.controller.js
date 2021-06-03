@@ -2,6 +2,7 @@ const { response } = require('express');
 const { cuentaCausado } = require('../calculos/causado.calculo');
 const { cuentaCompromiso } = require('../calculos/compromiso.calculo');
 const { cuentaModificacion } = require('../calculos/modificacion.calculo');
+const { cuentaPagado } = require('../calculos/pagado.calculo');
 const { cuentaPresupuesto } = require('../calculos/presupuesto.calculo');
 
 const { query } = require('../database/dbcnn');
@@ -108,7 +109,7 @@ const getCausado = async (req, res = response) => {
       ok: false,
       data: {
         message: 'Consulte con el administrador',
-        modulo: 'getCompromiso',
+        modulo: 'getCausado',
       },
       error,
     });
@@ -118,14 +119,26 @@ const getCausado = async (req, res = response) => {
 const getPagado = async (req, res = response) => {
   const { year } = req.params;
   try {
-    resultJson = await query(
+    const resultPresup = await query(
+      cnndb,
+      `Select * from Cuentas where Año >= ${year} and Año <= ${year} ${orderBy}`
+    );
+    const resultPagado = await query(
       cnndb,
       `Select * from Pagos where Año >= ${year} and Año <= ${year} ${orderBy}`
     );
-
-    return res.status(200).json(resultJson);
+    const resultCuenta = cuentaPagado(resultPresup, resultPagado);
+    return res.status(200).json(resultCuenta);
   } catch (error) {
-    messageError();
+    console.log(error);
+    res.status(500).json({
+      ok: false,
+      data: {
+        message: 'Consulte con el administrador',
+        modulo: 'getPagado',
+      },
+      error,
+    });
   }
 };
 
