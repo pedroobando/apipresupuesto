@@ -1,6 +1,8 @@
 const ADODB = require('node-adodb');
 
 const query = async (cnndb, strSqlQuery) => {
+  // Persist Security Info=False;
+  // Jet OLEDB:Database Password=contralor;
   const connectdb = ADODB.open(
     `Provider=Microsoft.ACE.OLEDB.12.0;Data Source=${cnndb};Persist Security Info=False;`
   );

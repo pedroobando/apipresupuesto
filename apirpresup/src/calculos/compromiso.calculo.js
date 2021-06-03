@@ -6,8 +6,8 @@ const {
   numeroCuentaCreateFather,
 } = require('../helpers/utilCuentas');
 
-const cuentaComprometido = (cuentaPresup, cuentaRevisar) => {
-  const ctasPorAno = verificarCuenta(cuentaPresup, cuentaRevisar, 'MontoMod').sort(
+const cuentaCompromiso = (cuentaPresup, cuentaRevisar) => {
+  const ctasPorAno = verificarCuenta(cuentaPresup, cuentaRevisar, 'MontoComprometido').sort(
     ordenCuentaDesc
   );
 
@@ -23,7 +23,7 @@ const cuentaComprometido = (cuentaPresup, cuentaRevisar) => {
         Referencia: '0000000',
         nombreCuenta: '<< CUENTA FALTANTE >>',
         Observaciones: '<< CUENTA FALTANTE >>',
-        MontoMod: 0,
+        MontoComprometido: 0,
         Dia: 01,
         Mes: 01,
         Año: laCta.Año,
@@ -35,7 +35,12 @@ const cuentaComprometido = (cuentaPresup, cuentaRevisar) => {
 
     findFather = {
       ...findFather,
-      MontoMod: sumaCuenta(ctaAjustada, 'MontoMod', 'fatherId', findFather.cuentaNo),
+      MontoComprometido: sumaCuenta(
+        ctaAjustada,
+        'MontoComprometido',
+        'fatherId',
+        findFather.cuentaNo
+      ),
     };
     ctaAjustada = [
       ...ctaAjustada.filter((ctaAj) => ctaAj.cuentaNo !== findFather.cuentaNo),
@@ -45,4 +50,4 @@ const cuentaComprometido = (cuentaPresup, cuentaRevisar) => {
   return ctaAjustada.sort(ordenCuenta);
 };
 
-module.exports = { cuentaModificacion };
+module.exports = { cuentaCompromiso };

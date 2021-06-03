@@ -1,4 +1,6 @@
 const { response } = require('express');
+const { cuentaCausado } = require('../calculos/causado.calculo');
+const { cuentaCompromiso } = require('../calculos/compromiso.calculo');
 const { cuentaModificacion } = require('../calculos/modificacion.calculo');
 const { cuentaPresupuesto } = require('../calculos/presupuesto.calculo');
 
@@ -61,29 +63,55 @@ const getModificado = async (req, res = response) => {
   }
 };
 
-const getComprometido = async (req, res = response) => {
+const getCompromiso = async (req, res = response) => {
   const { year } = req.params;
   try {
-    resultJson = await query(
+    const resultPresup = await query(
+      cnndb,
+      `Select * from Cuentas where Año >= ${year} and Año <= ${year} ${orderBy}`
+    );
+    const resultCompromiso = await query(
       cnndb,
       `Select * from Comprometido where Año >= ${year} and Año <= ${year} ${orderBy}`
     );
-    return res.status(200).json(resultJson);
+    const resultCuenta = cuentaCompromiso(resultPresup, resultCompromiso);
+    return res.status(200).json(resultCuenta);
   } catch (error) {
-    messageError();
+    console.log(error);
+    res.status(500).json({
+      ok: false,
+      data: {
+        message: 'Consulte con el administrador',
+        modulo: 'getCompromiso',
+      },
+      error,
+    });
   }
 };
 
 const getCausado = async (req, res = response) => {
   const { year } = req.params;
   try {
-    resultJson = await query(
+    const resultPresup = await query(
+      cnndb,
+      `Select * from Cuentas where Año >= ${year} and Año <= ${year} ${orderBy}`
+    );
+    const resultCausado = await query(
       cnndb,
       `Select * from Causado where Año >= ${year} and Año <= ${year} ${orderBy}`
     );
-    return res.status(200).json(resultJson);
+    const resultCuenta = cuentaCausado(resultPresup, resultCausado);
+    return res.status(200).json(resultCuenta);
   } catch (error) {
-    messageError();
+    console.log(error);
+    res.status(500).json({
+      ok: false,
+      data: {
+        message: 'Consulte con el administrador',
+        modulo: 'getCompromiso',
+      },
+      error,
+    });
   }
 };
 
@@ -101,4 +129,4 @@ const getPagado = async (req, res = response) => {
   }
 };
 
-module.exports = { getCuenta, getComprometido, getCausado, getModificado, getPagado };
+module.exports = { getCuenta, getCompromiso, getCausado, getModificado, getPagado };
