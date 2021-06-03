@@ -1,45 +1,63 @@
-const { response } = require("express");
+const { response } = require('express');
+const { cuentaModificacion } = require('../calculos/modificacion.calculo');
+const { cuentaPresupuesto } = require('../calculos/presupuesto.calculo');
 
-const { query } = require("../database/dbcnn");
+const { query } = require('../database/dbcnn');
 
-const cnndb = "./PresupuestoData2013.accdb";
-const orderBy = "ORDER BY Año, Part, Gene, Espe, Sub";
+const cnndb = './PresupuestoData2013.accdb';
+const orderBy = 'ORDER BY Año, Part, Gene, Espe, Sub';
 
-const prefile = "./json";
-
-const messageError=()=>res.status(500).json({
-  ok: false,
-  data: {
-    message: "Consulte con el administrador",
-  },
-});
+const messageError = () =>
+  res.status(500).json({
+    ok: false,
+    data: {
+      message: 'Consulte con el administrador',
+    },
+  });
 
 const getCuenta = async (req, res = response) => {
   const { year } = req.params;
   try {
-    resultJson = await query(
+    const resultJson = await query(
       cnndb,
       `Select * from Cuentas where Año >= ${year} and Año <= ${year} ${orderBy}`
     );
-    return res.status(200).json(resultJson);
+    const resultCuenta = cuentaPresupuesto(resultJson);
+    return res.status(200).json(resultCuenta);
   } catch (error) {
-    messageError();
+    res.status(500).json({
+      ok: false,
+      data: {
+        message: 'Consulte con el administrador',
+      },
+      error,
+    });
   }
 };
 
-const getModificacion = async (req, res = response) => {
+const getModificado = async (req, res = response) => {
   const { year } = req.params;
   try {
-    resultJson = await query(
+    const resultPresup = await query(
       cnndb,
       `Select * from Modificaciones where Año >= ${year} and Año <= ${year} ${orderBy}`
     );
-    return res.status(200).json(resultJson);
+    const resultModif = await query(
+      cnndb,
+      `Select * from Modificaciones where Año >= ${year} and Año <= ${year} ${orderBy}`
+    );
+    const resultCuenta = await cuentaModificacion(resultPresup, resultModif);
+    return res.status(200).json(resultCuenta);
   } catch (error) {
-    messageError();
+    res.status(500).json({
+      ok: false,
+      data: {
+        message: 'Consulte con el administrador',
+      },
+      error,
+    });
   }
 };
-
 
 const getComprometido = async (req, res = response) => {
   const { year } = req.params;
@@ -54,7 +72,6 @@ const getComprometido = async (req, res = response) => {
   }
 };
 
-
 const getCausado = async (req, res = response) => {
   const { year } = req.params;
   try {
@@ -68,7 +85,6 @@ const getCausado = async (req, res = response) => {
   }
 };
 
-
 const getPagado = async (req, res = response) => {
   const { year } = req.params;
   try {
@@ -76,10 +92,11 @@ const getPagado = async (req, res = response) => {
       cnndb,
       `Select * from Pagos where Año >= ${year} and Año <= ${year} ${orderBy}`
     );
+
     return res.status(200).json(resultJson);
   } catch (error) {
     messageError();
   }
 };
 
-module.exports = { getCuenta, getComprometido,getCausado,getModificacion,getPagado };
+module.exports = { getCuenta, getComprometido, getCausado, getModificado, getPagado };

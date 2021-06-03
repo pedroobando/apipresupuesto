@@ -1,23 +1,24 @@
-const ADODB = require("node-adodb");
+const ADODB = require('node-adodb');
 
 const query = async (cnndb, strSqlQuery) => {
   const connectdb = ADODB.open(
     `Provider=Microsoft.ACE.OLEDB.12.0;Data Source=${cnndb};Persist Security Info=False;`
   );
-    
-  let respConsulta=null;
+
+  let respConsulta = null;
   try {
-    const cuentas = await connectdb.query(strSqlQuery);
-     respConsulta = await JSON.stringify(cuentas, null, 2);
+    respConsulta = await connectdb.query(strSqlQuery);
+    //  = cuentas; // await JSON.parse(cuentas);
+    // respConsulta = await JSON.stringify(cuentas, null, 2);
   } catch (error) {
-    respConsulta={
+    respConsulta = {
       ok: false,
       data: {
-        message: "Consulte con el administrador",
+        message: 'Consulte con el administrador - query()',
       },
-      error
-    }
-  } finally{
+      error,
+    };
+  } finally {
     return respConsulta;
   }
 };

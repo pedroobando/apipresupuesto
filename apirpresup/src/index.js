@@ -1,4 +1,3 @@
-// import '@babel/polyfill';
 const { serve, thePort } = require('./serve');
 
 const main = () => {
