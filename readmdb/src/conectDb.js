@@ -1,6 +1,3 @@
-'use strict';
-'use strict';
-
 const ADODB = require('node-adodb');
 
 const query = async (cnndb, strSqlQuery) => {
