@@ -39,12 +39,16 @@ Lee una base de datos de Microsoft Access 2007 -
 ```
 
 ```bash
-  Conductores
+  Entrega el causado
+  http:localhost:4000/api/presupuesto/causado/:year
 ```
 
-## Objetos Json
+```bash
+  Entrega el pagado
+  http:localhost:4000/api/presupuesto/pagado/:year
+```
 
-## kill process active
+## kill process active - otra informacion
 
 ```bash
 # Primero, querrá saber qué proceso está utilizando el puerto 3000
@@ -52,46 +56,6 @@ $ sudo lsof -i :3000
 
 # Esto enumerará todos los PID que escuchan en este puerto, una vez que tenga el PID puede terminarlo:
 $ kill -9 {PID}
-```
-
-## Guias Varias
-
-[Guia Conexion serial ttl](https://ubuntuperonista.blogspot.com/2017/09/como-me-conecto-traves-de-conexion-serial-ttl-ubuntu.html), [Guia de serialport](https://github.com/node-serialport/node-serialport#readme)
-
-## Guia de SerialPort
-
-```bash
-# Muestra los puertos USB
-  $ dmesg | grep tty
-
-# Activa los permisos para lectura puerto
-  $ sudo chmod a+rw /dev/ttyACM0
-```
-
-## Guia Docker
-
-```bash
-# Crear la imagen
-  $ docker build -t backendsalidaimg .
-
-# Crear el contenedor
-# puerto_expuesto: puerto_interno
-# -it: modo interactivo
-# -d: modo deployment
-  $ docker run --name backendsalida -it -d --restart always -p 4001:4000 backendsalidaimg
-
-# Guida de node Docker
-  https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
-
-# Entrar a un contenedor
-  $ docker exec -i -t contenedorId /bin/bash #
-  $ docker exec -i -t contenedorId /bin/sh # <= alpine
-
-# Extraer la base datos del contenedor
-  $ docker cp contenedorId:/app/logisticadb.sqlite  .
-
-# Copiar archivo al contenedor
-  $ docker cp nombredelarchivo  contenedorId:/rutadestino
 ```
 
 ## License
