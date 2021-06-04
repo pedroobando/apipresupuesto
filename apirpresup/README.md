@@ -1,35 +1,41 @@
-# apisalidas
+# apipresupuesto
 
 ## Description
 
-Aplicacion backend de creacion de tickes de salida de materiales o equipos, lleva el control de las personas, transporte y tiempo que permanecen los equipos afuera.
+Lee una base de datos de Microsoft Access 2007 -
 
 ## La base de datos
 
 ```bash
-  # mongo local
-  con solo este comando creeamos la base de datos en un contenedor.
-  $ docker run --name mongodb -it -d --restart always -p 27017:27017 mongo:4.2-bionic
+  # Microsoft Access 2007
 
-  # mongo
-  base de datos es Mongo, la cual se ejecuta desde un contenidor Docker.
-  mediante el comando,
-  $ docker-compose up
+  Las tablas que se encuentran en la base de datos.
 
-  # docker-compose.yml
-  Contiene la configuracion del contenedor docker y mongo,
-  instala de una ves la base de datos y la aplicacion mongo-express,
-  permitiendo administrar de forma grafica el servidor de base de datos.
+  - Cuenta: Contiene las cuentas del presupuesto
+  - Modificaciones: Modificaciones, reformulaciones y traslados de partida
+  - Comprometido: Son la planificiacion del presupuesto a cancelar
+  - Causado: El comprometido, ya fue asignado a un ente o individuo, esperando por pago.
+  - Pagado: Es la cancelacion del causado, mediante un instrumento de pago.
+  - Usuario: Usuario como lo indica.
+
+  Nombre: PresupuestoData2013.accdb
 ```
-
-## Mongodb-compass
-
-[Mongodb-Compass](https://www.mongodb.com/products/compass) esta aplicacion nos permite conectarnos a la base de datos.
 
 ## rutas
 
 ```bash
-  Usuarios
+  Entrega el presupuesto
+  http:localhost:4000/api/presupuesto/cuenta/:year
+```
+
+```bash
+  Entrega las modificaciones
+  http:localhost:4000/api/presupuesto/modificado/:year
+```
+
+```bash
+  Entrega el comprometido
+  http:localhost:4000/api/presupuesto/compromiso/:year
 ```
 
 ```bash

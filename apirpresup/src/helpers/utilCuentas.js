@@ -45,15 +45,15 @@ const sumaCuenta = (laColleccion, amoutName, accountName, accountFather) => {
   return totSumaCuenta;
 };
 
-const sumaPadre = (laColleccion, elPadre) => {
-  var total = 0;
-  laColleccion
-    .filter((item) => item.fatherId == elPadre)
-    .forEach((element) => {
-      total += element.Inicial;
-    });
-  return total;
-};
+// const sumaPadre = (laColleccion, elPadre) => {
+//   var total = 0;
+//   laColleccion
+//     .filter((item) => item.fatherId == elPadre)
+//     .forEach((element) => {
+//       total += element.Inicial;
+//     });
+//   return total;
+// };
 
 const addCuentaNo = (laColleccion) =>
   laColleccion.map((cta) => ({
@@ -107,7 +107,6 @@ module.exports = {
   ordenCuentaDesc,
   numeroCuenta,
   numeroCuentaCreateFather,
-  sumaPadre,
   addCuentaNo,
   sumaCuenta,
   verificarCuenta,
