@@ -1,10 +1,11 @@
 {
   "name": "apireadado",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
+  "main": "src/convertJson.js",
   "scripts": {
-    "json": "node src/convertJson.js",
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon .",
+    "start": "node ."
   },
   "keywords": [],
   "author": "Pedro Obando",
