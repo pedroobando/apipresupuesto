@@ -1,5 +1,4 @@
 const { response } = require('express');
-const XLSX = require('xlsx');
 
 const { cuentaCausado } = require('../calculos/causado.calculo');
 const { cuentaCompromiso } = require('../calculos/compromiso.calculo');
