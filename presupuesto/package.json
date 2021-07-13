@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "dev": "nodemon src/index.js",
-    "dev2": "node src/index.js"
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "Pedro Obando",

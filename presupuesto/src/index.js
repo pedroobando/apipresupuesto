@@ -7,7 +7,7 @@ const { cuentaCompromiso } = require("./calcs/calcCompromiso");
 const { cuentaCausado } = require("./calcs/calcCausado");
 const { cuentaPagado } = require("./calcs/calcPagado");
 
-const AnoActivo = 2019;
+const AnoActivo = 2017;
 
 const formatoFecha = (cta) =>
   new Date(`${cta.Año}-${ceroleft(cta.Mes, 2)}-${ceroleft(cta.Dia, 2)}T00:01:40`);
