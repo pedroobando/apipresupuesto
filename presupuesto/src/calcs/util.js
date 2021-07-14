@@ -6,8 +6,7 @@ const ceroleft = (valor, cantidad) => {
   return valor?.toString().padStart(cantidad, "0");
 };
 
-const ordenCuenta = (a, b) =>
-  a.cuentaNo > b.cuentaNo ? 1 : a.cuentaNo < b.cuentaNo ? -1 : 0;
+const ordenCuenta = (a, b) => (a.cuentaNo > b.cuentaNo ? 1 : a.cuentaNo < b.cuentaNo ? -1 : 0);
 
 const ordenCuentaDesc = (a, b) =>
   a.cuentaNo < b.cuentaNo ? 1 : a.cuentaNo > b.cuentaNo ? -1 : 0;
@@ -85,21 +84,20 @@ const addCuentaNo = (laColleccion) =>
     fatherId: numeroCuentaFather(cta),
   }));
 
-const verificarCuenta = (anoTrabajo, cuentaOrigen, nombreMonto) => {
-  let plantCuentas = cuentaPresup
-    .filter((cta) => cta.Año == anoTrabajo)
-    .sort(ordenCuenta);
-  let cuentaVerificar = cuentaOrigen
-    .filter((cta) => cta.Año == anoTrabajo)
-    .sort(ordenCuenta);
+const verificarCuenta = (anoTrabajo, cuentaOrigen, nombreMonto, mesTrabajo = 12) => {
+  let nuevaCuentaVerifica = [];
+  let plantCuentas = addCuentaNo(cuentaPresup.filter((cta) => cta.Año == anoTrabajo)).sort(
+    ordenCuenta
+  );
+  let cuentaVerificar = addCuentaNo(
+    cuentaOrigen.filter((cta) => cta.Año == anoTrabajo && cta.Mes <= mesTrabajo)
+  ).sort(ordenCuenta);
 
-  plantCuentas = addCuentaNo(plantCuentas);
-  cuentaVerificar = addCuentaNo(cuentaVerificar);
+  // plantCuentas = addCuentaNo(plantCuentas);
+  // cuentaVerificar = addCuentaNo(cuentaVerificar);
 
   plantCuentas.map((ctaFind) => {
-    let cuentaExiste = cuentaVerificar.find(
-      (laCta) => laCta.cuentaNo == ctaFind.cuentaNo
-    );
+    let cuentaExiste = cuentaVerificar.find((laCta) => laCta.cuentaNo == ctaFind.cuentaNo);
     if (!cuentaExiste) {
       const findFather = {
         cuentaNo: ctaFind.cuentaNo,
@@ -108,8 +106,8 @@ const verificarCuenta = (anoTrabajo, cuentaOrigen, nombreMonto) => {
         nombreCuenta: ctaFind.Descripcion,
         Observaciones: "",
         [nombreMonto]: 0,
-        Dia: 30,
-        Mes: 12,
+        Dia: 1,
+        Mes: mesTrabajo,
         Año: anoTrabajo,
         Nivel: ctaFind.Nivel,
       };
@@ -126,6 +124,16 @@ const verificarCuenta = (anoTrabajo, cuentaOrigen, nombreMonto) => {
       ];
     }
   });
+
+  // let totalx = 0;
+  // plantCuentas.map((ctaFind) => {
+  //   totalx = cuentaVerificar.reduce((prev, curr) =>
+  //     prev + ctaFind.cuentaNo === curr.cuentaNo ? curr[nombreMonto] : 0
+  //   );
+  //   nuevaCuentaVerifica = [...nuevaCuentaVerifica, { ...ctaFind, [nombreMonto]: totalx }];
+
+  //   // let cuentaExiste = cuentaVerificar.find((laCta) => laCta.cuentaNo == ctaFind.cuentaNo);
+  // });
 
   return cuentaVerificar;
 };

@@ -1,5 +1,6 @@
 const cuentaOriginal = require("../../json/comprometido.json");
-
+const cuentaPresupuerto = require("../../json/cuentas.json");
+const fse = require("fs-extra");
 const {
   ordenCuenta,
   ordenCuentaDesc,
@@ -10,50 +11,34 @@ const {
   verificarCuenta,
 } = require("./util");
 
-const cuentaCompromiso = (anoTrabajo) => {
-  const ctasPorAno = verificarCuenta(
-    anoTrabajo,
-    cuentaOriginal,
-    "MontoComprometido"
+const cuentaCompromiso = (anoTrabajo, mesTrabajo = 12) => {
+  const ctasPorAno = addCuentaNo(
+    cuentaPresupuerto.filter((cta) => cta.Año == anoTrabajo)
   ).sort(ordenCuentaDesc);
 
-  let ctaAjustada = ctasPorAno.filter((cta) => cta.Año == anoTrabajo).sort(ordenCuenta);
+  let ctaAjustada = addCuentaNo(
+    cuentaOriginal.filter((cta) => cta.Año == anoTrabajo && cta.Mes <= mesTrabajo)
+  ).sort(ordenCuentaDesc);
 
+  let ctaAjustadaII = [];
   ctasPorAno.map((laCta) => {
-    let findFather = ctaAjustada.find((cta) => cta.cuentaNo == laCta.fatherId);
+    const sumCtaTotal = ctaAjustada.reduce((prev, curr) => {
+      return prev + (laCta.cuentaNo === curr.cuentaNo ? curr.MontoComprometido : 0);
+    }, 0);
+    ctaAjustadaII = [...ctaAjustadaII, { ...laCta, MontoComprometido: sumCtaTotal }];
 
-    if (!findFather) {
-      findFather = {
-        cuentaNo: laCta.fatherId,
-        fatherId: numeroCuentaCreateFather(laCta.fatherId),
-        Referencia: "0000000",
-        nombreCuenta: "<< CUENTA FALTANTE >>",
-        Observaciones: "<< CUENTA FALTANTE >>",
-        MontoComprometido: 0,
-        Dia: 01,
-        Mes: 01,
-        Año: anoTrabajo,
-        Nivel: 1,
-      };
-      ctaAjustada = [...ctaAjustada, findFather];
+    const sumCtaTotalF = ctaAjustadaII.reduce((prev, curr) => {
+      return prev + (laCta.cuentaNo === curr.fatherId ? curr.MontoComprometido : 0);
+    }, 0);
+    if (sumCtaTotalF > 0) {
+      ctaAjustadaII = [
+        ...ctaAjustadaII.filter((ctaMod) => ctaMod.cuentaNo !== laCta.cuentaNo),
+        { ...laCta, MontoComprometido: sumCtaTotalF },
+      ];
     }
-
-    findFather = {
-      ...findFather,
-      MontoComprometido: sumaCuenta(
-        ctaAjustada,
-        "MontoComprometido",
-        "fatherId",
-        findFather.cuentaNo
-      ),
-    };
-    ctaAjustada = [
-      ...ctaAjustada.filter((ctaAj) => ctaAj.cuentaNo !== findFather.cuentaNo),
-      findFather,
-    ];
   });
-
-  return ctaAjustada.sort(ordenCuenta);
+  fse.writeJson("ctaAjustadaII.json", ctaAjustadaII);
+  return ctaAjustadaII.sort(ordenCuenta);
 };
 
 module.exports = { cuentaCompromiso };

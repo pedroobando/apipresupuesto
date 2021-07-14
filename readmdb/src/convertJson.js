@@ -2,7 +2,7 @@ const { query } = require('./conectDb');
 
 const fse = require('fs-extra');
 const cnndb = './src/PresupuestoData2013.accdb';
-const yearBegin = 2005;
+const yearBegin = 2010;
 const yearEnd = 2021;
 const orderBy = 'ORDER BY Año, Part, Gene, Espe, Sub';
 const prefile = './json';

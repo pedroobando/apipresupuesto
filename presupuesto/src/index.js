@@ -7,7 +7,8 @@ const { cuentaCompromiso } = require("./calcs/calcCompromiso");
 const { cuentaCausado } = require("./calcs/calcCausado");
 const { cuentaPagado } = require("./calcs/calcPagado");
 
-const AnoActivo = 2017;
+const AnoActivo = 2020;
+const MesActivo = 1;
 
 const formatoFecha = (cta) =>
   new Date(`${cta.Año}-${ceroleft(cta.Mes, 2)}-${ceroleft(cta.Dia, 2)}T00:01:40`);
@@ -19,25 +20,24 @@ const ctaPresup = cuentaPresupuesto(AnoActivo).map((cta) => ({
   Monto: cta.Inicial,
 }));
 
-const ctaModifi = cuentaModificacion(AnoActivo).map((cta) => ({
+const ctaModifi = cuentaModificacion(AnoActivo, MesActivo).map((cta) => ({
   cuentaNo: cta.cuentaNo,
   cuentaGrupo: cta.fatherId,
-  tipoModific: cta.TipoMod,
-  fecha: formatoFecha(cta),
-  nombreCuenta: cta.nombreCuenta,
-  Observacion: cta.Observaciones,
+  // tipoModific: cta.TipoMod,
+  // fecha: formatoFecha(cta),
+  nombreCuenta: cta.Descripcion,
   Monto: cta.MontoMod,
   // Nivel: cta.Nivel,
 }));
 
-const ctaCompromiso = cuentaCompromiso(AnoActivo).map((cta) => ({
+const ctaCompromiso = cuentaCompromiso(AnoActivo, MesActivo).map((cta) => ({
   cuentaNo: cta.cuentaNo,
   cuentaGrupo: cta.fatherId,
-  referencia: cta.Referencia,
-  correlativo: cta.CorrComp,
-  fecha: formatoFecha(cta),
-  nombreCuenta: cta.nombreCuenta,
-  Observacion: cta.Observaciones,
+  // referencia: cta.Referencia,
+  // correlativo: cta.CorrComp,
+  // fecha: formatoFecha(cta),
+  nombreCuenta: cta.Descripcion,
+  // Observacion: cta.Observaciones,
   Monto: cta.MontoComprometido,
   // Nivel: cta.Nivel,
 }));
@@ -45,11 +45,11 @@ const ctaCompromiso = cuentaCompromiso(AnoActivo).map((cta) => ({
 const ctaCausado = cuentaCausado(AnoActivo).map((cta) => ({
   cuentaNo: cta.cuentaNo,
   cuentaGrupo: cta.fatherId,
-  referencia: cta.Referencia,
-  correlativo: cta.CorrC,
-  fecha: formatoFecha(cta),
-  nombreCuenta: cta.nombreCuenta,
-  Observacion: cta.Observaciones,
+  // referencia: cta.Referencia,
+  // correlativo: cta.CorrC,
+  // fecha: formatoFecha(cta),
+  nombreCuenta: cta.Descripcion,
+  // Observacion: cta.Observaciones,
   Monto: cta.MontoCausado,
   // Nivel: cta.Nivel,
 }));
