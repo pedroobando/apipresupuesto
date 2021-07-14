@@ -8,7 +8,7 @@ const { cuentaCausado } = require("./calcs/calcCausado");
 const { cuentaPagado } = require("./calcs/calcPagado");
 
 const AnoActivo = 2020;
-const MesActivo = 2;
+const MesActivo = 11;
 
 const formatoFecha = (cta) =>
   new Date(`${cta.Año}-${ceroleft(cta.Mes, 2)}-${ceroleft(cta.Dia, 2)}T00:01:40`);
