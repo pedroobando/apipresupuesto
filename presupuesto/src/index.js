@@ -8,7 +8,7 @@ const { cuentaCausado } = require("./calcs/calcCausado");
 const { cuentaPagado } = require("./calcs/calcPagado");
 
 const AnoActivo = 2020;
-const MesActivo = 1;
+const MesActivo = 2;
 
 const formatoFecha = (cta) =>
   new Date(`${cta.Año}-${ceroleft(cta.Mes, 2)}-${ceroleft(cta.Dia, 2)}T00:01:40`);
@@ -27,6 +27,7 @@ const ctaModifi = cuentaModificacion(AnoActivo, MesActivo).map((cta) => ({
   // fecha: formatoFecha(cta),
   nombreCuenta: cta.Descripcion,
   Monto: cta.MontoMod,
+  MontoMes: cta.MontoModMes,
   // Nivel: cta.Nivel,
 }));
 
@@ -39,10 +40,11 @@ const ctaCompromiso = cuentaCompromiso(AnoActivo, MesActivo).map((cta) => ({
   nombreCuenta: cta.Descripcion,
   // Observacion: cta.Observaciones,
   Monto: cta.MontoComprometido,
+  MontoMes: cta.MontoComprometidoMes,
   // Nivel: cta.Nivel,
 }));
 
-const ctaCausado = cuentaCausado(AnoActivo).map((cta) => ({
+const ctaCausado = cuentaCausado(AnoActivo, MesActivo).map((cta) => ({
   cuentaNo: cta.cuentaNo,
   cuentaGrupo: cta.fatherId,
   // referencia: cta.Referencia,
@@ -51,18 +53,20 @@ const ctaCausado = cuentaCausado(AnoActivo).map((cta) => ({
   nombreCuenta: cta.Descripcion,
   // Observacion: cta.Observaciones,
   Monto: cta.MontoCausado,
+  MontoMes: cta.MontoCausadoMes,
   // Nivel: cta.Nivel,
 }));
 
-const ctaPagado = cuentaPagado(AnoActivo).map((cta) => ({
+const ctaPagado = cuentaPagado(AnoActivo, MesActivo).map((cta) => ({
   cuentaNo: cta.cuentaNo,
   cuentaGrupo: cta.fatherId,
-  referencia: cta.Referencia,
-  correlativo: cta.CorrP,
-  fecha: formatoFecha(cta),
-  nombreCuenta: cta.nombreCuenta,
-  Observacion: cta.Observaciones,
+  // referencia: cta.Referencia,
+  // correlativo: cta.CorrP,
+  // fecha: formatoFecha(cta),
+  nombreCuenta: cta.Descripcion,
+  // Observacion: cta.Observaciones,
   Monto: cta.MontoPag,
+  MontoMes: cta.MontoPagMes,
   // Nivel: cta.Nivel,
 }));
 

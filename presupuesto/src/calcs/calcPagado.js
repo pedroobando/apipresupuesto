@@ -1,4 +1,6 @@
 const cuentaOriginal = require("../../json/pagos.json");
+const cuentaPresupuerto = require("../../json/cuentas.json");
+const fse = require("fs-extra");
 
 const {
   ordenCuenta,
@@ -10,42 +12,49 @@ const {
   verificarCuenta,
 } = require("./util");
 
-const cuentaPagado = (anoTrabajo) => {
-  const ctasPorAno = verificarCuenta(anoTrabajo, cuentaOriginal, "MontoPag").sort(
-    ordenCuentaDesc
-  );
+const cuentaPagado = (anoTrabajo, mesTrabajo = 12) => {
+  // const ctasPorAno = verificarCuenta(anoTrabajo, cuentaOriginal, "MontoPag").sort(
+  //   ordenCuentaDesc
+  // );
 
-  let ctaAjustada = ctasPorAno.filter((cta) => cta.Año == anoTrabajo).sort(ordenCuenta);
+  const ctasPorAno = addCuentaNo(
+    cuentaPresupuerto.filter((cta) => cta.Año == anoTrabajo)
+  ).sort(ordenCuentaDesc);
 
+  let ctaAjustada = addCuentaNo(
+    cuentaOriginal.filter((cta) => cta.Año == anoTrabajo && cta.Mes <= mesTrabajo)
+  ).sort(ordenCuentaDesc);
+
+  let ctaAjustadaII = [];
   ctasPorAno.map((laCta) => {
-    let findFather = ctaAjustada.find((cta) => cta.cuentaNo == laCta.fatherId);
-
-    if (!findFather) {
-      findFather = {
-        cuentaNo: laCta.fatherId,
-        fatherId: numeroCuentaCreateFather(laCta.fatherId),
-        Referencia: "0000000",
-        nombreCuenta: "<< CUENTA FALTANTE >>",
-        Observaciones: "<< CUENTA FALTANTE >>",
-        MontoPag: 0,
-        Dia: 01,
-        Mes: 01,
-        Año: anoTrabajo,
-        Nivel: 1,
-      };
-      ctaAjustada = [...ctaAjustada, findFather];
-    }
-
-    findFather = {
-      ...findFather,
-      MontoPag: sumaCuenta(ctaAjustada, "MontoPag", "fatherId", findFather.cuentaNo),
-    };
-    ctaAjustada = [
-      ...ctaAjustada.filter((ctaAj) => ctaAj.cuentaNo !== findFather.cuentaNo),
-      findFather,
+    const sumCtaMes = ctaAjustada.reduce((prev, curr) => {
+      return (
+        prev +
+        (laCta.cuentaNo === curr.cuentaNo && curr.Mes === mesTrabajo ? curr.MontoPag : 0)
+      );
+    }, 0);
+    const sumCtaTotal = ctaAjustada.reduce((prev, curr) => {
+      return prev + (laCta.cuentaNo === curr.cuentaNo ? curr.MontoPag : 0);
+    }, 0);
+    ctaAjustadaII = [
+      ...ctaAjustadaII,
+      { ...laCta, MontoPag: sumCtaTotal, MontoPagMes: sumCtaMes },
     ];
+
+    const sumCtaMesF = ctaAjustadaII.reduce((prev, curr) => {
+      return prev + (laCta.cuentaNo === curr.fatherId ? curr.MontoPagMes : 0);
+    }, 0);
+    const sumCtaTotalF = ctaAjustadaII.reduce((prev, curr) => {
+      return prev + (laCta.cuentaNo === curr.fatherId ? curr.MontoPag : 0);
+    }, 0);
+    if (sumCtaTotalF !== 0) {
+      ctaAjustadaII = [
+        ...ctaAjustadaII.filter((ctaMod) => ctaMod.cuentaNo !== laCta.cuentaNo),
+        { ...laCta, MontoPag: sumCtaTotalF, MontoPagMes: sumCtaMesF },
+      ];
+    }
   });
-  return ctaAjustada.sort(ordenCuenta);
+  return ctaAjustadaII.sort(ordenCuenta);
 };
 
 module.exports = { cuentaPagado };

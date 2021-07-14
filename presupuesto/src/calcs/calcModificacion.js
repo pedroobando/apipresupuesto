@@ -24,22 +24,34 @@ const cuentaModificacion = (anoTrabajo, mesTrabajo = 12) => {
 
   let ctaAjustadaII = [];
   ctasPorAno.map((laCta) => {
+    const sumCtaMes = ctaAjustada.reduce((prev, curr) => {
+      return (
+        prev +
+        (laCta.cuentaNo === curr.cuentaNo && curr.Mes === mesTrabajo ? curr.MontoMod : 0)
+      );
+    }, 0);
     const sumCtaTotal = ctaAjustada.reduce((prev, curr) => {
       return prev + (laCta.cuentaNo === curr.cuentaNo ? curr.MontoMod : 0);
     }, 0);
-    ctaAjustadaII = [...ctaAjustadaII, { ...laCta, MontoMod: sumCtaTotal }];
+    ctaAjustadaII = [
+      ...ctaAjustadaII,
+      { ...laCta, MontoMod: sumCtaTotal, MontoModMes: sumCtaMes },
+    ];
 
+    const sumCtaMesF = ctaAjustadaII.reduce((prev, curr) => {
+      return prev + (laCta.cuentaNo === curr.fatherId ? curr.MontoModMes : 0);
+    }, 0);
     const sumCtaTotalF = ctaAjustadaII.reduce((prev, curr) => {
       return prev + (laCta.cuentaNo === curr.fatherId ? curr.MontoMod : 0);
     }, 0);
     if (sumCtaTotalF !== 0) {
       ctaAjustadaII = [
         ...ctaAjustadaII.filter((ctaMod) => ctaMod.cuentaNo !== laCta.cuentaNo),
-        { ...laCta, MontoMod: sumCtaTotalF },
+        { ...laCta, MontoMod: sumCtaTotalF, MontoModMes: sumCtaMesF },
       ];
     }
   });
-  // fse.writeJson("ctaAjustadaII.json", ctaAjustadaII.sort(ordenCuenta));
+  fse.writeJson("ctaAjustadaII.json", ctaAjustadaII.sort(ordenCuenta));
   return ctaAjustadaII.sort(ordenCuenta);
 };
 

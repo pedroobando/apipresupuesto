@@ -22,22 +22,36 @@ const cuentaCompromiso = (anoTrabajo, mesTrabajo = 12) => {
 
   let ctaAjustadaII = [];
   ctasPorAno.map((laCta) => {
+    const sumCtaMes = ctaAjustada.reduce((prev, curr) => {
+      return (
+        prev +
+        (laCta.cuentaNo === curr.cuentaNo && curr.Mes === mesTrabajo
+          ? curr.MontoComprometido
+          : 0)
+      );
+    }, 0);
     const sumCtaTotal = ctaAjustada.reduce((prev, curr) => {
       return prev + (laCta.cuentaNo === curr.cuentaNo ? curr.MontoComprometido : 0);
     }, 0);
-    ctaAjustadaII = [...ctaAjustadaII, { ...laCta, MontoComprometido: sumCtaTotal }];
+    ctaAjustadaII = [
+      ...ctaAjustadaII,
+      { ...laCta, MontoComprometido: sumCtaTotal, MontoComprometidoMes: sumCtaMes },
+    ];
 
+    const sumCtaMesF = ctaAjustadaII.reduce((prev, curr) => {
+      return prev + (laCta.cuentaNo === curr.fatherId ? curr.MontoComprometidoMes : 0);
+    }, 0);
     const sumCtaTotalF = ctaAjustadaII.reduce((prev, curr) => {
       return prev + (laCta.cuentaNo === curr.fatherId ? curr.MontoComprometido : 0);
     }, 0);
-    if (sumCtaTotalF > 0) {
+    if (sumCtaTotalF !== 0) {
       ctaAjustadaII = [
         ...ctaAjustadaII.filter((ctaMod) => ctaMod.cuentaNo !== laCta.cuentaNo),
-        { ...laCta, MontoComprometido: sumCtaTotalF },
+        { ...laCta, MontoComprometido: sumCtaTotalF, MontoComprometidoMes: sumCtaMesF },
       ];
     }
   });
-  fse.writeJson("ctaAjustadaII.json", ctaAjustadaII);
+  // fse.writeJson("ctaAjustadaII.json", ctaAjustadaII);
   return ctaAjustadaII.sort(ordenCuenta);
 };
 
