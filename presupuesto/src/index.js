@@ -1,4 +1,6 @@
 const XLSX = require("xlsx");
+const fse = require("fs-extra");
+
 const { ceroleft, ordenCuenta } = require("./calcs/util");
 
 const { cuentaPresupuesto } = require("./calcs/calcPresupueto");
@@ -6,6 +8,7 @@ const { cuentaModificacion } = require("./calcs/calcModificacion");
 const { cuentaCompromiso } = require("./calcs/calcCompromiso");
 const { cuentaCausado } = require("./calcs/calcCausado");
 const { cuentaPagado } = require("./calcs/calcPagado");
+const { presupuestoConsolidado } = require("./pdf/reportes");
 
 const AnoActivo = 2020;
 const MesActivo = 12;
@@ -171,4 +174,7 @@ XLSX.utils.book_append_sheet(libroExcel, hojaEjecucion, `Ejecucion ${AnoActivo}`
 
 XLSX.writeFile(libroExcel, `./presupuesto_${AnoActivo}.xlsx`);
 
+fse.writeJson("ctaEjecucion.json", ctaEjecucion.sort(ordenCuenta));
+
+presupuestoConsolidado(ctaEjecucion);
 console.log("success..!");

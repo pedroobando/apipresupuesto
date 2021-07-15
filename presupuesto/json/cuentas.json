@@ -1,5 +1,23 @@
 [
   {
+    "Año": 2020,
+    "Part": 4,
+    "Gene": 0,
+    "Espe": 0,
+    "Sub": 0,
+    "Ordi": 0,
+    "Nivel": 2,
+    "Descripcion": "GASTOS",
+    "Inicial": 0,
+    "Tipo": "D",
+    "CuentaLogin": "YENI",
+    "LoPagadoEnElMes": 0,
+    "LoPagadoHasta": 0.54,
+    "AsignadoAlFinDeMes": 0,
+    "AsignadoAlfinDeAño": 0,
+    "IngresoEgresoEnEsteMes": 0
+  },
+  {
     "Año": 2010,
     "Part": 4,
     "Gene": 1,

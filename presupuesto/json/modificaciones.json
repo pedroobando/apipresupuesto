@@ -1,5 +1,19 @@
 [
   {
+    "Año": 2020,
+    "Mes": 1,
+    "Dia": 1,
+    "Part": 4,
+    "Gene": 0,
+    "Espe": 0,
+    "Sub": 0,
+    "Ordi": 0,
+    "TipoMod": "T",
+    "MontoMod": 0,
+    "Observaciones": "Para:4.03.17.01 Servicios de gestion administ.",
+    "ModLogin": "YENI"
+  },
+  {
     "Año": 2010,
     "Mes": 2,
     "Dia": 1,
