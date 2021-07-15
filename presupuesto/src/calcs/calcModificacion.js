@@ -51,7 +51,7 @@ const cuentaModificacion = (anoTrabajo, mesTrabajo = 12) => {
       ];
     }
   });
-  fse.writeJson("ctaAjustadaII.json", ctaAjustadaII.sort(ordenCuenta));
+  // fse.writeJson("ctaAjustadaII.json", ctaAjustadaII.sort(ordenCuenta));
   return ctaAjustadaII.sort(ordenCuenta);
 };
 

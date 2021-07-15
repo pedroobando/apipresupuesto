@@ -1,5 +1,5 @@
 const XLSX = require("xlsx");
-const { ceroleft } = require("./calcs/util");
+const { ceroleft, ordenCuenta } = require("./calcs/util");
 
 const { cuentaPresupuesto } = require("./calcs/calcPresupueto");
 const { cuentaModificacion } = require("./calcs/calcModificacion");
@@ -8,7 +8,7 @@ const { cuentaCausado } = require("./calcs/calcCausado");
 const { cuentaPagado } = require("./calcs/calcPagado");
 
 const AnoActivo = 2020;
-const MesActivo = 11;
+const MesActivo = 12;
 
 const formatoFecha = (cta) =>
   new Date(`${cta.Año}-${ceroleft(cta.Mes, 2)}-${ceroleft(cta.Dia, 2)}T00:01:40`);
@@ -17,18 +17,15 @@ const ctaPresup = cuentaPresupuesto(AnoActivo).map((cta) => ({
   cuentaNo: cta.cuentaNo,
   cuentaGrupo: cta.fatherId,
   nombreCuenta: cta.Descripcion,
-  Monto: cta.Inicial,
+  montoInicial: cta.Inicial,
 }));
 
 const ctaModifi = cuentaModificacion(AnoActivo, MesActivo).map((cta) => ({
   cuentaNo: cta.cuentaNo,
   cuentaGrupo: cta.fatherId,
-  // tipoModific: cta.TipoMod,
-  // fecha: formatoFecha(cta),
   nombreCuenta: cta.Descripcion,
-  Monto: cta.MontoMod,
-  MontoMes: cta.MontoModMes,
-  // Nivel: cta.Nivel,
+  montoModMes: cta.MontoModMes,
+  montoModAcm: cta.MontoMod,
 }));
 
 const ctaCompromiso = cuentaCompromiso(AnoActivo, MesActivo).map((cta) => ({
@@ -39,8 +36,8 @@ const ctaCompromiso = cuentaCompromiso(AnoActivo, MesActivo).map((cta) => ({
   // fecha: formatoFecha(cta),
   nombreCuenta: cta.Descripcion,
   // Observacion: cta.Observaciones,
-  Monto: cta.MontoComprometido,
-  MontoMes: cta.MontoComprometidoMes,
+  montoCompMes: cta.MontoComprometidoMes,
+  montoCompAcm: cta.MontoComprometido,
   // Nivel: cta.Nivel,
 }));
 
@@ -52,8 +49,8 @@ const ctaCausado = cuentaCausado(AnoActivo, MesActivo).map((cta) => ({
   // fecha: formatoFecha(cta),
   nombreCuenta: cta.Descripcion,
   // Observacion: cta.Observaciones,
-  Monto: cta.MontoCausado,
-  MontoMes: cta.MontoCausadoMes,
+  montoCausAcm: cta.MontoCausado,
+  montoCausMes: cta.MontoCausadoMes,
   // Nivel: cta.Nivel,
 }));
 
@@ -65,43 +62,111 @@ const ctaPagado = cuentaPagado(AnoActivo, MesActivo).map((cta) => ({
   // fecha: formatoFecha(cta),
   nombreCuenta: cta.Descripcion,
   // Observacion: cta.Observaciones,
-  Monto: cta.MontoPag,
-  MontoMes: cta.MontoPagMes,
+  montoPagaAcm: cta.MontoPag,
+  montoPagaMes: cta.MontoPagMes,
   // Nivel: cta.Nivel,
 }));
 
-let ctaEjecucion = [];
-// const findMonto = (cuenta, cuentafind) => cuenta.cuentaNo == cuentafind.cuentaNo;
-ctaEjecucion = ctaPresup.map((cta) => {
-  fctaCompromiso = ctaCompromiso.filter((cuenta) => cuenta.cuentaNo == cta.cuentaNo);
+// Presupuesto Inicial
+let ctaEjecucion = [...ctaPresup];
 
-  return {
-    cuentaNo: cta.cuentaNo,
-    cuentaGrupo: cta.cuentaGrupo,
-    fecha: AnoActivo,
-    nombreCuenta: cta.nombreCuenta,
-    montoPresupuesto: cta.Monto,
-    montoComprometido: 0,
-    montoCausado: 0,
-    montoPagado: 0,
-  };
+// Modificacion del Presupuesto
+ctaModifi.map((cta) => {
+  const ctaFind = ctaEjecucion.find((ctaOrig) => ctaOrig.cuentaNo == cta.cuentaNo);
+  ctaEjecucion = [
+    ...ctaEjecucion.filter((ctaRemove) => ctaRemove.cuentaNo != cta.cuentaNo),
+    {
+      ...ctaFind,
+      montoModMes: cta.montoModMes,
+      montoModAcm: cta.montoModAcm,
+      montoAsigAjust: ctaFind.montoInicial + cta.montoModAcm,
+    },
+  ];
 });
+
+// Compromiso del Presupuesto
+ctaCompromiso.map((cta) => {
+  const ctaFind = ctaEjecucion.find((ctaOrig) => ctaOrig.cuentaNo == cta.cuentaNo);
+  ctaEjecucion = [
+    ...ctaEjecucion.filter((ctaRemove) => ctaRemove.cuentaNo != cta.cuentaNo),
+    {
+      ...ctaFind,
+      montoCompMes: cta.montoCompMes,
+      montoCompAcm: cta.montoCompAcm,
+    },
+  ];
+});
+
+// Causado del Presupuesto
+ctaCausado.map((cta) => {
+  const ctaFind = ctaEjecucion.find((ctaOrig) => ctaOrig.cuentaNo == cta.cuentaNo);
+  ctaEjecucion = [
+    ...ctaEjecucion.filter((ctaRemove) => ctaRemove.cuentaNo != cta.cuentaNo),
+    {
+      ...ctaFind,
+      montoCausMes: cta.montoCausMes,
+      montoCausAcm: cta.montoCausAcm,
+    },
+  ];
+});
+
+// Pagado del Presupuesto
+ctaPagado.map((cta) => {
+  const ctaFind = ctaEjecucion.find((ctaOrig) => ctaOrig.cuentaNo == cta.cuentaNo);
+  ctaEjecucion = [
+    ...ctaEjecucion.filter((ctaRemove) => ctaRemove.cuentaNo != cta.cuentaNo),
+    {
+      ...ctaFind,
+      montoPagaMes: cta.montoPagaMes,
+      montoPagaAcm: cta.montoPagaAcm,
+    },
+  ];
+});
+
+let ctaEjecucionTmp = [];
+ctaEjecucion.map((cta) => {
+  // const ctaFind = ctaEjecucion.find((ctaOrig) => ctaOrig.cuentaNo == cta.cuentaNo);
+  ctaEjecucionTmp = [
+    ...ctaEjecucionTmp,
+    {
+      ...cta,
+      // cuentaNo: cta.cuentaNo,
+      // cuentaGrupo: cta.cuentaGrupo,
+      // nombreCuenta: cta.nombreCuenta,
+
+      montoInicial: cta.montoInicial,
+      montoModMes: cta.montoModMes,
+      montoModAcm: cta.montoModAcm,
+      montoAsigAjust: cta.montoAsigAjust,
+
+      montoCompMes: cta.montoCompMes,
+      montoCausMes: cta.montoCausMes,
+      montoPagaMes: cta.montoPagaMes,
+
+      montoCompAcm: cta.montoCompAcm,
+      montoCausAcm: cta.montoCausAcm,
+      montoPagaAcm: cta.montoPagaAcm,
+    },
+  ];
+});
+
+ctaEjecucion = ctaEjecucionTmp.sort(ordenCuenta);
 
 const formatoCellDate = { cellDates: true, dateNF: "YYYYMMDD HH:mm:ss" };
 
 const libroExcel = XLSX.utils.book_new();
-const hojaPresupuesto = XLSX.utils.json_to_sheet(ctaPresup);
-const hojaModificacion = XLSX.utils.json_to_sheet(ctaModifi, formatoCellDate);
-const hojaComprometido = XLSX.utils.json_to_sheet(ctaCompromiso, formatoCellDate);
-const hojaCausado = XLSX.utils.json_to_sheet(ctaCausado, formatoCellDate);
-const hojaPagado = XLSX.utils.json_to_sheet(ctaPagado, formatoCellDate);
+// const hojaPresupuesto = XLSX.utils.json_to_sheet(ctaEjecucion, formatoCellDate);
+// const hojaModificacion = XLSX.utils.json_to_sheet(ctaModifi, formatoCellDate);
+// const hojaComprometido = XLSX.utils.json_to_sheet(ctaCompromiso, formatoCellDate);
+// const hojaCausado = XLSX.utils.json_to_sheet(ctaCausado, formatoCellDate);
+// const hojaPagado = XLSX.utils.json_to_sheet(ctaPagado, formatoCellDate);
 const hojaEjecucion = XLSX.utils.json_to_sheet(ctaEjecucion, formatoCellDate);
 
-XLSX.utils.book_append_sheet(libroExcel, hojaPresupuesto, `Presupuesto ${AnoActivo}`);
-XLSX.utils.book_append_sheet(libroExcel, hojaModificacion, `Modificaciones ${AnoActivo}`);
-XLSX.utils.book_append_sheet(libroExcel, hojaComprometido, `Comprometido ${AnoActivo}`);
-XLSX.utils.book_append_sheet(libroExcel, hojaCausado, `Causado ${AnoActivo}`);
-XLSX.utils.book_append_sheet(libroExcel, hojaPagado, `Pagado ${AnoActivo}`);
+// XLSX.utils.book_append_sheet(libroExcel, hojaPresupuesto, `Presupuesto ${AnoActivo}`);
+// XLSX.utils.book_append_sheet(libroExcel, hojaModificacion, `Modificaciones ${AnoActivo}`);
+// XLSX.utils.book_append_sheet(libroExcel, hojaComprometido, `Comprometido ${AnoActivo}`);
+// XLSX.utils.book_append_sheet(libroExcel, hojaCausado, `Causado ${AnoActivo}`);
+// XLSX.utils.book_append_sheet(libroExcel, hojaPagado, `Pagado ${AnoActivo}`);
 XLSX.utils.book_append_sheet(libroExcel, hojaEjecucion, `Ejecucion ${AnoActivo}`);
 
 XLSX.writeFile(libroExcel, `./presupuesto_${AnoActivo}.xlsx`);
